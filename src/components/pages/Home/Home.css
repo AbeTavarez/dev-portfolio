@@ -49,6 +49,23 @@ a {
   animation-name: name-animation;
   animation-duration: 4s;
 }
+.home-projects-container {
+  display: flex;
+  flex-direction: row;
+  margin: 40px;
+}
+.home-projects-title {
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  font-family: "Bebas Neue";
+  padding-top: 100px;
+}
+.card-section {
+}
+.hr-divider {
+  padding-bottom: 20px;
+}
 
 @keyframes name-animation {
   from {

@@ -2,7 +2,28 @@ import React from "react";
 import Layout from "../../shared/Layout";
 
 import "./Home.css";
+import { makeStyles } from "@material-ui/core/styles";
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
+import Button from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
+
+const useStyles = makeStyles({
+  root: {
+    maxWidth: 445,
+    // backgroundColor: "black",
+    // color: "white",
+  },
+  media: {
+    height: 200,
+  },
+});
+
 export default function Home() {
+  const classes = useStyles();
   return (
     <Layout>
       <div className="img-container">
@@ -18,27 +39,92 @@ export default function Home() {
         </div>
 
         <div className="welcome-message">
-          <p>I'm a Software Engineer</p>
-          <p>from the city that never sleeps: NYC</p>
+          <p>I'm a Junior Software Engineer grad</p>
+          <p>from GA's Software Engineer</p>
+          <p>immersive program.</p>
           <p>Feel free to look around...</p>
         </div>
-        {/* LinkedIn */}
-        <div className="social-links">
-          <a
-            href="https://www.linkedin.com/in/abrahametavarez/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <i className="fa fa-linkedin-square" aria-hidden="true" />
-          </a>
-          {/* Github */}
-          <a
-            href="https://github.com/AbeTavarez"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <i className="fa fa-github-square" aria-hidden="true" />
-          </a>
+        <div className="home-projects-title">Latest Projects</div>
+
+        <div className="home-projects-container">
+          <div className="card-section">
+            <hr />
+            <div className="hr-divider"></div>
+            <Card className={classes.root}>
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image="https://res.cloudinary.com/abetavarez/image/upload/v1592666031/Screen_Shot_2020-06-20_at_11.13.01_AM_noe2tf.png"
+                  title="instacart-project-website"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    InstaCart
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    I had the amazing oportunity to work with a team of other
+                    four software engineers and three UI/UX designers, to create
+                    this InstaCart prototype.
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="http://instacart-costco.surge.sh/welcome"
+                >
+                  Visit Site
+                </Button>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://github.com/AbeTavarez/Instacart-Costco"
+                >
+                  Visit Repo
+                </Button>
+              </CardActions>
+            </Card>
+          </div>
+
+          <div className="card-section">
+            <hr />
+            <Card className={classes.root}>
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image="/static/images/cards/contemplative-reptile.jpg"
+                  title="Contemplative Reptile"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    InstaCart
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    Lizards are a widespread group of squamate reptiles, with
+                    over 6,000 species, ranging across all continents except
+                    Antarctica
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button size="small" color="primary">
+                  Share
+                </Button>
+                <Button size="small" color="primary">
+                  Learn More
+                </Button>
+              </CardActions>
+            </Card>
+          </div>
         </div>
       </div>
     </Layout>

@@ -4,6 +4,7 @@
 .footer-container {
   display: flex;
   justify-content: space-evenly;
+  padding-top: 20px;
   height: 100px;
   /* padding: 50px 0; */
   /* margin-left: -2px;
@@ -11,7 +12,7 @@
   margin-top: -2px; */
   border: 1px solid #cecece;
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   left: 0;
   background: #aa4b6b; /* fallback for old browsers */
@@ -32,6 +33,9 @@
   display: flex;
 }
 .links {
+  display: flex;
+}
+.social-links {
   display: flex;
 }
 .contact {

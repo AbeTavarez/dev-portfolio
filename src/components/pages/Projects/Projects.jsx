@@ -16,7 +16,7 @@ const useStyles = makeStyles({
     maxWidth: 345,
   },
   media: {
-    height: 140,
+    height: 200,
   },
 });
 
@@ -134,25 +134,26 @@ export default function Projects() {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="/static/images/cards/contemplative-reptile.jpg"
-                title="Contemplative Reptile"
+                image="https://res.cloudinary.com/abetavarez/image/upload/v1592666031/Screen_Shot_2020-06-20_at_11.13.01_AM_noe2tf.png"
+                title="instacart-project-website"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
                   InstaCart
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
+                  I had the amazing oportunity to work with a team of other four
+                  software engineers and three UI/UX designers, to create this
+                  InstaCart prototype.
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
               <Button size="small" color="primary">
-                Share
+                Visit Site
               </Button>
               <Button size="small" color="primary">
-                Learn More
+                Visit Repo
               </Button>
             </CardActions>
           </Card>
