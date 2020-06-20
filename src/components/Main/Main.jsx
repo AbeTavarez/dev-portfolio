@@ -15,7 +15,7 @@ export default function Main() {
     <Route>
       <Switch>
         <Route exact path="/" component={() => <Landing />} />
-        <Route exact path="/home" component={() => <Home />} />
+        <Route path="/home" component={() => <Home />} />
         <Route path="/about" component={() => <About />} />
         <Route path="/projects" component={() => <Projects />} />
         <Route path="/resume" component={() => <Resume />} />

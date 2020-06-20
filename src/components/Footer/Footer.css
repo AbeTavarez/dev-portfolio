@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100px;
+  /* padding: 50px 0; */
+  /* margin-left: -2px;
+  margin-right: -2px;
+  margin-top: -2px; */
+  border: 1px solid #cecece;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #aa4b6b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3b8d99,
+    #6b6b83,
+    #aa4b6b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3b8d99,
+    #6b6b83,
+    #aa4b6b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.terms {
+  display: flex;
+}
+.links {
+  display: flex;
+}
+.contact {
+  display: flex;
+}

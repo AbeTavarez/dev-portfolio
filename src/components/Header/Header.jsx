@@ -7,6 +7,7 @@ export default function Header() {
   //Unauthenticate
   const alwaysShows = (
     <>
+      <NavLink to="/home">Home</NavLink>
       <NavLink to="/about">About</NavLink>
       <NavLink to="/projects">Projects</NavLink>
       <NavLink to="/resume">Resume</NavLink>
@@ -17,6 +18,11 @@ export default function Header() {
     <nav>
       <div className="header-container">
         <div className="message">
+          <img
+            src="https://cdn0.iconfinder.com/data/icons/avatar-15/512/ninja-512.png"
+            alt="avatar"
+            className="ninja-header"
+          />
           <h1>Hello Friend</h1>
         </div>
         <div className="nav-links pad">{alwaysShows}</div>

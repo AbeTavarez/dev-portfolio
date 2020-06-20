@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.projects-container {
+  display: flex;
+  margin: auto;
+}
+.card-section {
+  margin: 20px;
+}
