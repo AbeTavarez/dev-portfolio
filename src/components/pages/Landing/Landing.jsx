@@ -11,11 +11,12 @@ export default function Landing() {
         <img
           src="https://cdn0.iconfinder.com/data/icons/avatar-15/512/ninja-512.png"
           alt="avatar"
-          className="profile-img"
+          className="ninja-img"
         />
         <h3>Welcome</h3>
-
-        <NavLink to="/home">Enter</NavLink>
+        <div className="home-transition">
+          <NavLink to="/home">Enter</NavLink>
+        </div>
       </div>
 
       <div>
@@ -24,7 +25,7 @@ export default function Landing() {
             <img
               src="https://cdn0.iconfinder.com/data/icons/avatar-15/512/ninja-512.png"
               alt="avatar"
-              className="profile-img"
+              className="ninja-img"
             />
             <h1>My sites</h1>
             <h1>My sites</h1>

@@ -46,4 +46,15 @@ a {
   font-family: "Bebas Neue";
   font-size: 35px;
   letter-spacing: 5px;
+  animation-name: name-animation;
+  animation-duration: 4s;
+}
+
+@keyframes name-animation {
+  from {
+    color: rgba(51, 121, 135);
+  }
+  to {
+    color: rgba(166, 67, 97);
+  }
 }

@@ -33,6 +33,31 @@
   width: 150px;
   border-radius: 50%;
 }
+.ninja-img {
+  animation-name: ninja-anime;
+  animation-duration: 1s;
+}
+.home-transition {
+  width: 150px;
+  height: 50px;
+  background: rgba(166, 67, 97);
+  box-shadow: 0px 0px 5px 10px #888888;
+  transition: width 2s;
+}
+.home-transition:hover {
+  width: 300px;
+}
+
+@keyframes ninja-anime {
+  from {
+    /* height: 50px; */
+    width: 50px;
+  }
+  to {
+    /* height: 55px; */
+    width: 55px;
+  }
+}
 
 @media (max-width: 500px) {
   .home {

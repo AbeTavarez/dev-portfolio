@@ -19,8 +19,8 @@ export default function Home() {
 
         <div className="welcome-message">
           <p>I'm a Software Engineer</p>
-          <p>from the city that never sleeps NYC</p>
-          <p>feel free to look around...</p>
+          <p>from the city that never sleeps: NYC</p>
+          <p>Feel free to look around...</p>
         </div>
         {/* LinkedIn */}
         <div className="social-links">
