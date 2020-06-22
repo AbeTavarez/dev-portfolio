@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import { Link } from "react-router-dom";
 import "./Resume.css";
 import { Grid, Container } from "@material-ui/core";
 import Education from "./education";

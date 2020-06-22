@@ -8,11 +8,13 @@
   /* margin-top: 150px; */
 }
 .profile-img {
-  border-radius: 100%;
-  border: 3px solid white;
-  box-shadow: 3px 3px 3px 0.3px #cecece;
-  /* width: 250px; */
-  height: 200px;
+  border-radius: 10%;
+  border: 1px solid white;
+  height: 400px;
+}
+.img-title {
+  display: flex;
+  flex-direction: column;
 }
 .img-container {
   display: flex;
@@ -48,6 +50,7 @@ a {
   letter-spacing: 5px;
   animation-name: name-animation;
   animation-duration: 3s;
+  padding-left: 25px;
 }
 .home-projects-container {
   display: flex;
@@ -66,11 +69,22 @@ a {
   padding-bottom: 20px;
 }
 
+.aboutme {
+  padding-top: 80px;
+  text-align: center;
+  font-size: 22px;
+}
+
 @keyframes name-animation {
   from {
     color: rgba(51, 121, 135);
   }
   to {
     color: rgba(166, 67, 97);
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    padding: 100px 40px;
   }
 }

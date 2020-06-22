@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-evenly;
   padding-top: 20px;
-  height: 100px;
+  height: 165px;
   /* padding: 50px 0; */
   /* margin-left: -2px;
   margin-right: -2px;
@@ -34,10 +34,14 @@
 }
 .links {
   display: flex;
+  flex-direction: column;
 }
 .social-links {
   display: flex;
+
+  flex-direction: row;
 }
 .contact {
   display: flex;
+  flex-direction: column;
 }

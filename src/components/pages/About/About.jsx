@@ -64,7 +64,7 @@ export default function About() {
 
           <div className="aboutme">
             <p>I'm passionate about tech and software development.</p>
-            <p>As a New Yorker, I feel really proud to live in this city.</p>
+            <p>As a New Yorker, I feel lucky to live in this city.</p>
             <p>
               I've attended many events and meetups all around my city and they
               all have been an amazing experience.

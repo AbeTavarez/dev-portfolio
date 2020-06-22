@@ -40,8 +40,10 @@ export default function Projects() {
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                   Provides easy recipies and information to the public to stay
-                  save when shopping during #covid19 virus. Stack: HTML, CSS,
-                  JavaScript.
+                  save when shopping during #covid19 virus.
+                </Typography>
+                <Typography variant="body2" color="textPrimary" component="p">
+                  Stack: HTML, CSS, JavaScript.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -79,8 +81,11 @@ export default function Projects() {
                   Streamnetfy
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
+                  Website that can help you to find tv shows. Get show rating,
+                  gender, images, network, show summary and more.
+                </Typography>
+                <Typography variant="body2" color="textPrimary" component="p">
+                  Stack: ReactJS.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -118,8 +123,11 @@ export default function Projects() {
                   CommandBlog
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
+                  Full Stack Blog Application build with Authentication using
+                  JWT Tokens. Users that sign-up can create and post articles.
+                  <Typography variant="body2" color="textPrimary" component="p">
+                    Stack: ReactJS, Ruby on Rails, PostgreSQL.
+                  </Typography>
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -155,10 +163,13 @@ export default function Projects() {
                 <Typography gutterBottom variant="h5" component="h2">
                   InstaCart
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  I had the amazing oportunity to work with a team of other four
-                  software engineers and three UI/UX designers, to create this
-                  InstaCart prototype.
+                <Typography variant="body2" color="textSeconry" component="p">
+                  I had the amazing oportunity to collaborate with a team of
+                  software engineers and UI/UX designers, to replicate the
+                  e-commerce site InstaCart.
+                </Typography>
+                <Typography variant="body2" color="textPrimary" component="p">
+                  Stack: ReactJS, NodeJS.
                 </Typography>
               </CardContent>
             </CardActionArea>

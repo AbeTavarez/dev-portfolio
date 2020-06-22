@@ -9,6 +9,9 @@ export default function Footer() {
         <p>© 2020</p>
       </div>
       <div className="links">
+        <div>
+          <h2>Get in touch </h2>
+        </div>
         {/* LinkedIn */}
         <div className="social-links">
           <a
@@ -33,6 +36,13 @@ export default function Footer() {
             target="_blank"
           >
             <i className="fab fa-dev"></i>
+          </a>
+          <a
+            href="mailto:abetavarez@icloud.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <i class="fas fa-envelope-square"></i>
           </a>
         </div>
       </div>

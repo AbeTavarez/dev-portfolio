@@ -14,8 +14,7 @@ import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles({
   root: {
     maxWidth: 445,
-    // backgroundColor: "black",
-    // color: "white",
+    maxHeight: 800,
   },
   media: {
     height: 200,
@@ -26,32 +25,106 @@ export default function Home() {
   const classes = useStyles();
   return (
     <Layout>
-      <div className="img-container">
-        <img
-          src="https://avatars0.githubusercontent.com/u/39171176?s=460&u=ca3e045a92e31b6c19180496fb71d6aab41e0098&v=4"
-          alt="avatar"
-          className="profile-img"
-        />
-      </div>
       <div className="home-container">
-        <div className="name-home">
-          <h1 style={{ padding: "10px" }}>hi, I'm Abraham</h1>
+        <div className="welcome-message">
+          <div className="img-container">
+            <div className="img-title">
+              <img
+                src="https://res.cloudinary.com/abetavarez/image/upload/v1592839319/117FF774-687A-4770-BE37-A691F898B74B_1_105_c_h8cmno.jpg"
+                alt="avatar"
+                className="profile-img"
+              />
+            </div>
+            <div className="name-home">
+              <h1 style={{ padding: "10px" }}>hi, I'm Abraham</h1>
+              <p>I'm a Junior Software Engineer</p>
+            </div>
+          </div>
         </div>
 
-        <div className="welcome-message">
-          <p>I'm a Junior Software Engineer grad</p>
-          <p>from GA's Software Engineer</p>
-          <p>immersive program.</p>
-          <p>I really enjoy writing code and</p>
-          <p>especially making web-sites and web-apps.</p>
-          <p>Feel free to look around.</p>
+        <div className="aboutme">
+          <hr />
+          <h2>About me</h2>
+          <p>
+            I am a New Yorker who is passionate about tech and software
+            development.
+          </p>
+
+          <p>
+            I get to attend many tech events and meetups all around my city
+            which have all been an amazing experience.
+          </p>
+          <p>
+            I have been using a wide range of technologies including{" "}
+            <span style={{ fontStyle: "italic" }}> Javascript</span>,
+            <span style={{ fontStyle: "italic" }}> ReactJS</span>,{" "}
+            <span style={{ fontStyle: "italic" }}> NodeJS</span>,{" "}
+            <span style={{ fontStyle: "italic" }}> Express</span>,
+            <span style={{ fontStyle: "italic" }}> Ruby On Rails</span>,{" "}
+            <span style={{ fontStyle: "italic" }}> Python</span>
+          </p>
+          <p>to create fun and modern websites and webapps.</p>
+          <p>I am seeking a challenging and fun position.</p>
+          <p>
+            I am very excited to work on creative team projects where I can
+            share everything I have to offer to the tech community.
+          </p>
         </div>
+
+        <div style={{ padding: "15px" }}>
+          <img
+            src="https://img.icons8.com/dusk/64/000000/html-5.png"
+            style={{ padding: "3px" }}
+            alt="html-icon"
+          />
+          <img
+            src="https://img.icons8.com/dusk/64/000000/css3.png"
+            style={{ padding: "3px" }}
+            alt="css-icons"
+          />
+          <img
+            src="https://img.icons8.com/dusk/64/000000/javascript.png"
+            style={{ padding: "3px" }}
+            alt="javascript-icon"
+          />
+          <img
+            src="https://img.icons8.com/offices/60/000000/react.png"
+            style={{ padding: "3px" }}
+            alt="react-js-icon"
+          />
+          <img
+            src="https://img.icons8.com/color/64/000000/nodejs.png"
+            style={{ padding: "3px" }}
+            alt="node-js-icon"
+          />
+          <img
+            src="https://img.icons8.com/dusk/64/000000/ruby-programming-language.png"
+            style={{ padding: "3px" }}
+            alt="ruby-icon"
+          />
+          <img
+            src="https://img.icons8.com/dusk/64/000000/python.png"
+            style={{ padding: "3px" }}
+            alt="python-icon"
+          />
+          <img
+            src="https://img.icons8.com/color/48/000000/npm.png"
+            style={{ padding: "3px" }}
+            alt="npm-icon"
+          />
+          <img
+            src="https://img.icons8.com/color/48/000000/git.png"
+            style={{ padding: "3px" }}
+            alt="git-icon"
+          />
+        </div>
+
         <div className="home-projects-title">Latest Projects</div>
 
         <div className="home-projects-container">
           <div className="card-section">
             <hr />
-            <div className="hr-divider"></div>
+
             <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
@@ -63,14 +136,13 @@ export default function Home() {
                   <Typography gutterBottom variant="h5" component="h2">
                     InstaCart
                   </Typography>
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
-                    I had the amazing oportunity to work with a team of other
-                    four software engineers and three UI/UX designers, to create
-                    this InstaCart prototype.
+                  <Typography variant="body2" color="textSeconry" component="p">
+                    I had the amazing oportunity to collaborate with a team of
+                    software engineers and UI/UX designers, to replicate the
+                    e-commerce site InstaCart.
+                  </Typography>
+                  <Typography variant="body2" color="textPrimary" component="p">
+                    Stack: ReactJS, NodeJS.
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -101,30 +173,143 @@ export default function Home() {
               <CardActionArea>
                 <CardMedia
                   className={classes.media}
-                  image="/static/images/cards/contemplative-reptile.jpg"
-                  title="Contemplative Reptile"
+                  image="https://res.cloudinary.com/abetavarez/image/upload/v1592622098/Screen_Shot_2020-06-19_at_11.01.22_PM_nds2kr.png"
+                  title="command-blog-website"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    InstaCart
+                    CommandBlog
                   </Typography>
                   <Typography
                     variant="body2"
                     color="textSecondary"
                     component="p"
                   >
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                    Full Stack Blog Application build with Authentication using
+                    JWT Tokens. All users can read articles. Users that sign-up
+                    can create and post articles.
+                    <Typography
+                      variant="body2"
+                      color="textPrimary"
+                      component="p"
+                    >
+                      Stack: ReactJS, Ruby on Rails, PostgreSQL.
+                    </Typography>
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
-                  Share
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://commandblog.netlify.app/"
+                  target="_blank"
+                >
+                  Visit site
                 </Button>
-                <Button size="small" color="primary">
-                  Learn More
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://github.com/AbeTavarez/CmdBlog"
+                  target="_blank"
+                >
+                  Visit Repo
+                </Button>
+              </CardActions>
+            </Card>
+          </div>
+        </div>
+
+        <div className="home-projects-container">
+          <div className="card-section">
+            <hr />
+            <Card className={classes.root}>
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image="https://res.cloudinary.com/abetavarez/image/upload/v1592621658/Screen_Shot_2020-06-19_at_10.52.40_PM_wzvrar.png"
+                  title="streamnetfy-website"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Streamnetfy
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    Website that can help you to find tv shows. Get show rating,
+                    gender, images, network, show summary and more.
+                  </Typography>
+                  <Typography variant="body2" color="textPrimary" component="p">
+                    Stack: ReactJS.
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://streamnetfy.netlify.app/"
+                  target="_blank"
+                >
+                  Visit Site
+                </Button>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://github.com/AbeTavarez/Streamnetfy"
+                  target="_blank"
+                >
+                  Visit Repo
+                </Button>
+              </CardActions>
+            </Card>
+          </div>
+
+          <div className="card-section">
+            <hr />
+            <Card className={classes.root}>
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image="https://res.cloudinary.com/abetavarez/image/upload/v1592620250/Screen_Shot_2020-06-19_at_10.30.27_PM_wofq1e.png"
+                  title="stayhomecookhome-website"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    #StayHomeCookHome
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    Provides easy recipies and information to the public to stay
+                    save when shopping during #covid19 virus.
+                  </Typography>
+                  <Typography variant="body2" color="textPrimary" component="p">
+                    Stack: HTML, CSS, JavaScript.
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://pages.git.generalassemb.ly/AbrahamEfrenTavarez/StayHomeCookHome/"
+                  target="_blank"
+                >
+                  Visit Site
+                </Button>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://github.com/AbeTavarez/-StayHomeCookHome"
+                  target="_blank"
+                >
+                  Visit Repo
                 </Button>
               </CardActions>
             </Card>

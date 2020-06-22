@@ -19,24 +19,25 @@ export default class Contact extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     console.log(this.state);
-    axios
-      .create({
-        method: "POST",
-        url: "http://localhost:3002/send",
-        data: this.state,
-      })
-      .then((res) => {
-        res.data.status === "success"
-          ? alert("Message send")
-          : alert("Message failed to send");
-      });
+    axios({
+      method: "POST",
+      url: "http://localhost:3002/send",
+      data: this.state,
+    }).then((res) => {
+      res.data.status === "success"
+        ? alert("Message send")
+        : alert("Message failed to send");
+    });
   };
   render() {
     return (
       <div className="email-form-container">
         <div className="email-form-top">
           <h1>Get in touch</h1>
-          <img src="https://img.icons8.com/dusk/84/000000/paper-plane.png" />
+          <img
+            src="https://img.icons8.com/dusk/84/000000/paper-plane.png"
+            alt="paper-plain-icon"
+          />
         </div>
 
         <form onSubmit={this.handleSubmit} method="post">
