@@ -19,6 +19,17 @@ export default class Contact extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     console.log(this.state);
+    axios
+      .create({
+        method: "POST",
+        url: "http://localhost:3002/send",
+        data: this.state,
+      })
+      .then((res) => {
+        res.data.status === "success"
+          ? alert("Message send")
+          : alert("Message failed to send");
+      });
   };
   render() {
     return (
