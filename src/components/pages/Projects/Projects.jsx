@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 import "./Projects.css";
 import Layout from "../../shared/Layout";
@@ -50,6 +50,7 @@ export default function Projects() {
                 size="small"
                 color="primary"
                 href="https://pages.git.generalassemb.ly/AbrahamEfrenTavarez/StayHomeCookHome/"
+                target="_blank"
               >
                 Visit Site
               </Button>
@@ -57,6 +58,7 @@ export default function Projects() {
                 size="small"
                 color="primary"
                 href="https://github.com/AbeTavarez/-StayHomeCookHome"
+                target="_blank"
               >
                 Visit Repo
               </Button>
@@ -87,6 +89,7 @@ export default function Projects() {
                 size="small"
                 color="primary"
                 href="https://streamnetfy.netlify.app/"
+                target="_blank"
               >
                 Visit Site
               </Button>
@@ -94,6 +97,7 @@ export default function Projects() {
                 size="small"
                 color="primary"
                 href="https://github.com/AbeTavarez/Streamnetfy"
+                target="_blank"
               >
                 Visit Repo
               </Button>
@@ -120,11 +124,21 @@ export default function Projects() {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
-                Share
+              <Button
+                size="small"
+                color="primary"
+                href="https://commandblog.netlify.app/"
+                target="_blank"
+              >
+                Visit site
               </Button>
-              <Button size="small" color="primary">
-                Learn More
+              <Button
+                size="small"
+                color="primary"
+                href="https://github.com/AbeTavarez/CmdBlog"
+                target="_blank"
+              >
+                Visit Repo
               </Button>
             </CardActions>
           </Card>
@@ -149,10 +163,20 @@ export default function Projects() {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
+              <Button
+                size="small"
+                color="primary"
+                href="http://instacart-costco.surge.sh/welcome"
+                target="_blank"
+              >
                 Visit Site
               </Button>
-              <Button size="small" color="primary">
+              <Button
+                size="small"
+                color="primary"
+                href="https://github.com/AbeTavarez/Instacart-Costco"
+                target="_blank"
+              >
                 Visit Repo
               </Button>
             </CardActions>

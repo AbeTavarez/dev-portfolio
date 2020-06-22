@@ -35,14 +35,16 @@ export default function Home() {
       </div>
       <div className="home-container">
         <div className="name-home">
-          <h1>hi, I'm Abraham</h1>
+          <h1 style={{ padding: "10px" }}>hi, I'm Abraham</h1>
         </div>
 
         <div className="welcome-message">
           <p>I'm a Junior Software Engineer grad</p>
           <p>from GA's Software Engineer</p>
           <p>immersive program.</p>
-          <p>Feel free to look around...</p>
+          <p>I really enjoy writing code and</p>
+          <p>especially making web-sites and web-apps.</p>
+          <p>Feel free to look around.</p>
         </div>
         <div className="home-projects-title">Latest Projects</div>
 
@@ -77,6 +79,7 @@ export default function Home() {
                   size="small"
                   color="primary"
                   href="http://instacart-costco.surge.sh/welcome"
+                  target="_blank"
                 >
                   Visit Site
                 </Button>
@@ -84,6 +87,7 @@ export default function Home() {
                   size="small"
                   color="primary"
                   href="https://github.com/AbeTavarez/Instacart-Costco"
+                  target="_blank"
                 >
                   Visit Repo
                 </Button>

@@ -1,0 +1,16 @@
+.ninja-img-resume {
+  width: 150px;
+}
+.resume-right-col {
+  /* background: #27221f; */
+  color: white;
+  padding: 2em;
+}
+
+.resume-top {
+  display: flex;
+  justify-content: space-between;
+}
+.resume-top-right {
+  padding-top: 25px;
+}

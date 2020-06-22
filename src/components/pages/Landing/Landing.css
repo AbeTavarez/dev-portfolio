@@ -35,7 +35,7 @@
 }
 .ninja-img {
   animation-name: ninja-anime;
-  animation-duration: 1s;
+  animation-duration: 0.2s;
 }
 .home-transition {
   width: 150px;

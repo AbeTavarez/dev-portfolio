@@ -9,8 +9,8 @@
 }
 .profile-img {
   border-radius: 100%;
-  border: 2px solid white;
-  box-shadow: 5px 5px 5px 0.3px #cecece;
+  border: 3px solid white;
+  box-shadow: 3px 3px 3px 0.3px #cecece;
   /* width: 250px; */
   height: 200px;
 }
@@ -47,7 +47,7 @@ a {
   font-size: 35px;
   letter-spacing: 5px;
   animation-name: name-animation;
-  animation-duration: 4s;
+  animation-duration: 3s;
 }
 .home-projects-container {
   display: flex;
@@ -61,8 +61,7 @@ a {
   font-family: "Bebas Neue";
   padding-top: 100px;
 }
-.card-section {
-}
+
 .hr-divider {
   padding-bottom: 20px;
 }

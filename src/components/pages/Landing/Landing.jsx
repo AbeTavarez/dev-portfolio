@@ -1,5 +1,4 @@
 import React from "react";
-import Layout from "../../shared/Layout";
 
 import "./Landing.css";
 import { NavLink } from "react-router-dom";
