@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="contact">
-        <p>email: abetavarez@icloud.com</p>
+        <p>E-mail: abetavarez@icloud.com</p>
       </div>
     </div>
   );

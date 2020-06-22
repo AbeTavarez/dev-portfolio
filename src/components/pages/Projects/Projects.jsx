@@ -39,9 +39,9 @@ export default function Projects() {
                   #StayHomeCookHome
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Helping people from around the world to find quick easy and
-                  healthy recepies to cook at home and stay safe from the
-                  #covid19 virus.
+                  Provides easy recipies and information to the public to stay
+                  save when shopping during #covid19 virus. Stack: HTML, CSS,
+                  JavaScript.
                 </Typography>
               </CardContent>
             </CardActionArea>

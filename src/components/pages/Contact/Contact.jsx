@@ -1,34 +1,66 @@
-import React from "react";
+import React, { Component } from "react";
 
-import {
-  FormControl,
-  Input,
-  InputLabel,
-  FormHelperText,
-} from "@material-ui/core";
+import "./Contact.css";
 
-export default function Contact() {
-  return (
-    <div>
-      <h1>Get in touch</h1>
-      <FormControl>
-        <InputLabel htmlFor="email">Email address</InputLabel>
-        <Input id="my-input" aria-describedby="my-helper-text" />
-        <FormHelperText id="my-helper-text">
-          I'll never share your email.
-        </FormHelperText>
-        <InputLabel htmlFor="name">Name</InputLabel>
-        <Input id="my-input" aria-describedby="my-helper-text" />
-        <FormHelperText id="my-helper-text">Full name</FormHelperText>
+export default class Contact extends Component {
+  state = {
+    email: "",
+    name: "",
+    subject: "",
+    message: "",
+  };
+  handleChange = (e) => {
+    const { name, value } = e.target;
+    this.setState({
+      [name]: value,
+    });
+  };
+  handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(this.state);
+  };
+  render() {
+    return (
+      <div className="email-form-container">
+        <div className="email-form-top">
+          <h1>Get in touch</h1>
+          <img src="https://img.icons8.com/dusk/84/000000/paper-plane.png" />
+        </div>
 
-        {/* <InputLabel htmlFor="subject">Subject</InputLabel> */}
-        <Input id="my-input" aria-describedby="my-helper-text" />
-        <FormHelperText id="my-helper-text">Subject</FormHelperText>
+        <form onSubmit={this.handleSubmit} method="post">
+          <div>
+            <label>
+              E-mail:
+              <input type="text" name="email" required focused />
+            </label>
+          </div>
 
-        {/* <InputLabel htmlFor="message">Message</InputLabel> */}
-        <Input id="my-input" aria-describedby="my-helper-text" />
-        <FormHelperText id="my-helper-text">Your message</FormHelperText>
-      </FormControl>
-    </div>
-  );
+          <div>
+            <label>
+              Name:
+              <input typer="text" name="name" required />
+            </label>
+          </div>
+          <div>
+            <label>
+              Subject:
+              <input typer="text" name="subject" required />
+            </label>
+          </div>
+          <div>
+            <label>
+              Message:
+              <textarea typer="text" name="message" rows="5" required />
+            </label>
+          </div>
+
+          <div>
+            <button type="submit" value="send">
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+    );
+  }
 }

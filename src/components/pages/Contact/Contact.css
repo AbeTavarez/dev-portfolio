@@ -1,0 +1,13 @@
+.email-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 140px;
+}
+.email-form-top {
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px;
+}

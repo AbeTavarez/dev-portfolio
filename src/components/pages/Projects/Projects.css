@@ -3,6 +3,8 @@
 .projects-container {
   display: flex;
   margin: auto;
+  padding: 40px;
+  height: 1000px;
 }
 .card-section {
   margin: 20px;
