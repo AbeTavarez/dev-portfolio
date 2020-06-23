@@ -5,11 +5,12 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <div className="footer-container">
-      <div className="terms">
+      <div className="contact">
+        <p>E-mail: abetavarez@icloud.com</p>
         <p>© 2020</p>
       </div>
       <div className="links">
-        <div>
+        <div className="getintouch">
           <h2>Get in touch </h2>
         </div>
         {/* LinkedIn */}
@@ -45,9 +46,6 @@ export default function Footer() {
             <i class="fas fa-envelope-square"></i>
           </a>
         </div>
-      </div>
-      <div className="contact">
-        <p>E-mail: abetavarez@icloud.com</p>
       </div>
     </div>
   );

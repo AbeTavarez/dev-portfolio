@@ -69,7 +69,7 @@ class Resume extends Component {
               startYear={2010}
               endYear={2020}
               jobName="Team Associate, Coca Cola"
-              jobDescription="Ability to work in a large and fast paced team environment dealing with multiple tasks and individuals. Conduct daily inventories and produce reports. Coordinate customer orders and deliveries. Train new associates in company’s multiple software systems."
+              jobDescription="Ability to work in a large and fast paced team environment dealing with multiple tasks and individuals. Conduct daily inventories, produce reports and inspect area of work for any safety hazards. Coordinate customer orders and deliveries assuring client satisfacion. In charge of train new associates in company’s multiple software systems and procedures."
             />
           </Container>
 

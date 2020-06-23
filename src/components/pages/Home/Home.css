@@ -83,7 +83,7 @@ a {
     color: rgba(166, 67, 97);
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .home {
     padding: 100px 40px;
   }
