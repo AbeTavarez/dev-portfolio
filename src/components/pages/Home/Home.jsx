@@ -71,7 +71,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div style={{ padding: "15px" }}>
+        <div className="icons-media">
           <img
             src="https://img.icons8.com/dusk/64/000000/html-5.png"
             style={{ padding: "3px" }}

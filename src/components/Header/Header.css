@@ -61,6 +61,13 @@ a {
     justify-content: center;
     padding: 0 5px;
   }
+  .header-container {
+    display: flex;
+    padding: 20px 0;
+    margin-top: 2px;
+    box-shadow: 1px 1px 5px 0.3px #cecece;
+    width: 100%;
+  }
 }
 
 /*medium screens to large screens*/
@@ -87,6 +94,10 @@ a {
   .s-link {
     font-size: 28px;
   }
+  .message {
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
 }
 /*Small screens */
 @media (max-width: 577px) {
@@ -96,8 +107,8 @@ a {
   .message {
     text-align: center;
     font-weight: bold;
-    font-size: 18px;
-    letter-spacing: 5px;
+    font-size: 12px;
+    letter-spacing: 2px;
     transition: 250ms all;
   }
   .nav-links {
