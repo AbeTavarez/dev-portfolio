@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 nav {
   flex: 1;
-  /* position: fixed; */
   width: 100%;
   z-index: 1;
   top: 0;
@@ -15,11 +14,10 @@ nav {
 .header-container {
   display: flex;
   padding: 20px 0;
-  /* margin-left: -2px; */
   margin-right: -2px;
   margin-top: -2px;
   box-shadow: 1px 1px 1px 0.3px #cecece;
-  width: 100%;
+  /* width: 100%; */
 }
 .message {
   font-family: "Bebas Neue", cursive;
@@ -28,7 +26,7 @@ nav {
   font-size: 22px;
   letter-spacing: 10px;
   flex: 1;
-  max-width: 30vw;
+  /* max-width: 30vw; */
   transition: 250ms all;
 }
 .message:hover {
@@ -36,27 +34,45 @@ nav {
 }
 .nav-links {
   flex: 2;
-  max-width: 60vw;
+  /* max-width: 60vw; */
   align-items: center;
   font-size: 18px;
   display: flex;
   justify-content: space-evenly;
 }
 .pad {
-  padding: 0 100px;
+  /* padding: 0 100px; */
 }
 
 a {
   text-decoration: none;
   color: white;
 }
+/*medium screens to large screens*/
+@media (max-width: 1200px) {
+  nav {
+    width: 88%;
+  }
+  .message {
+    flex: 2;
+    font-size: 14px;
+  }
+  .nav-links {
+    justify-content: center;
+    padding: 0 5px;
+  }
+}
 
-@media (max-width: 500px) {
+/*medium screens to large screens*/
+@media (max-width: 700px) {
   nav {
     width: 98%;
   }
   .logo {
     max-width: 50%;
+  }
+  .header-container {
+    margin-right: -6px;
   }
   .links {
     flex-direction: column;
@@ -67,5 +83,29 @@ a {
   }
   .link {
     padding: 3px;
+  }
+  .s-link {
+    font-size: 28px;
+  }
+}
+/*Small screens */
+@media (max-width: 577px) {
+  .header-container {
+    margin-right: -4px;
+  }
+  .message {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 5px;
+    transition: 250ms all;
+  }
+  .nav-links {
+    flex: 2;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .s-link {
+    font-size: 18px;
   }
 }

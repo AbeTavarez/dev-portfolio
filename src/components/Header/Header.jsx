@@ -7,10 +7,16 @@ export default function Header() {
   //Unauthenticate
   const alwaysShows = (
     <>
-      <NavLink to="/">Home</NavLink>
+      <NavLink to="/" className="s-link">
+        Home
+      </NavLink>
       {/* <NavLink to="/about">About</NavLink> */}
-      <NavLink to="/projects">Projects</NavLink>
-      <NavLink to="/resume">Resume</NavLink>
+      <NavLink to="/projects" className="s-link">
+        Projects
+      </NavLink>
+      <NavLink to="/resume" className="s-link">
+        Resume
+      </NavLink>
       {/* <NavLink to="/contact">Contact</NavLink> */}
     </>
   );

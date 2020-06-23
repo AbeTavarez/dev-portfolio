@@ -9,3 +9,12 @@
 .card-section {
   margin: 20px;
 }
+
+@media (max-width: 1200px) {
+  .projects-container {
+    flex-direction: column;
+  }
+  .card-section {
+    width: 300px;
+  }
+}
