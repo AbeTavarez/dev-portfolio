@@ -17,7 +17,7 @@ class Resume extends Component {
                 <h4 style={{ padding: "5px" }}>Junior Software Engineer</h4>
               </div>
               <div className="resume-top-right">
-                <a href="https://docdro.id/0mmJjfB" download>
+                <a href="https://docdro.id/SbFxLdJ" download>
                   <img
                     src="https://img.icons8.com/dusk/64/000000/pdf.png"
                     alt="pdf-icon"
