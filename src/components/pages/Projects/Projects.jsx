@@ -163,7 +163,7 @@ export default function Projects() {
                 <Typography gutterBottom variant="h5" component="h2">
                   InstaCart
                 </Typography>
-                <Typography variant="body2" color="textSeconry" component="p">
+                <Typography variant="body2" color="textSecondary" component="p">
                   I had the amazing oportunity to collaborate with a team of
                   software engineers and UI/UX designers, to replicate the
                   e-commerce site InstaCart.
