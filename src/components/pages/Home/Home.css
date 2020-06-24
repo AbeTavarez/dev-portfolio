@@ -131,8 +131,8 @@ a {
     padding: 0 200px;
   }
   .aboutme {
-    font-size: 14px;
-    width: 200px;
+    font-size: 18px;
+    width: 400px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -169,7 +169,28 @@ a {
     padding-left: 25px;
   }
 }
-@media (max-width: 770px) {
+
+@media (max-width: 570px) {
+  .profile-img {
+    height: 350px;
+  }
+  .name-home {
+    font-size: 22px;
+  }
+}
+@media (max-width: 530px) {
+  .welcome-message {
+    width: 150px;
+  }
+  .home-container {
+    width: auto;
+  }
+  .aboutme {
+    width: auto;
+  }
+}
+
+/* @media (max-width: 770px) {
   .welcome-message {
     font-size: 10px;
   }
@@ -193,21 +214,4 @@ a {
     animation-duration: 3s;
     padding-left: 25px;
   }
-}
-
-@media (max-width: 770px) {
-  .profile-img {
-    height: 350px;
-  }
-  .name-home {
-    font-size: 22px;
-  }
-}
-@media (max-width: 650px) {
-  .profile-img {
-    height: 250px;
-  }
-  .name-home {
-    font-size: 14px;
-  }
-}
+} */

@@ -4,7 +4,8 @@
   display: flex;
   margin: auto;
   padding: 40px;
-  height: 1000px;
+  height: auto;
+  padding-bottom: 172px;
 }
 .card-section {
   margin: 20px;
@@ -16,5 +17,16 @@
   }
   .card-section {
     width: 300px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .projects-container {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 40px;
+    height: 1000;
   }
 }
