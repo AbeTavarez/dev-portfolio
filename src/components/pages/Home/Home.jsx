@@ -129,7 +129,7 @@ export default function Home() {
               <CardActionArea>
                 <CardMedia
                   className={classes.media}
-                  image="https://res.cloudinary.com/abetavarez/image/upload/v1592666031/Screen_Shot_2020-06-20_at_11.13.01_AM_noe2tf.png"
+                  image="https://media.giphy.com/media/MF1XrtS1F0YrC21R3K/giphy.gif"
                   title="instacart-project-website"
                 />
                 <CardContent>
