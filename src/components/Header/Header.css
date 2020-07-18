@@ -71,6 +71,13 @@ a {
     justify-content: space-evenly;
     padding: 0 20px;
   }
+  .s-link {
+    display: none;
+  }
+  .pad {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 @media (max-width: 800px) {
@@ -124,5 +131,9 @@ a {
   }
   .s-link {
     font-size: 18px;
+  }
+  .pad {
+    display: flex;
+    justify-content: flex-end;
   }
 }

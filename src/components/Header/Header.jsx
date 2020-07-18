@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+import Dropdown from "../DropdownMenu/Dropdown";
 import "./Header.css";
 
 export default function Header() {
@@ -31,7 +32,12 @@ export default function Header() {
           />
           <h1>Hello Friend</h1>
         </div>
-        <div className="nav-links pad">{alwaysShows}</div>
+        <div className="nav-links pad">
+          {alwaysShows}
+          <div className="dropdown-container">
+            <Dropdown />
+          </div>
+        </div>
       </div>
     </nav>
   );

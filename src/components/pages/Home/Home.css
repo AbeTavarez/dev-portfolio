@@ -7,9 +7,10 @@
   width: auto;
 }
 .profile-img {
-  border-radius: 10%;
+  border-radius: 50%;
   border: 1px solid white;
-  height: 400px;
+  height: 240px;
+  width: 200px;
 }
 .img-title {
   display: flex;
@@ -128,7 +129,6 @@ a {
 @media (max-width: 800px) {
   .welcome-message {
     font-size: 10px;
-    padding: 0 200px;
   }
   .aboutme {
     font-size: 18px;
@@ -171,19 +171,16 @@ a {
 }
 
 @media (max-width: 570px) {
-  .profile-img {
-    height: 350px;
-  }
   .name-home {
     font-size: 22px;
   }
 }
 @media (max-width: 530px) {
   .welcome-message {
-    width: 150px;
+    width: auto;
   }
   .home-container {
-    width: auto;
+    width: 300px;
   }
   .aboutme {
     width: auto;
