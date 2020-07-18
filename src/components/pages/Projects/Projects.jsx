@@ -25,6 +25,9 @@ export default function Projects() {
 
   return (
     <Layout>
+      <div className="project-title">
+        <h1>Latest Projects</h1>
+      </div>
       <div className="projects-container">
         <div className="card-section">
           <Card className={classes.root}>

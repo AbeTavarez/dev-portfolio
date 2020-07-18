@@ -10,10 +10,21 @@
 .card-section {
   margin: 20px;
 }
+.project-title {
+  text-align: center;
+}
 
 @media (max-width: 1200px) {
-  .projects-container {
+  /* .projects-container {
     flex-direction: column;
+  } */
+  .projects-container {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 40px;
+    height: 1000;
   }
   .card-section {
     width: 300px;

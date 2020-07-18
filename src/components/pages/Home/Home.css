@@ -175,6 +175,7 @@ a {
     font-size: 22px;
   }
 }
+
 @media (max-width: 530px) {
   .welcome-message {
     width: auto;
@@ -183,7 +184,7 @@ a {
     width: 300px;
   }
   .aboutme {
-    width: 200px;
+    width: 300px;
   }
 }
 
