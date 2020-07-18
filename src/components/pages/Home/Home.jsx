@@ -46,7 +46,7 @@ export default function Home() {
           <hr />
           <h2>About me</h2>
           <p>
-            I am a New Yorker who is passionate about tech and software
+            I'm a New Yorker who is passionate about tech and software
             development.
           </p>
 
@@ -61,13 +61,13 @@ export default function Home() {
             <span style={{ fontStyle: "italic" }}> NodeJS</span>,{" "}
             <span style={{ fontStyle: "italic" }}> Express</span>,
             <span style={{ fontStyle: "italic" }}> Ruby On Rails</span>,{" "}
-            <span style={{ fontStyle: "italic" }}> Python</span>
+            <span style={{ fontStyle: "italic" }}> Python</span>, <br />
+            to create fun and modern websites and webapps.
           </p>
-          <p>to create fun and modern websites and webapps.</p>
-          <p>I am seeking a challenging and fun position.</p>
+
           <p>
-            I am very excited to work on creative team projects where I can
-            share everything I have to offer to the tech community.
+            I'm seeking a challenging and fun position, where I can share
+            everything I have to offer to the tech community.
           </p>
         </div>
 

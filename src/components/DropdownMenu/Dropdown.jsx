@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import "./DropdownMenu.css";
+import { NavLink } from "react-router-dom";
 
 class Dropdown extends Component {
   state = {
@@ -30,15 +31,15 @@ class Dropdown extends Component {
         {this.state.showMenu ? (
           <ul>
             <li>
-              <a className="active" href="/">
+              <NavLink className="active" to="/">
                 Home
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="/projects">Projects</a>
+              <NavLink to="/projects">Projects</NavLink>
             </li>
             <li>
-              <a href="/resume">Resume</a>
+              <NavLink to="/resume">Resume</NavLink>
             </li>
           </ul>
         ) : null}

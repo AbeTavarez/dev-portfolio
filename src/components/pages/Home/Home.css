@@ -7,9 +7,9 @@
   width: auto;
 }
 .profile-img {
-  border-radius: 50%;
-  border: 1px solid white;
-  height: 240px;
+  border-radius: 100%;
+  border: 2px solid white;
+  height: 200px;
   width: 200px;
 }
 .img-title {
@@ -138,9 +138,10 @@ a {
   }
   .img-container {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: 100px;
   }
+
   .icons-media {
     display: flex;
     flex-wrap: wrap;
@@ -161,11 +162,10 @@ a {
     display: flex;
     flex-direction: column;
   }
+
   .name-home {
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 3px;
-    animation-name: name-animation;
-    animation-duration: 3s;
     padding-left: 25px;
   }
 }
@@ -183,7 +183,7 @@ a {
     width: 300px;
   }
   .aboutme {
-    width: auto;
+    width: 200px;
   }
 }
 
