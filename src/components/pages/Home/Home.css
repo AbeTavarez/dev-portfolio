@@ -5,6 +5,8 @@
   flex-direction: column;
   align-items: center;
   width: auto;
+  /* background-color: rgb(91, 97, 166); */
+  background-color: rgb(16, 168, 166);
 }
 .profile-img {
   border-radius: 100%;
@@ -73,12 +75,16 @@ a {
   padding-top: 80px;
   text-align: center;
   font-size: 22px;
+  /* background-color: rgb(91, 97, 166); */
+  background-color: rgb(16, 168, 166);
 }
 .icons-media {
   display: flex;
   justify-content: center;
   height: 80px;
   padding: 15px;
+  /* background-color: rgb(91, 97, 166); */
+  background-color: rgb(16, 168, 166);
 }
 
 @keyframes name-animation {
@@ -181,7 +187,7 @@ a {
     width: auto;
   }
   .home-container {
-    width: 300px;
+    width: 400px;
   }
   .aboutme {
     width: 300px;
