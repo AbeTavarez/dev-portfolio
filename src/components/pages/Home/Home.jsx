@@ -29,11 +29,11 @@ export default function Home() {
         <div className="welcome-message">
           <div className="img-container">
             <div className="img-title">
-              <img
+              {/* <img
                 src="https://res.cloudinary.com/abetavarez/image/upload/v1592839319/117FF774-687A-4770-BE37-A691F898B74B_1_105_c_h8cmno.jpg"
                 alt="avatar"
                 className="profile-img"
-              />
+              /> */}
             </div>
             <div className="name-home">
               <h1 style={{ padding: "10px" }}>hi, I'm Abraham</h1>
