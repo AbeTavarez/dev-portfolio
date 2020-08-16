@@ -3,6 +3,9 @@
 }
 .resume-right-col {
   /* background: #27221f; */
+  /* background-color: rgb(16, 168, 166); */
+  background-color: #322f3d;
+
   color: white;
   padding: 2em;
 }
@@ -10,6 +13,13 @@
 .resume-top {
   display: flex;
   justify-content: space-between;
+  /* background-color: #322f3d; */
+}
+.resume-top-left {
+  /* background-color: #322f3d; */
+  /* padding-top: 10px; */
+  color: #322f3d;
+  margin-top: 15px;
 }
 .resume-top-right {
   padding-top: 25px;

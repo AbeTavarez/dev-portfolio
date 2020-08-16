@@ -13,7 +13,7 @@ class Resume extends Component {
             {/*Left side panel*/}
             <div className="resume-top">
               <div className="resume-top-left">
-                <h2 style={{ paddingTop: "2em" }}>Efren Abraham Tavarez</h2>
+                <h2>Efren Abraham Tavarez</h2>
                 <h4 style={{ padding: "5px" }}>Junior Software Engineer</h4>
               </div>
               <div className="resume-top-right">

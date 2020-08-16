@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 .projects-container {
   display: flex;
@@ -11,7 +12,10 @@
   margin: 20px;
 }
 .project-title {
+  font-size: 24px;
   text-align: center;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 10px;
 }
 
 @media (max-width: 1200px) {

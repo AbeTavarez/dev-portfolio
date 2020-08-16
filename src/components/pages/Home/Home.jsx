@@ -44,7 +44,9 @@ export default function Home() {
 
         <div className="aboutme">
           <hr />
-          <h2>About me</h2>
+          <div className="name-home">
+            <h2>About me</h2>
+          </div>
           <p>
             I'm a New Yorker who is passionate about tech and software
             development.
@@ -54,14 +56,16 @@ export default function Home() {
             I get to attend many tech events and meetups all around my city
             which have all been an amazing experience.
           </p>
+          <p>I have been using a wide range of technologies including</p>
           <p>
-            I have been using a wide range of technologies including{" "}
             <span style={{ fontStyle: "italic" }}> Javascript</span>,
-            <span style={{ fontStyle: "italic" }}> ReactJS</span>,{" "}
-            <span style={{ fontStyle: "italic" }}> NodeJS</span>,{" "}
+            <span style={{ fontStyle: "italic" }}> React</span>,{" "}
+            <span style={{ fontStyle: "italic" }}> Node</span>,{" "}
             <span style={{ fontStyle: "italic" }}> Express</span>,
+            <span style={{ fontStyle: "italic" }}> MongoDB</span>,
+            <span style={{ fontStyle: "italic" }}> PostgreSQL</span>,
             <span style={{ fontStyle: "italic" }}> Ruby On Rails</span>,{" "}
-            <span style={{ fontStyle: "italic" }}> Python</span>, <br />
+            <span style={{ fontStyle: "italic" }}> Python</span>, <br /> <br />
             to create fun and modern websites and webapps.
           </p>
 
@@ -119,7 +123,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="home-projects-title">Latest Projects</div>
+        <div className="home-projects-title name-home">RECENT PROJECTS</div>
 
         <div className="home-projects-container">
           <div className="card-section">
