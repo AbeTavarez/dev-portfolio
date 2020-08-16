@@ -10,6 +10,8 @@ import { fade, makeStyles } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 import MoreIcon from "@material-ui/icons/MoreVert";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 
 import Dropdown from "../DropdownMenu/Dropdown";
@@ -50,6 +52,11 @@ function ElevationScroll(props) {
 }
 
 export default function Header(props) {
+  //* Tabs State amd handler
+  const [value, setValue] = React.useState(0);
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
   const classes = useStyles();
   //Unauthenticate
   const alwaysShows = (
