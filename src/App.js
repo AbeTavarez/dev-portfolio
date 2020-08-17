@@ -1,18 +1,20 @@
 import React from "react";
 
+import { ThemeProvider } from "@material-ui/styles";
+import theme from "./UI/Theme";
 import Header from "./components/Header/Header";
 import DropDown from "./components/DropdownMenu/Dropdown";
 import Main from "./components/Main/Main";
-import "./App.css";
+// import "./App.css";
 import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
+    <ThemeProvider theme={theme}>
       <Header />
       <Main />
       <Footer />
-    </div>
+    </ThemeProvider>
   );
 }
 

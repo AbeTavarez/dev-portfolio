@@ -9,8 +9,8 @@ nav {
   background-color: #7b88ff;
 }
 .ninja-header {
-  width: 25px;
-  height: 25px;
+  width: 3em;
+  height: 3em;
 }
 
 .header-container {
@@ -30,9 +30,10 @@ nav {
   /* max-width: 30vw; */
   transition: 250ms all;
 }
-.message:hover {
-  transform: scale(1.004);
+.estimate {
+  padding-top: 15px;
 }
+
 .nav-links {
   flex: 2;
   /* max-width: 60vw; */

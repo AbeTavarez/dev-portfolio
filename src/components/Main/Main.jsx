@@ -16,10 +16,10 @@ export default function Main() {
       <Switch>
         {/* <Route exact path="/" component={() => <Landing />} /> */}
         <Route exact path="/" component={() => <Home />} />
-        {/* <Route path="/about" component={() => <About />} /> */}
         <Route path="/projects" component={() => <Projects />} />
         <Route path="/resume" component={() => <Resume />} />
-        {/* <Route path="/contact" component={() => <Contact />} /> */}
+        {/* <Route path="/services" component={() => <Services />} />
+        <Route path="/opensource" component={() => <OpenSource />} /> */}
       </Switch>
     </Route>
   );
