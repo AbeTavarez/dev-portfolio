@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -17,7 +17,7 @@ import Button from "@material-ui/core/Button";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
-import { Link } from "@material-ui/core";
+
 // import Dropdown from "../DropdownMenu/Dropdown";
 import "./Header.css";
 
@@ -73,6 +73,18 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "50px",
     height: "45px",
   },
+  menu: {
+    backgroundColor: theme.palette.common.orange,
+    color: "white",
+    borderRadius: 0,
+  },
+  menuItem: {
+    ...theme.typography.tab,
+    opacity: 0.7,
+    "&:hover": {
+      opacity: 1,
+    },
+  },
 }));
 
 /////////////////////////////////////////////////////////////
@@ -104,6 +116,7 @@ export default function Header(props) {
   const [value, setValue] = useState(0);
   const [anchorEl, setAnchorEl] = useState(null);
   const [open, setOpen] = useState(false);
+  const [selectedIdx, setSelectedIdx] = useState(0);
 
   //updates Tabs state
   const handleChange = (e, value) => {
@@ -147,7 +160,7 @@ export default function Header(props) {
                 aria-label="open drawer"
               >
                 <MenuIcon />
-                <MenuItem containerElement={<Link></Link>} />
+                <MenuItem />
               </IconButton>
               <Typography
                 className={classes.title}
@@ -157,7 +170,7 @@ export default function Header(props) {
               >
                 <div className="message">
                   <Button
-                    component={NavLink}
+                    component={Link}
                     to="/"
                     disableRipple
                     onClick={() => setValue(0)}
@@ -166,7 +179,6 @@ export default function Header(props) {
                     <img
                       src="https://cdn0.iconfinder.com/data/icons/avatar-15/512/ninja-512.png"
                       alt="avatar"
-                      className="ninja-header"
                       className={classes.logo}
                     />
                   </Button>
@@ -175,19 +187,19 @@ export default function Header(props) {
                     <Tabs value={value} onChange={handleChange}>
                       <Tab
                         className={classes.tab}
-                        component={NavLink}
+                        component={Link}
                         to="/"
                         label="Home"
                       />
                       <Tab
                         className={classes.tab}
-                        component={NavLink}
+                        component={Link}
                         to="/projects"
                         label="Projects"
                       />
                       <Tab
                         className={classes.tab}
-                        component={NavLink}
+                        component={Link}
                         to="/resume"
                         label="Resume"
                       />
@@ -195,7 +207,7 @@ export default function Header(props) {
                         aria-owns={anchorEl ? "simple-menu" : undefined}
                         aria-haspopup={anchorEl ? true : undefined}
                         className={classes.tab}
-                        component={NavLink}
+                        component={Link}
                         onMouseOver={(event) => handleClick(event)}
                         to="/services"
                         label="Services"
@@ -222,10 +234,54 @@ export default function Header(props) {
                       anchorEl={anchorEl}
                       open={open}
                       onClose={handleClose}
+                      classes={{ paper: classes.menu }}
+                      MenuListProps={{ onMouseLeave: handleClose }}
+                      elevation={0}
                     >
-                      <MenuItem onClick={handleClose}>Custom Website</MenuItem>
-                      <MenuItem onClick={handleClose}>Custom Website</MenuItem>
-                      <MenuItem onClick={handleClose}>Custom Website</MenuItem>
+                      <MenuItem
+                        onClick={() => {
+                          handleClose();
+                          setValue(3);
+                        }}
+                        component={Link}
+                        to="/services"
+                        classes={{ root: classes.menuItem }}
+                      >
+                        Services
+                      </MenuItem>
+                      <MenuItem
+                        onClick={() => {
+                          handleClose();
+                          setValue(3);
+                        }}
+                        component={Link}
+                        to="/personalwebsite"
+                        classes={{ root: classes.menuItem }}
+                      >
+                        Personal Website
+                      </MenuItem>
+                      <MenuItem
+                        onClick={() => {
+                          handleClose();
+                          setValue(3);
+                        }}
+                        component={Link}
+                        to="/storewebsite"
+                        classes={{ root: classes.menuItem }}
+                      >
+                        Store Website
+                      </MenuItem>
+                      <MenuItem
+                        onClick={() => {
+                          handleClose();
+                          setValue(3);
+                        }}
+                        component={Link}
+                        to="/customwebsite"
+                        classes={{ root: classes.menuItem }}
+                      >
+                        Custom Website
+                      </MenuItem>
                     </Menu>
                   </div>
                 </div>
