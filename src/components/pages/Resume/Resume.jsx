@@ -7,7 +7,7 @@ import Experience from "./experience";
 class Resume extends Component {
   render() {
     return (
-      <Fragment>
+      <Fragment className="main-support">
         <Grid>
           <Container col={4}>
             {/*Left side panel*/}
