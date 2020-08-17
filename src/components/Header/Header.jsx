@@ -1,24 +1,30 @@
 import React, { Fragment, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import IconButton from "@material-ui/core/IconButton";
-import Typography from "@material-ui/core/Typography";
-import InputBase from "@material-ui/core/InputBase";
+import {
+  AppBar,
+  Typography,
+  Button,
+  IconButton,
+  Paper,
+  Menu,
+  MenuItem,
+  Tab,
+  Tabs,
+  Toolbar,
+  SwipeableDrawer,
+  InputBase,
+  List,
+  ListItem,
+  ListItemText,
+  useMediaQuery,
+  useScrollTrigger,
+} from "@material-ui/core";
 import { fade, makeStyles } from "@material-ui/core/styles";
-import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 import MoreIcon from "@material-ui/icons/MoreVert";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
-import Paper from "@material-ui/core/Paper";
-import Button from "@material-ui/core/Button";
-import useScrollTrigger from "@material-ui/core/useScrollTrigger";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
+import MenuIcon from "@material-ui/icons/Menu";
 
-// import Dropdown from "../DropdownMenu/Dropdown";
 import "./Header.css";
 
 /////////////////////////////////////////////////////////////
@@ -70,7 +76,6 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     ...theme.typography.estimate,
-    borderRadius: "50px",
     height: "45px",
   },
   menu: {
@@ -132,6 +137,19 @@ export default function Header(props) {
     setAnchorEl(null);
     setOpen(false);
   };
+  //Menu Item Handler
+  const handleMenuItemClick = (e, idx) => {
+    setAnchorEl(null);
+    setOpen(false);
+    setSelectedIdx(idx);
+  };
+  //Menu Items Array
+  const menuOptions = [
+    { name: "Services", link: "/services" },
+    { name: "Personal Website", link: "personalwebsite" },
+    { name: "Store Website", link: "/storewebsite" },
+    { name: "Custome Website", link: "/customwebsite" },
+  ];
   // active tab refresh
   useEffect(() => {
     if (window.location.pathname === "/" && value !== 0) {
@@ -237,51 +255,24 @@ export default function Header(props) {
                       classes={{ paper: classes.menu }}
                       MenuListProps={{ onMouseLeave: handleClose }}
                       elevation={0}
+                      keepMounted
                     >
-                      <MenuItem
-                        onClick={() => {
-                          handleClose();
-                          setValue(3);
-                        }}
-                        component={Link}
-                        to="/services"
-                        classes={{ root: classes.menuItem }}
-                      >
-                        Services
-                      </MenuItem>
-                      <MenuItem
-                        onClick={() => {
-                          handleClose();
-                          setValue(3);
-                        }}
-                        component={Link}
-                        to="/personalwebsite"
-                        classes={{ root: classes.menuItem }}
-                      >
-                        Personal Website
-                      </MenuItem>
-                      <MenuItem
-                        onClick={() => {
-                          handleClose();
-                          setValue(3);
-                        }}
-                        component={Link}
-                        to="/storewebsite"
-                        classes={{ root: classes.menuItem }}
-                      >
-                        Store Website
-                      </MenuItem>
-                      <MenuItem
-                        onClick={() => {
-                          handleClose();
-                          setValue(3);
-                        }}
-                        component={Link}
-                        to="/customwebsite"
-                        classes={{ root: classes.menuItem }}
-                      >
-                        Custom Website
-                      </MenuItem>
+                      {menuOptions.map((option, idx) => (
+                        <MenuItem
+                          key={option}
+                          component={Link}
+                          to={option.link}
+                          classes={{ root: classes.menuItem }}
+                          onClick={(event, idx) => {
+                            handleMenuItemClick(event, idx);
+                            setValue(3);
+                            handleClose();
+                          }}
+                          selected={idx === selectedIdx && value === 3}
+                        >
+                          {option.name}
+                        </MenuItem>
+                      ))}
                     </Menu>
                   </div>
                 </div>
@@ -303,25 +294,4 @@ export default function Header(props) {
       <div className={classes.toolbarMargin} />
     </Fragment>
   );
-}
-
-{
-  /* <nav>
-      <div className="header-container">
-        <div className="message">
-          <img
-            src="https://cdn0.iconfinder.com/data/icons/avatar-15/512/ninja-512.png"
-            alt="avatar"
-            className="ninja-header"
-          />
-          <h1>Hello Friend</h1>
-        </div>
-        <div className="nav-links pad">
-          {alwaysShows}
-          <div className="dropdown-container">
-            <Dropdown />
-          </div>
-        </div>
-      </div>
-    </nav> */
 }
