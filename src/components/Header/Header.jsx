@@ -15,11 +15,17 @@ import Tab from "@material-ui/core/Tab";
 import Paper from "@material-ui/core/Paper";
 import Button from "@material-ui/core/Button";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
-import { MenuItem, Link } from "@material-ui/core";
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
+import { Link } from "@material-ui/core";
 // import Dropdown from "../DropdownMenu/Dropdown";
 import "./Header.css";
 
+/////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
 //* Styles
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
 const useStyles = makeStyles((theme) => ({
   toolbarMargin: {
     ...theme.mixins.toolbar,
@@ -69,7 +75,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-// Scroll control
+/////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+//* Scroll control
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
 function ElevationScroll(props) {
   const { children } = props;
   //event listener for scrolling
@@ -82,12 +92,32 @@ function ElevationScroll(props) {
   });
 }
 
+/////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+//* Main Function
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+
 export default function Header(props) {
   const classes = useStyles();
   // Tabs State and handler
   const [value, setValue] = useState(0);
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [open, setOpen] = useState(false);
+
+  //updates Tabs state
   const handleChange = (e, value) => {
     setValue(value);
+  };
+  //opens Services menu
+  const handleClick = (e) => {
+    setAnchorEl(e.currentTarget);
+    setOpen(true);
+  };
+  //close Services menu
+  const handleClose = (e) => {
+    setAnchorEl(null);
+    setOpen(false);
   };
   // active tab refresh
   useEffect(() => {
@@ -162,11 +192,13 @@ export default function Header(props) {
                         label="Resume"
                       />
                       <Tab
+                        aria-owns={anchorEl ? "simple-menu" : undefined}
+                        aria-haspopup={anchorEl ? true : undefined}
                         className={classes.tab}
                         component={NavLink}
+                        onMouseOver={(event) => handleClick(event)}
                         to="/services"
                         label="Services"
-                        disabled
                       />
                       <Tab
                         className={classes.tab}
@@ -185,6 +217,16 @@ export default function Header(props) {
                     >
                       Free Estimate
                     </Button>
+                    <Menu
+                      id="simple-menu"
+                      anchorEl={anchorEl}
+                      open={open}
+                      onClose={handleClose}
+                    >
+                      <MenuItem onClick={handleClose}>Custom Website</MenuItem>
+                      <MenuItem onClick={handleClose}>Custom Website</MenuItem>
+                      <MenuItem onClick={handleClose}>Custom Website</MenuItem>
+                    </Menu>
                   </div>
                 </div>
               </Typography>
