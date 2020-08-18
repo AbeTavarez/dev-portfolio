@@ -3,6 +3,7 @@
 
 .projects-container {
   display: flex;
+  justify-content: center;
   margin: auto;
   padding: 40px;
   height: auto;

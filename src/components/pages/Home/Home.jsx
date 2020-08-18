@@ -175,6 +175,102 @@ export default function Home() {
               <CardActionArea>
                 <CardMedia
                   className={classes.media}
+                  image="https://res.cloudinary.com/abetavarez/image/upload/v1592620250/Screen_Shot_2020-06-19_at_10.30.27_PM_wofq1e.png"
+                  title="stayhomecookhome-website"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    #StayHomeCookHome
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    Provides easy recipies and information to the public to stay
+                    save when shopping during #covid19 virus.
+                  </Typography>
+                  <Typography variant="body2" color="textPrimary" component="p">
+                    Stack: HTML, CSS, JavaScript.
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://www.stayhomecookhome.com/"
+                  target="_blank"
+                >
+                  Visit Site
+                </Button>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://github.com/AbeTavarez/-StayHomeCookHome"
+                  target="_blank"
+                >
+                  Visit Repo
+                </Button>
+              </CardActions>
+            </Card>
+          </div>
+        </div>
+
+        <div className="home-projects-container">
+          <div className="card-section">
+            <hr />
+            {/* <Card className={classes.root}>
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image="https://res.cloudinary.com/abetavarez/image/upload/v1592621658/Screen_Shot_2020-06-19_at_10.52.40_PM_wzvrar.png"
+                  title="streamnetfy-website"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Streamnetfy
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    Website that can help you to find tv shows. Get show rating,
+                    gender, images, network, show summary and more.
+                  </Typography>
+                  <Typography variant="body2" color="textPrimary" component="p">
+                    Stack: ReactJS.
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://streamnetfy.netlify.app/"
+                  target="_blank"
+                >
+                  Visit Site
+                </Button>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://github.com/AbeTavarez/Streamnetfy"
+                  target="_blank"
+                >
+                  Visit Repo
+                </Button>
+              </CardActions>
+            </Card> */}
+          </div>
+
+          <div className="card-section">
+            <hr />
+            {/* <Card className={classes.root}>
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
                   image="https://res.cloudinary.com/abetavarez/image/upload/v1592622098/Screen_Shot_2020-06-19_at_11.01.22_PM_nds2kr.png"
                   title="command-blog-website"
                 />
@@ -218,103 +314,7 @@ export default function Home() {
                   Visit Repo
                 </Button>
               </CardActions>
-            </Card>
-          </div>
-        </div>
-
-        <div className="home-projects-container">
-          <div className="card-section">
-            <hr />
-            <Card className={classes.root}>
-              <CardActionArea>
-                <CardMedia
-                  className={classes.media}
-                  image="https://res.cloudinary.com/abetavarez/image/upload/v1592621658/Screen_Shot_2020-06-19_at_10.52.40_PM_wzvrar.png"
-                  title="streamnetfy-website"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    Streamnetfy
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
-                    Website that can help you to find tv shows. Get show rating,
-                    gender, images, network, show summary and more.
-                  </Typography>
-                  <Typography variant="body2" color="textPrimary" component="p">
-                    Stack: ReactJS.
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Button
-                  size="small"
-                  color="primary"
-                  href="https://streamnetfy.netlify.app/"
-                  target="_blank"
-                >
-                  Visit Site
-                </Button>
-                <Button
-                  size="small"
-                  color="primary"
-                  href="https://github.com/AbeTavarez/Streamnetfy"
-                  target="_blank"
-                >
-                  Visit Repo
-                </Button>
-              </CardActions>
-            </Card>
-          </div>
-
-          <div className="card-section">
-            <hr />
-            <Card className={classes.root}>
-              <CardActionArea>
-                <CardMedia
-                  className={classes.media}
-                  image="https://res.cloudinary.com/abetavarez/image/upload/v1592620250/Screen_Shot_2020-06-19_at_10.30.27_PM_wofq1e.png"
-                  title="stayhomecookhome-website"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    #StayHomeCookHome
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
-                    Provides easy recipies and information to the public to stay
-                    save when shopping during #covid19 virus.
-                  </Typography>
-                  <Typography variant="body2" color="textPrimary" component="p">
-                    Stack: HTML, CSS, JavaScript.
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Button
-                  size="small"
-                  color="primary"
-                  href="https://pages.git.generalassemb.ly/AbrahamEfrenTavarez/StayHomeCookHome/"
-                  target="_blank"
-                >
-                  Visit Site
-                </Button>
-                <Button
-                  size="small"
-                  color="primary"
-                  href="https://github.com/AbeTavarez/-StayHomeCookHome"
-                  target="_blank"
-                >
-                  Visit Repo
-                </Button>
-              </CardActions>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </div>

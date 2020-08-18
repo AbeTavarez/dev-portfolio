@@ -54,7 +54,7 @@ export default function Projects() {
               <Button
                 size="small"
                 color="primary"
-                href="https://pages.git.generalassemb.ly/AbrahamEfrenTavarez/StayHomeCookHome/"
+                href="https://www.stayhomecookhome.com/"
                 target="_blank"
               >
                 Visit Site
@@ -71,89 +71,6 @@ export default function Projects() {
           </Card>
         </div>
 
-        <div className="card-section">
-          <Card className={classes.root}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image="https://res.cloudinary.com/abetavarez/image/upload/v1592621658/Screen_Shot_2020-06-19_at_10.52.40_PM_wzvrar.png"
-                title="streamnetfy-website"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  Streamnetfy
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  Website that can help you to find tv shows. Get show rating,
-                  gender, images, network, show summary and more.
-                </Typography>
-                <Typography variant="body2" color="textPrimary" component="p">
-                  Stack: ReactJS.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                href="https://streamnetfy.netlify.app/"
-                target="_blank"
-              >
-                Visit Site
-              </Button>
-              <Button
-                size="small"
-                color="primary"
-                href="https://github.com/AbeTavarez/Streamnetfy"
-                target="_blank"
-              >
-                Visit Repo
-              </Button>
-            </CardActions>
-          </Card>
-        </div>
-
-        <div className="card-section">
-          <Card className={classes.root}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image="https://res.cloudinary.com/abetavarez/image/upload/v1592622098/Screen_Shot_2020-06-19_at_11.01.22_PM_nds2kr.png"
-                title="command-blog-website"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  CommandBlog
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  Full Stack Blog Application build with Authentication using
-                  JWT Tokens. Users that sign-up can create and post articles.
-                  <Typography variant="body2" color="textPrimary" component="p">
-                    Stack: ReactJS, Ruby on Rails, PostgreSQL.
-                  </Typography>
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                href="https://commandblog.netlify.app/"
-                target="_blank"
-              >
-                Visit site
-              </Button>
-              <Button
-                size="small"
-                color="primary"
-                href="https://github.com/AbeTavarez/CmdBlog"
-                target="_blank"
-              >
-                Visit Repo
-              </Button>
-            </CardActions>
-          </Card>
-        </div>
         <div className="card-section">
           <Card className={classes.root}>
             <CardActionArea>
@@ -196,6 +113,89 @@ export default function Projects() {
             </CardActions>
           </Card>
         </div>
+
+        {/* <div className="card-section">
+          <Card className={classes.root}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image="https://res.cloudinary.com/abetavarez/image/upload/v1592622098/Screen_Shot_2020-06-19_at_11.01.22_PM_nds2kr.png"
+                title="command-blog-website"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  CommandBlog
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  Full Stack Blog Application build with Authentication using
+                  JWT Tokens. Users that sign-up can create and post articles.
+                  <Typography variant="body2" color="textPrimary" component="p">
+                    Stack: ReactJS, Ruby on Rails, PostgreSQL.
+                  </Typography>
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                href="https://commandblog.netlify.app/"
+                target="_blank"
+              >
+                Visit site
+              </Button>
+              <Button
+                size="small"
+                color="primary"
+                href="https://github.com/AbeTavarez/CmdBlog"
+                target="_blank"
+              >
+                Visit Repo
+              </Button>
+            </CardActions>
+          </Card>
+        </div> */}
+        {/* <div className="card-section">
+          <Card className={classes.root}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image="https://res.cloudinary.com/abetavarez/image/upload/v1592621658/Screen_Shot_2020-06-19_at_10.52.40_PM_wzvrar.png"
+                title="streamnetfy-website"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  Streamnetfy
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  Website that can help you to find tv shows. Get show rating,
+                  gender, images, network, show summary and more.
+                </Typography>
+                <Typography variant="body2" color="textPrimary" component="p">
+                  Stack: ReactJS.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                href="https://streamnetfy.netlify.app/"
+                target="_blank"
+              >
+                Visit Site
+              </Button>
+              <Button
+                size="small"
+                color="primary"
+                href="https://github.com/AbeTavarez/Streamnetfy"
+                target="_blank"
+              >
+                Visit Repo
+              </Button>
+            </CardActions>
+          </Card>
+        </div> */}
       </div>
     </Layout>
   );
