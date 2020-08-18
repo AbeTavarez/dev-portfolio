@@ -354,22 +354,22 @@ export default function Header(props) {
         onPen={() => setOpenDrawer(true)}
       >
         <List disablePadding>
-          <ListItem componet={Link} to="/">
+          <ListItem divider button componet={Link} to="/">
             <ListItemText disableTypography>Home</ListItemText>
           </ListItem>
-          <ListItem componet={Link} to="/projrcts">
+          <ListItem divider button componet={Link} to="/projrcts">
             <ListItemText disableTypography>Projects</ListItemText>
           </ListItem>
-          <ListItem componet={Link} to="/resume">
+          <ListItem divider button componet={Link} to="/resume">
             <ListItemText disableTypography>Resume</ListItemText>
           </ListItem>
-          <ListItem componet={Link} to="/services">
+          <ListItem divider button componet={Link} to="/services">
             <ListItemText disableTypography>Services</ListItemText>
           </ListItem>
-          <ListItem componet={Link} to="/opensource">
+          <ListItem divider button componet={Link} to="/opensource">
             <ListItemText disableTypography>Open Source</ListItemText>
           </ListItem>
-          <ListItem componet={Link} to="/freeestimate">
+          <ListItem divider button componet={Link} to="/freeestimate">
             <ListItemText disableTypography>Free Estimate</ListItemText>
           </ListItem>
         </List>
