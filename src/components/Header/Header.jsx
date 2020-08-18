@@ -102,6 +102,16 @@ const useStyles = makeStyles((theme) => ({
       opacity: 1,
     },
   },
+  drawerIcon: {
+    height: "50px",
+    width: "50px",
+  },
+  drawerIconContainer: {
+    marginLeft: "auto",
+    "&:hover": {
+      backgroundColor: "transparent",
+    },
+  },
 }));
 
 /////////////////////////////////////////////////////////////
@@ -167,7 +177,7 @@ export default function Header(props) {
     { name: "Store Website", link: "/storewebsite" },
     { name: "Custom Website", link: "/customwebsite" },
   ];
-  // active tab refresh
+  //* ACTIVE TAB REFRESH ////////////////////////////////////////////////////////////////////////////////
   useEffect(() => {
     switch (window.location.pathname) {
       case "/":
@@ -224,6 +234,7 @@ export default function Header(props) {
     }
   }, [value]);
 
+  //* TABS ////////////////////////////////////////////////////////////////////////////////
   const tabs = (
     <Fragment>
       <div className="message">
@@ -316,9 +327,25 @@ export default function Header(props) {
     </Fragment>
   );
 
-  //draw
+  //* DRAWER ////////////////////////////////////////////////////////////////////////////////
   const drawer = (
     <Fragment>
+      <div className="message">
+        <Button
+          component={Link}
+          to="/"
+          disableRipple
+          onClick={() => setValue(0)}
+          className={classes.logoContainer}
+        >
+          <img
+            src="https://cdn0.iconfinder.com/data/icons/avatar-15/512/ninja-512.png"
+            alt="avatar"
+            className={classes.logo}
+          />
+        </Button>
+        <h1>HELLO FRIEND</h1>
+      </div>
       <SwipeableDrawer
         disableBackdropTransition={!iOS}
         disableDiscovery={iOS}
@@ -326,9 +353,34 @@ export default function Header(props) {
         onClose={() => setOpenDrawer(false)}
         onPen={() => setOpenDrawer(true)}
       >
-        Hello Friend
+        <List disablePadding>
+          <ListItem componet={Link} to="/">
+            <ListItemText disableTypography>Home</ListItemText>
+          </ListItem>
+          <ListItem componet={Link} to="/projrcts">
+            <ListItemText disableTypography>Projects</ListItemText>
+          </ListItem>
+          <ListItem componet={Link} to="/resume">
+            <ListItemText disableTypography>Resume</ListItemText>
+          </ListItem>
+          <ListItem componet={Link} to="/services">
+            <ListItemText disableTypography>Services</ListItemText>
+          </ListItem>
+          <ListItem componet={Link} to="/opensource">
+            <ListItemText disableTypography>Open Source</ListItemText>
+          </ListItem>
+          <ListItem componet={Link} to="/freeestimate">
+            <ListItemText disableTypography>Free Estimate</ListItemText>
+          </ListItem>
+        </List>
       </SwipeableDrawer>
-      <IconButton />
+      <IconButton
+        className={classes.drawerIconContainer}
+        onClick={() => setOpenDrawer(!openDrawer)}
+        disableRipple
+      >
+        <MenuIcon className={classes.drawerIcon} />
+      </IconButton>
     </Fragment>
   );
 
@@ -338,7 +390,7 @@ export default function Header(props) {
         <div className={classes.root}>
           <AppBar position="fixed" color="secondary">
             <Toolbar className={classes.toolbar}>
-              {matches ? null : tabs}
+              {matches ? drawer : tabs}
             </Toolbar>
           </AppBar>
         </div>
@@ -346,32 +398,4 @@ export default function Header(props) {
       <div className={classes.toolbarMargin} />
     </Fragment>
   );
-}
-
-{
-  /* <IconButton
-                edge="start"
-                className={classes.menuButton}
-                color="inherit"
-                aria-label="open drawer"
-              >
-                <MenuIcon />
-                <MenuItem />
-              </IconButton>
-              <Typography
-                className={classes.title}
-                variant="h3"
-                color="primary"
-                noWrap
-              ></Typography>
-              <IconButton aria-label="search" color="inherit">
-                <SearchIcon />
-              </IconButton>
-              <IconButton
-                aria-label="display more actions"
-                edge="end"
-                color="inherit"
-              >
-                <MoreIcon />
-              </IconButton> */
 }
