@@ -126,7 +126,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.common.orange,
   },
   drawItemSelected: {
-    opacity: 1,
+    "& .MuiListItemText-root": {
+      opacity: 1,
+    },
   },
   appbar: {
     zIndex: theme.zIndex.modal + 1,
@@ -135,9 +137,10 @@ const useStyles = makeStyles((theme) => ({
 
 //* ///////////////////////////////////////////////////////////
 //* //////////////////////////////////////////////////////////
-//* Scroll control ///////////////////////////////////////////
+//* ///////////////Scroll control ////////////////////////////
 //* //////////////////////////////////////////////////////////
 //* //////////////////////////////////////////////////////////
+
 function ElevationScroll(props) {
   const { children } = props;
   //event listener for scrolling
@@ -152,7 +155,7 @@ function ElevationScroll(props) {
 
 //* ///////////////////////////////////////////////////////////
 //* //////////////////////////////////////////////////////////
-//* Main Function ////////////////////////////////////////////
+//* /////////////////////Main Function ///////////////////////
 //* //////////////////////////////////////////////////////////
 //* //////////////////////////////////////////////////////////
 
@@ -189,9 +192,33 @@ export default function Header(props) {
     setOpenMenu(false);
     setSelectedIndex(idx);
   };
+
+  //* @routes - all routes
+  const routes = [
+    { name: "Home", link: "/", activeIndex: 0 },
+
+    { name: "Projects", link: "/projects", activeIndex: 1 },
+    { name: "Resume", link: "/resume", activeIndex: 2 },
+    {
+      name: "Services",
+      link: "/services",
+      activeIndex: 3,
+      ariaOwns: anchorEl ? "simple-menu" : undefined,
+      ariaPopup: anchorEl ? true : undefined,
+      mouseOver: (e) => handleClick(e),
+      isDisable: true,
+    },
+
+    {
+      name: "Open Source",
+      link: "/opensource",
+      activeIndex: 4,
+      isDisable: true,
+    },
+  ];
   //Menu Items Array
   const menuOptions = [
-    { name: "Services", link: "/services", activeIndex: 1, selectedIndex: 0 },
+    { name: "Services", link: "/services", activeIndex: 3, selectedIndex: 0 },
     {
       name: "Personal Website",
       link: "personalwebsite",
@@ -211,24 +238,9 @@ export default function Header(props) {
       selectedIndex: 3,
     },
   ];
-  //* @routes - all routes
-  const routes = [
-    { name: "Home", link: "/", activeIndex: 0 },
-    { name: "Projects", link: "/projects", activeIndex: 1 },
-    { name: "Resume", link: "/resume", activeIndex: 2 },
-    {
-      name: "Services",
-      link: "/services",
-      activeIndex: 3,
-      ariaOwns: anchorEl ? "simple-menu" : undefined,
-      ariaPopup: anchorEl ? true : undefined,
-      mouseOver: (event) => handleClick(event),
-    },
-    { name: "Home", link: "/opensource", activeIndex: 4 },
-  ];
   //* ///////////////////////////////////////////////////////////
-  //* //////////////////////////////////////////////////////////
-  //* ACTIVE TAB REFRESH ////////////////////////////////////////
+  //* ///////////////////////////////////////////////////////////
+  //* ///////////////ACTIVE TAB REFRESH//////////////////////////
   //* ///////////////////////////////////////////////////////////
   //* //////////////////////////////////////////////////////////
   useEffect(() => {
@@ -247,10 +259,10 @@ export default function Header(props) {
       }
     });
   }, [value, menuOptions, selectedIndex, routes]);
-  //* //////////////////////////////////////////////////////////
-  //* TABS ///////////////////////////////////////////////////
-  //* ////////////////////////////////////////////////////////
-  //* //////////////////////////////////////////////////////////
+  //* /////////////////////////////////////////////////////////
+  //* //////////////////TABS //////////////////////////////////
+  //* /////////////////////////////////////////////////////////
+  //* /////////////////////////////////////////////////////////
 
   const tabs = (
     <Fragment>
@@ -282,6 +294,7 @@ export default function Header(props) {
                 aria-owns={route.ariaOwns}
                 aria-haspopup={route.ariaPopup}
                 onMouseOver={route.mouseOver}
+                disabled={route.isDisable}
               />
             ))}
           </Tabs>
@@ -304,11 +317,12 @@ export default function Header(props) {
             classes={{ paper: classes.menu }}
             MenuListProps={{ onMouseLeave: handleClose }}
             elevation={0}
+            style={{ zIndex: 1302 }}
             keepMounted
           >
             {menuOptions.map((option, idx) => (
               <MenuItem
-                key={option}
+                key={`${option}${idx}`}
                 component={Link}
                 to={option.link}
                 classes={{ root: classes.menuItem }}
@@ -365,19 +379,13 @@ export default function Header(props) {
               component={Link}
               to={route.link}
               selected={value === route.activeIndex}
+              classes={{ selected: classes.drawItemSelected }}
               onClick={() => {
                 setOpenDrawer(false);
                 setValue(route.activeIndex);
               }}
             >
-              <ListItemText
-                className={
-                  value === route.activeIndex
-                    ? [classes.drawerItem, classes.drawItemSelected]
-                    : classes.drawerItem
-                }
-                disableTypography
-              >
+              <ListItemText className={classes.drawerItem} disableTypography>
                 {route.name}
               </ListItemText>
             </ListItem>
@@ -392,17 +400,13 @@ export default function Header(props) {
             component={Link}
             to="/freeestimate"
             selected={value === 5}
-            className={classes.drawerItemEstimate}
+            className={{
+              root: classes.drawerItemEstimate,
+              selected: classes.drawItemSelected,
+            }}
             disabled
           >
-            <ListItemText
-              className={
-                value === 5
-                  ? [classes.drawerItem, classes.drawItemSelected]
-                  : classes.drawerItem
-              }
-              disableTypography
-            >
+            <ListItemText className={classes.drawerItem} disableTypography>
               Free Estimate
             </ListItemText>
           </ListItem>
