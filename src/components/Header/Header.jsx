@@ -193,61 +193,31 @@ export default function Header(props) {
     { name: "Store Website", link: "/storewebsite" },
     { name: "Custom Website", link: "/customwebsite" },
   ];
+  //* @routes
+  const routes = [
+    { name: "Home", link: "/" },
+    { name: "Projects", link: "/projects" },
+    { name: "Resume", link: "/resume" },
+    { name: "Services", link: "/services" },
+    { name: "Home", link: "/opensource" },
+  ];
+
   //* ACTIVE TAB REFRESH ////////////////////////////////////////////////////////////////////////////////
   useEffect(() => {
-    switch (window.location.pathname) {
-      case "/":
-        if (value !== 0) {
-          setValue(0);
-          setSelectedIdx(0);
-        }
-        break;
-
-      case "/projects":
-        if (value !== 1) {
-          setValue(1);
-        }
-        break;
-
-      case "/resume":
-        if (value !== 2) {
-          setValue(2);
-        }
-        break;
-
-      case "/services":
-        if (value !== 3) {
-          setValue(3);
-          setSelectedIdx(0);
-        }
-        break;
-
-      case "/personalwebsite":
-        if (value !== 3) {
-          setValue(3);
-          setSelectedIdx(1);
-        }
-        break;
-      case "/storewebsite":
-        if (value !== 3) {
-          setValue(3);
-          setSelectedIdx(2);
-        }
-        break;
-      case "/customwebsite":
-        if (value !== 3) {
-          setValue(3);
-          setSelectedIdx(3);
-        }
-        break;
-      case "/opensource":
-        if (value !== 4) {
-          setValue(4);
-        }
-        break;
-      default:
-        break;
-    }
+    [...menuOptions, ...routes].forEach((route) => {
+      switch (window.location.pathname) {
+        case `${route.link}`:
+          if (value !== route.activeIndex) {
+            setValue(route.activeIndex);
+            if (route.setSelectedIdx && route.selectedIdx !== selectedIdx) {
+              setSelectedIdx(route.selectedIdx);
+            }
+          }
+          break;
+        default:
+          break;
+      }
+    });
   }, [value]);
 
   //* TABS ////////////////////////////////////////////////////////////////////////////////
