@@ -271,6 +271,7 @@ export default function Header(props) {
           <Tabs value={value} onChange={handleChange}>
             {routes.map((route, index) => (
               <Tab
+                key={`${route}${index}`}
                 className={classes.tab}
                 component={Link}
                 to={route.link}
@@ -354,6 +355,7 @@ export default function Header(props) {
         <List disablePadding>
           {routes.map((route, index) => (
             <ListItem
+              key={`${route}${route.activeIndex}`}
               divider
               button
               component={Link}
