@@ -20,7 +20,7 @@ import {
   useMediaQuery,
   useScrollTrigger,
 } from "@material-ui/core";
-import { fade, makeStyles } from "@material-ui/core/styles";
+import { fade, makeStyles, useTheme } from "@material-ui/core/styles";
 import SearchIcon from "@material-ui/icons/Search";
 import MoreIcon from "@material-ui/icons/MoreVert";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -36,6 +36,12 @@ const useStyles = makeStyles((theme) => ({
   toolbarMargin: {
     ...theme.mixins.toolbar,
     marginBottom: "20em",
+    [theme.breakpoints.down("md")]: {
+      marginBottom: "3em",
+    },
+    [theme.breakpoints.down("xs")]: {
+      marginBottom: "3.5em",
+    },
   },
 
   root: {
@@ -57,6 +63,12 @@ const useStyles = makeStyles((theme) => ({
   },
   logo: {
     height: "5em",
+    [theme.breakpoints.down("md")]: {
+      height: "3em",
+    },
+    [theme.breakpoints.down("xs")]: {
+      height: "3.5em",
+    },
   },
   logoContainer: {
     padding: 0,
@@ -117,6 +129,8 @@ function ElevationScroll(props) {
 
 export default function Header(props) {
   const classes = useStyles();
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("md"));
   // Tabs State and handler
   const [value, setValue] = useState(0);
   const [anchorEl, setAnchorEl] = useState(null);
@@ -207,13 +221,116 @@ export default function Header(props) {
     }
   }, [value]);
 
+  const tabs = (
+    <Fragment>
+      <div className="message">
+        <Button
+          component={Link}
+          to="/"
+          disableRipple
+          onClick={() => setValue(0)}
+          className={classes.logoContainer}
+        >
+          <img
+            src="https://cdn0.iconfinder.com/data/icons/avatar-15/512/ninja-512.png"
+            alt="avatar"
+            className={classes.logo}
+          />
+        </Button>
+
+        <h1 style={{ color: "white" }}>Hello Friend</h1>
+        <Paper className={classes.tabContainer}>
+          <Tabs value={value} onChange={handleChange}>
+            <Tab className={classes.tab} component={Link} to="/" label="Home" />
+            <Tab
+              className={classes.tab}
+              component={Link}
+              to="/projects"
+              label="Projects"
+            />
+            <Tab
+              className={classes.tab}
+              component={Link}
+              to="/resume"
+              label="Resume"
+            />
+            <Tab
+              aria-owns={anchorEl ? "simple-menu" : undefined}
+              aria-haspopup={anchorEl ? true : undefined}
+              className={classes.tab}
+              component={Link}
+              onMouseOver={(event) => handleClick(event)}
+              to="/services"
+              label="Services"
+            />
+            <Tab
+              className={classes.tab}
+              to="/opensource"
+              label="Open Source"
+              disabled
+            />
+          </Tabs>
+        </Paper>
+
+        <div className="estimate">
+          <Button
+            variant="contained"
+            color="primary"
+            className={classes.button}
+            disabled
+          >
+            Free Estimate
+          </Button>
+          <Menu
+            id="simple-menu"
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleClose}
+            classes={{ paper: classes.menu }}
+            MenuListProps={{ onMouseLeave: handleClose }}
+            elevation={0}
+            keepMounted
+          >
+            {menuOptions.map((option, idx) => (
+              <MenuItem
+                key={option}
+                component={Link}
+                to={option.link}
+                classes={{ root: classes.menuItem }}
+                onClick={(event, idx) => {
+                  handleMenuItemClick(event, idx);
+                  setValue(3);
+                  handleClose();
+                }}
+                selected={idx === selectedIdx && value === 3}
+              >
+                {option.name}
+              </MenuItem>
+            ))}
+          </Menu>
+        </div>
+      </div>
+    </Fragment>
+  );
+
   return (
     <Fragment>
       <ElevationScroll>
         <div className={classes.root}>
           <AppBar position="fixed" color="secondary">
             <Toolbar className={classes.toolbar}>
-              <IconButton
+              {matches ? null : tabs}
+            </Toolbar>
+          </AppBar>
+        </div>
+      </ElevationScroll>
+      <div className={classes.toolbarMargin} />
+    </Fragment>
+  );
+}
+
+{
+  /* <IconButton
                 edge="start"
                 className={classes.menuButton}
                 color="inherit"
@@ -227,98 +344,7 @@ export default function Header(props) {
                 variant="h3"
                 color="primary"
                 noWrap
-              >
-                <div className="message">
-                  <Button
-                    component={Link}
-                    to="/"
-                    disableRipple
-                    onClick={() => setValue(0)}
-                    className={classes.logoContainer}
-                  >
-                    <img
-                      src="https://cdn0.iconfinder.com/data/icons/avatar-15/512/ninja-512.png"
-                      alt="avatar"
-                      className={classes.logo}
-                    />
-                  </Button>
-                  <h1 style={{ color: "white" }}>Hello Friend</h1>
-                  <Paper className={classes.tabContainer}>
-                    <Tabs value={value} onChange={handleChange}>
-                      <Tab
-                        className={classes.tab}
-                        component={Link}
-                        to="/"
-                        label="Home"
-                      />
-                      <Tab
-                        className={classes.tab}
-                        component={Link}
-                        to="/projects"
-                        label="Projects"
-                      />
-                      <Tab
-                        className={classes.tab}
-                        component={Link}
-                        to="/resume"
-                        label="Resume"
-                      />
-                      <Tab
-                        aria-owns={anchorEl ? "simple-menu" : undefined}
-                        aria-haspopup={anchorEl ? true : undefined}
-                        className={classes.tab}
-                        component={Link}
-                        onMouseOver={(event) => handleClick(event)}
-                        to="/services"
-                        label="Services"
-                      />
-                      <Tab
-                        className={classes.tab}
-                        to="/opensource"
-                        label="Open Source"
-                        disabled
-                      />
-                    </Tabs>
-                  </Paper>
-                  <div className="estimate">
-                    <Button
-                      variant="contained"
-                      color="primary"
-                      className={classes.button}
-                      disabled
-                    >
-                      Free Estimate
-                    </Button>
-                    <Menu
-                      id="simple-menu"
-                      anchorEl={anchorEl}
-                      open={open}
-                      onClose={handleClose}
-                      classes={{ paper: classes.menu }}
-                      MenuListProps={{ onMouseLeave: handleClose }}
-                      elevation={0}
-                      keepMounted
-                    >
-                      {menuOptions.map((option, idx) => (
-                        <MenuItem
-                          key={option}
-                          component={Link}
-                          to={option.link}
-                          classes={{ root: classes.menuItem }}
-                          onClick={(event, idx) => {
-                            handleMenuItemClick(event, idx);
-                            setValue(3);
-                            handleClose();
-                          }}
-                          selected={idx === selectedIdx && value === 3}
-                        >
-                          {option.name}
-                        </MenuItem>
-                      ))}
-                    </Menu>
-                  </div>
-                </div>
-              </Typography>
+              ></Typography>
               <IconButton aria-label="search" color="inherit">
                 <SearchIcon />
               </IconButton>
@@ -328,12 +354,5 @@ export default function Header(props) {
                 color="inherit"
               >
                 <MoreIcon />
-              </IconButton>
-            </Toolbar>
-          </AppBar>
-        </div>
-      </ElevationScroll>
-      <div className={classes.toolbarMargin} />
-    </Fragment>
-  );
+              </IconButton> */
 }
