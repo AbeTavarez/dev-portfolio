@@ -128,6 +128,9 @@ const useStyles = makeStyles((theme) => ({
   drawItemSelected: {
     opacity: 1,
   },
+  appbar: {
+    zIndex: theme.zIndex.modal + 1,
+  },
 }));
 
 //* ///////////////////////////////////////////////////////////
@@ -352,8 +355,9 @@ export default function Header(props) {
         onPen={() => setOpenDrawer(true)}
         classes={{ paper: classes.drawer }}
       >
+        <div className={classes.toolbarMargin} />
         <List disablePadding>
-          {routes.map((route, index) => (
+          {routes.map((route) => (
             <ListItem
               key={`${route}${route.activeIndex}`}
               divider
@@ -418,7 +422,7 @@ export default function Header(props) {
     <Fragment>
       <ElevationScroll>
         <div className={classes.root}>
-          <AppBar position="fixed" color="secondary">
+          <AppBar position="fixed" color="secondary" className={classes.appbar}>
             <Toolbar className={classes.toolbar}>
               {matches ? drawer : tabs}
             </Toolbar>
