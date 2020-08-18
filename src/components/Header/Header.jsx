@@ -134,10 +134,10 @@ export default function Header(props) {
   const matches = useMediaQuery(theme.breakpoints.down("md"));
 
   // Tabs State and handler
-  const [opendrawe, setOpenDrawer] = useState(false);
+  const [openDrawer, setOpenDrawer] = useState(false);
   const [value, setValue] = useState(0);
   const [anchorEl, setAnchorEl] = useState(null);
-  const [open, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
   const [selectedIdx, setSelectedIdx] = useState(0);
 
   //updates Tabs state
@@ -313,6 +313,22 @@ export default function Header(props) {
           </Menu>
         </div>
       </div>
+    </Fragment>
+  );
+
+  //draw
+  const drawer = (
+    <Fragment>
+      <SwipeableDrawer
+        disableBackdropTransition={!iOS}
+        disableDiscovery={iOS}
+        open={openDrawer}
+        onClose={() => setOpenDrawer(false)}
+        onPen={() => setOpenDrawer(true)}
+      >
+        Hello Friend
+      </SwipeableDrawer>
+      <IconButton />
     </Fragment>
   );
 
