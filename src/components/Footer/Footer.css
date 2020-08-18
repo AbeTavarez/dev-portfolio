@@ -10,7 +10,8 @@
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: #ffba60;
+  background-color: #5f6caf;
+  color: #fff;
 }
 .terms {
   display: flex;

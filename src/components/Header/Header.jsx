@@ -148,20 +148,62 @@ export default function Header(props) {
     { name: "Services", link: "/services" },
     { name: "Personal Website", link: "personalwebsite" },
     { name: "Store Website", link: "/storewebsite" },
-    { name: "Custome Website", link: "/customwebsite" },
+    { name: "Custom Website", link: "/customwebsite" },
   ];
   // active tab refresh
   useEffect(() => {
-    if (window.location.pathname === "/" && value !== 0) {
-      setValue(0);
-    } else if (window.location.pathname === "/projects" && value !== 0) {
-      setValue(1);
-    } else if (window.location.pathname === "/resume" && value !== 0) {
-      setValue(2);
-    } else if (window.location.pathname === "/services" && value !== 0) {
-      setValue(3);
-    } else if (window.location.pathname === "/opensource" && value !== 0) {
-      setValue(4);
+    switch (window.location.pathname) {
+      case "/":
+        if (value !== 0) {
+          setValue(0);
+          setSelectedIdx(0);
+        }
+        break;
+
+      case "/projects":
+        if (value !== 1) {
+          setValue(1);
+        }
+        break;
+
+      case "/resume":
+        if (value !== 2) {
+          setValue(2);
+        }
+        break;
+
+      case "/services":
+        if (value !== 3) {
+          setValue(3);
+          setSelectedIdx(0);
+        }
+        break;
+
+      case "/personalwebsite":
+        if (value !== 3) {
+          setValue(3);
+          setSelectedIdx(1);
+        }
+        break;
+      case "/storewebsite":
+        if (value !== 3) {
+          setValue(3);
+          setSelectedIdx(2);
+        }
+        break;
+      case "/customwebsite":
+        if (value !== 3) {
+          setValue(3);
+          setSelectedIdx(3);
+        }
+        break;
+      case "/opensource":
+        if (value !== 4) {
+          setValue(4);
+        }
+        break;
+      default:
+        break;
     }
   }, [value]);
 
@@ -200,7 +242,7 @@ export default function Header(props) {
                       className={classes.logo}
                     />
                   </Button>
-                  <h1>Hello Friend</h1>
+                  <h1 style={{ color: "white" }}>Hello Friend</h1>
                   <Paper className={classes.tabContainer}>
                     <Tabs value={value} onChange={handleChange}>
                       <Tab
