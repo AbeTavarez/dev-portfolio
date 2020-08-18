@@ -130,31 +130,34 @@ function ElevationScroll(props) {
 export default function Header(props) {
   const classes = useStyles();
   const theme = useTheme();
+  const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
   const matches = useMediaQuery(theme.breakpoints.down("md"));
+
   // Tabs State and handler
+  const [opendrawe, setOpenDrawer] = useState(false);
   const [value, setValue] = useState(0);
   const [anchorEl, setAnchorEl] = useState(null);
-  const [open, setOpen] = useState(false);
+  const [open, setOpenMenu] = useState(false);
   const [selectedIdx, setSelectedIdx] = useState(0);
 
   //updates Tabs state
-  const handleChange = (e, value) => {
-    setValue(value);
+  const handleChange = (e, newValue) => {
+    setValue(newValue);
   };
   //opens Services menu
   const handleClick = (e) => {
     setAnchorEl(e.currentTarget);
-    setOpen(true);
+    setOpenMenu(true);
   };
   //close Services menu
   const handleClose = (e) => {
     setAnchorEl(null);
-    setOpen(false);
+    setOpenMenu(false);
   };
   //Menu Item Handler
   const handleMenuItemClick = (e, idx) => {
     setAnchorEl(null);
-    setOpen(false);
+    setOpenMenu(false);
     setSelectedIdx(idx);
   };
   //Menu Items Array
@@ -284,7 +287,7 @@ export default function Header(props) {
           <Menu
             id="simple-menu"
             anchorEl={anchorEl}
-            open={open}
+            openMenu={openMenu}
             onClose={handleClose}
             classes={{ paper: classes.menu }}
             MenuListProps={{ onMouseLeave: handleClose }}
