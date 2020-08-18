@@ -354,22 +354,63 @@ export default function Header(props) {
         onPen={() => setOpenDrawer(true)}
       >
         <List disablePadding>
-          <ListItem divider button componet={Link} to="/">
-            <ListItemText disableTypography>Home</ListItemText>
+          <ListItem
+            onClick={() => setOpenDrawer(false)}
+            divider
+            button
+            componet={Link}
+            to="/"
+          >
+            <ListItem
+              TextonClick={() => setOpenDrawer(false)}
+              disableTypography
+            >
+              Home
+            </ListItem>
           </ListItem>
-          <ListItem divider button componet={Link} to="/projrcts">
+          <ListItem
+            onClick={() => setOpenDrawer(false)}
+            divider
+            button
+            componet={Link}
+            to="/projrcts"
+          >
             <ListItemText disableTypography>Projects</ListItemText>
           </ListItem>
-          <ListItem divider button componet={Link} to="/resume">
+          <ListItem
+            onClick={() => setOpenDrawer(false)}
+            divider
+            button
+            componet={Link}
+            to="/resume"
+          >
             <ListItemText disableTypography>Resume</ListItemText>
           </ListItem>
-          <ListItem divider button componet={Link} to="/services">
+          <ListItem
+            onClick={() => setOpenDrawer(false)}
+            divider
+            button
+            componet={Link}
+            to="/services"
+          >
             <ListItemText disableTypography>Services</ListItemText>
           </ListItem>
-          <ListItem divider button componet={Link} to="/opensource">
+          <ListItem
+            onClick={() => setOpenDrawer(false)}
+            divider
+            button
+            componet={Link}
+            to="/opensource"
+          >
             <ListItemText disableTypography>Open Source</ListItemText>
           </ListItem>
-          <ListItem divider button componet={Link} to="/freeestimate">
+          <ListItem
+            onClick={() => setOpenDrawer(false)}
+            divider
+            button
+            componet={Link}
+            to="/freeestimate"
+          >
             <ListItemText disableTypography>Free Estimate</ListItemText>
           </ListItem>
         </List>
