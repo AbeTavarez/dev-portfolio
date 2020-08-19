@@ -45,6 +45,7 @@ a {
   justify-content: flex-end;
   margin: 0 auto;
   width: 150px;
+  margin-bottom: 20px;
 }
 .name-home {
   font-family: "Bebas Neue";
