@@ -10,6 +10,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import clouds from "../../../assets/cloud-computing.png";
 
 const useStyles = makeStyles({
   root: {
@@ -27,13 +28,11 @@ export default function Home() {
     <Layout>
       <div className="home-container">
         <div className="welcome-message">
-          <div className="img-container">
-            <div className="img-title"></div>
-            <div className="name-home">
-              <h1 style={{ padding: "10px" }}>hi, I'm Abraham</h1>
-              <p>I'm a Junior Software Engineer</p>
-            </div>
+          <div className="name-home">
+            <h1>hi, I'm Abraham</h1>
+            <img src={clouds} alt="cloud" className="cloud" />
           </div>
+          <p>I'm a Junior Software Engineer</p>
         </div>
 
         <div className="aboutme">
@@ -63,10 +62,11 @@ export default function Home() {
             to create fun and modern websites and webapps.
           </p>
 
-          <p>
+          <p className="last-p">
             I'm seeking a challenging and fun position, where I can share
             everything I have to offer to the tech community.
           </p>
+          <hr />
         </div>
 
         <div className="icons-media">
@@ -215,11 +215,57 @@ export default function Home() {
               </CardActions>
             </Card>
           </div>
+          <div className="card-section">
+            <Card className={classes.root}>
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image="https://res.cloudinary.com/abetavarez/image/upload/v1597804933/image1_rbedb6.png"
+                  title="motorcycle-project-website"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Motorcycle & Tire Shop Business Website
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    Consulted and created a website for a small business owner.
+                    Worked with the client throughout the project to help them
+                    create an online presence and driving new clients to their
+                    business by setting search engine optimization.
+                  </Typography>
+                  <Typography variant="body2" color="textPrimary" component="p">
+                    Technologies: HTML, CSS, JavaScript, SEO, UXUI, Deployment.
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://davidtireshop.netlify.app/"
+                  target="_blank"
+                >
+                  Visit Site
+                </Button>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://github.com/AbeTavarez/david_tire_shop"
+                  target="_blank"
+                >
+                  Visit Repo
+                </Button>
+              </CardActions>
+            </Card>
+          </div>
         </div>
 
         <div className="home-projects-container">
           <div className="card-section">
-            <hr />
             {/* <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
@@ -266,7 +312,6 @@ export default function Home() {
           </div>
 
           <div className="card-section">
-            <hr />
             {/* <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia

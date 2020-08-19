@@ -46,7 +46,7 @@ export default function Projects() {
                   save when shopping during #covid19 virus.
                 </Typography>
                 <Typography variant="body2" color="textPrimary" component="p">
-                  Stack: HTML, CSS, JavaScript.
+                  Technologies: HTML, CSS, JavaScript, Responsive Design.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -89,7 +89,8 @@ export default function Projects() {
                   e-commerce site InstaCart.
                 </Typography>
                 <Typography variant="body2" color="textPrimary" component="p">
-                  Stack: ReactJS, NodeJS.
+                  Technologies: React, JavaScript, NodeJS, Express, Mongoose,
+                  MongoDB, UXUI.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -106,6 +107,50 @@ export default function Projects() {
                 size="small"
                 color="primary"
                 href="https://github.com/AbeTavarez/Instacart-Costco"
+                target="_blank"
+              >
+                Visit Repo
+              </Button>
+            </CardActions>
+          </Card>
+        </div>
+
+        <div className="card-section">
+          <Card className={classes.root}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image="https://res.cloudinary.com/abetavarez/image/upload/v1597804933/image1_rbedb6.png"
+                title="motorcycle-project-website"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  Motorcycle & Tire Shop Business Website
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  Consulted and created a website for a small business owner.
+                  Worked with the client throughout the project to help them
+                  create an online presence and driving new clients to their
+                  business by setting search engine optimization.
+                </Typography>
+                <Typography variant="body2" color="textPrimary" component="p">
+                  Technologies: HTML, CSS, JavaScript, SEO, UXUI, Deployment.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                href="https://davidtireshop.netlify.app/"
+                target="_blank"
+              >
+                Visit Site
+              </Button>
+              <Button
+                size="small"
+                color="primary"
+                href="https://github.com/AbeTavarez/david_tire_shop"
                 target="_blank"
               >
                 Visit Repo

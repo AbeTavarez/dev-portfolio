@@ -9,6 +9,8 @@
   /* background-color: rgb(16, 168, 166); */
   /* background-color: #200f21; */
   /* background-color: #7b88ff; */
+  background-color: #1b262c;
+  color: #fff;
 }
 .profile-img {
   border-radius: 100%;
@@ -37,12 +39,17 @@ a {
   font-size: 32px;
   padding: 5px;
 }
+
+.name-home img {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  width: 150px;
+}
 .name-home {
   font-family: "Bebas Neue";
   font-size: 35px;
   letter-spacing: 5px;
-  animation-name: name-animation;
-  animation-duration: 3s;
 }
 .home-projects-container {
   display: flex;
@@ -58,7 +65,7 @@ a {
 }
 
 .aboutme {
-  padding-top: 80px;
+  padding-top: 40px;
   text-align: center;
   font-size: 22px;
 }
@@ -67,6 +74,9 @@ a {
   justify-content: center;
   height: 80px;
   padding: 15px;
+}
+.last-p {
+  margin-bottom: 80px;
 }
 
 @media (max-width: 1200px) {
@@ -103,7 +113,6 @@ a {
     letter-spacing: 3px;
     animation-name: name-animation;
     animation-duration: 3s;
-    padding-left: 25px;
   }
 }
 @media (max-width: 800px) {
@@ -133,7 +142,6 @@ a {
   .name-home {
     font-size: 20px;
     letter-spacing: 3px;
-    padding-left: 25px;
   }
 }
 

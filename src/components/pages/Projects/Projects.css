@@ -8,15 +8,18 @@
   padding: 40px;
   height: auto;
   padding-bottom: 172px;
+  background-color: #1b262c;
+  color: #fff;
 }
 .card-section {
   margin: 20px;
 }
 .project-title {
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   font-family: "Bebas Neue", cursive;
   letter-spacing: 10px;
+  padding-top: 20px;
 }
 
 @media (max-width: 1200px) {

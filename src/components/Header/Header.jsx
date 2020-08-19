@@ -35,12 +35,12 @@ import "./Header.css";
 const useStyles = makeStyles((theme) => ({
   toolbarMargin: {
     ...theme.mixins.toolbar,
-    marginBottom: "20em",
+    marginBottom: "16em",
     [theme.breakpoints.down("md")]: {
-      marginBottom: "6em",
+      marginBottom: "5.5em",
     },
     [theme.breakpoints.down("xs")]: {
-      marginBottom: "6.5em",
+      marginBottom: "5.5em",
     },
   },
 
@@ -91,7 +91,7 @@ const useStyles = makeStyles((theme) => ({
     height: "45px",
   },
   menu: {
-    backgroundColor: theme.palette.common.purple,
+    backgroundColor: theme.palette.common.lightBlue,
     color: "white",
     borderRadius: 0,
   },
@@ -113,9 +113,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   drawer: {
-    backgroundColor: theme.palette.common.purple,
-
-    // fontFamily: "Bebas Neue",
+    backgroundColor: theme.palette.common.lightBlue,
   },
   drawerItem: {
     ...theme.typography.tab,
@@ -123,7 +121,7 @@ const useStyles = makeStyles((theme) => ({
     opacity: 0.7,
   },
   drawerItemEstimate: {
-    backgroundColor: theme.palette.common.orange,
+    backgroundColor: theme.palette.common.purple,
   },
   drawItemSelected: {
     "& .MuiListItemText-root": {
@@ -135,9 +133,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-//* ///////////////////////////////////////////////////////////
 //* //////////////////////////////////////////////////////////
-//* ///////////////Scroll control ////////////////////////////
+//* //////////////////////////////////////////////////////////
+//* /////////////// Scroll control ///////////////////////////
 //* //////////////////////////////////////////////////////////
 //* //////////////////////////////////////////////////////////
 
