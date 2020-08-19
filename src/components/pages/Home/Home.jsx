@@ -37,30 +37,33 @@ export default function Home() {
 
         <div className="aboutme">
           <hr />
-          <div className="name-home">
+          <div>
             <h2>About me</h2>
           </div>
-          <p>
-            I'm a New Yorker who is passionate about tech and software
-            development.
-          </p>
-
-          <p>
-            I get to attend many tech events and meetups all around my city
-            which have all been an amazing experience.
-          </p>
-          <p>I have been using a wide range of technologies including</p>
-          <p>
-            <span style={{ fontStyle: "italic" }}> Javascript</span>,
-            <span style={{ fontStyle: "italic" }}> React</span>,{" "}
-            <span style={{ fontStyle: "italic" }}> Node</span>,{" "}
-            <span style={{ fontStyle: "italic" }}> Express</span>,
-            <span style={{ fontStyle: "italic" }}> MongoDB</span>,
-            <span style={{ fontStyle: "italic" }}> PostgreSQL</span>,
-            <span style={{ fontStyle: "italic" }}> Ruby On Rails</span>,{" "}
-            <span style={{ fontStyle: "italic" }}> Python</span>, <br /> <br />
-            to create fun and modern websites and webapps.
-          </p>
+          <div className="bio">
+            {" "}
+            <p>
+              I'm a New Yorker who is passionate about tech and software
+              development. I get to attend many tech events and meetups all
+              around the city which have all been an amazing experience.
+            </p>
+            <p>
+              I have been using a wide range of technologies to create fun and
+              modern websites and webapps including:
+            </p>
+            <p>
+              <span style={{ fontStyle: "italic" }}> Javascript</span>,
+              <span style={{ fontStyle: "italic" }}> React</span>,{" "}
+              <span style={{ fontStyle: "italic" }}> Node</span>,{" "}
+              <span style={{ fontStyle: "italic" }}> Express</span>,
+              <span style={{ fontStyle: "italic" }}> MongoDB</span>,
+              <span style={{ fontStyle: "italic" }}> PostgreSQL</span>,
+              <span style={{ fontStyle: "italic" }}> Ruby </span>
+              <span style={{ fontStyle: "italic" }}> Rails</span>,
+              <span style={{ fontStyle: "italic" }}> Python</span> and more.
+              <br /> <br />
+            </p>
+          </div>
 
           <p className="last-p">
             I'm seeking a challenging and fun position, where I can share
@@ -72,52 +75,63 @@ export default function Home() {
         <div className="icons-media">
           <img
             src="https://img.icons8.com/dusk/64/000000/html-5.png"
-            style={{ padding: "3px" }}
+            style={{ padding: "10px" }}
             alt="html-icon"
           />
           <img
             src="https://img.icons8.com/dusk/64/000000/css3.png"
-            style={{ padding: "3px" }}
+            style={{ padding: "10px" }}
             alt="css-icons"
           />
           <img
             src="https://img.icons8.com/dusk/64/000000/javascript.png"
-            style={{ padding: "3px" }}
+            style={{ padding: "10px" }}
             alt="javascript-icon"
           />
           <img
             src="https://img.icons8.com/offices/60/000000/react.png"
-            style={{ padding: "3px" }}
+            style={{ padding: "10px" }}
             alt="react-js-icon"
           />
           <img
             src="https://img.icons8.com/color/64/000000/nodejs.png"
-            style={{ padding: "3px" }}
+            style={{ padding: "10px" }}
             alt="node-js-icon"
           />
           <img
             src="https://img.icons8.com/dusk/64/000000/ruby-programming-language.png"
-            style={{ padding: "3px" }}
+            style={{ padding: "10px" }}
             alt="ruby-icon"
           />
           <img
             src="https://img.icons8.com/dusk/64/000000/python.png"
-            style={{ padding: "3px" }}
+            style={{ padding: "10px" }}
             alt="python-icon"
           />
           <img
             src="https://img.icons8.com/color/48/000000/npm.png"
-            style={{ padding: "3px" }}
+            style={{ padding: "10px" }}
             alt="npm-icon"
           />
           <img
             src="https://img.icons8.com/color/48/000000/git.png"
-            style={{ padding: "3px" }}
+            style={{ padding: "10px" }}
             alt="git-icon"
+          />
+          <img
+            src="
+            https://img.icons8.com/bubbles/48/000000/amazon.png"
+            style={{ padding: "10px" }}
+            alt="aws-icon"
           />
         </div>
 
         <div className="home-projects-title name-home">RECENT PROJECTS</div>
+        <img
+          src="
+          https://img.icons8.com/color/48/000000/jenkins.png"
+          alt="deployment-icon"
+        />
 
         <div className="home-projects-container">
           <div className="card-section">

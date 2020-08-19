@@ -357,7 +357,7 @@ export default function Header(props) {
             className={classes.logo}
           />
         </Button>
-        <h3>HELLO FRIEND</h3>
+        <h3>WELCOME</h3>
       </div>
       <SwipeableDrawer
         disableBackdropTransition={!iOS}

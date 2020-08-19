@@ -60,7 +60,7 @@ a {
 .home-projects-title {
   display: flex;
   justify-content: center;
-  font-size: 45px;
+  font-size: 65px;
   font-family: "Bebas Neue";
   padding-top: 100px;
 }
@@ -70,6 +70,9 @@ a {
   text-align: center;
   font-size: 22px;
 }
+.bio {
+  text-align: left;
+}
 .icons-media {
   display: flex;
   justify-content: center;
@@ -78,6 +81,7 @@ a {
 }
 .last-p {
   margin-bottom: 80px;
+  text-align: left;
 }
 
 @media (max-width: 1200px) {
