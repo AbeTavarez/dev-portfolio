@@ -93,7 +93,7 @@ a {
     margin: 0 15px;
   }
   .icons-media {
-    width: auto;
+    width: 200px;
     height: 80px;
     padding: 15px;
   }
@@ -134,9 +134,11 @@ a {
   .icons-media {
     display: flex;
     flex-wrap: wrap;
-    width: 40px;
-    height: 500px;
+    overflow-wrap: normal;
+    /* width: 40px;
+    height: auto; */
     padding: 15px;
+    padding-bottom: 300px;
   }
 
   .img-title {
