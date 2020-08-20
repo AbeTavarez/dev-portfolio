@@ -217,7 +217,12 @@ export default function Header(props) {
   ];
   //Menu Items Array
   const menuOptions = [
-    { name: "Services", link: "/services", activeIndex: 3, selectedIndex: 0 },
+    {
+      name: "Services",
+      link: "/services",
+      activeIndex: 3,
+      selectedIndex: 0,
+    },
     {
       name: "Personal Website",
       link: "personalwebsite",
@@ -322,6 +327,7 @@ export default function Header(props) {
             {menuOptions.map((option, idx) => (
               <MenuItem
                 key={`${option}${idx}`}
+                disabled={option.isDisable}
                 component={Link}
                 to={option.link}
                 classes={{ root: classes.menuItem }}

@@ -9,6 +9,7 @@ import Resume from "../pages/Resume/Resume";
 // import Contact from "../pages/Contact/Contact";
 
 import "./Main.css";
+import underConstruction from "../shared/underConstruction";
 
 export default function Main() {
   return (
@@ -18,6 +19,8 @@ export default function Main() {
         <Route exact path="/" component={() => <Home />} />
         <Route path="/projects" component={() => <Projects />} />
         <Route path="/resume" component={() => <Resume />} />
+        <Route path="/services" component={() => <Resume />} />
+        <Route path="/opensource" component={() => <Resume />} />
         {/* <Route path="/services" component={() => <Services />} />
         <Route path="/opensource" component={() => <OpenSource />} /> */}
       </Switch>
