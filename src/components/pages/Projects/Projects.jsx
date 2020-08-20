@@ -28,7 +28,10 @@ export default function Projects() {
       <div className="project-title">
         <div className="recent">
           RECENT PROJECTS{" "}
-          <img src="https://img.icons8.com/officel/60/000000/deployment.png" />
+          <img
+            src="https://img.icons8.com/officel/60/000000/deployment.png"
+            className="p-img"
+          />
         </div>
       </div>
       <div className="projects-container">

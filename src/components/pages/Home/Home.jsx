@@ -32,7 +32,7 @@ export default function Home() {
             <h1>hi, I'm Abraham</h1>
             <img src={clouds} alt="cloud" className="cloud" />
           </div>
-          <p>I'm a Junior Software Engineer</p>
+          <h2>I'm a Junior Software Engineer</h2>
         </div>
 
         <div className="aboutme">
@@ -140,8 +140,9 @@ export default function Home() {
         <div className="home-projects-title name-home">RECENT PROJECTS</div>
         <img
           src="
-          https://img.icons8.com/color/48/000000/jenkins.png"
+          https://img.icons8.com/color/68/000000/jenkins.png"
           alt="deployment-icon"
+          className="sir"
         />
 
         <div className="home-projects-container">

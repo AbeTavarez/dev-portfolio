@@ -83,6 +83,10 @@ a {
   margin-bottom: 80px;
   text-align: left;
 }
+.sir {
+  border: 2px solid#3282b8;
+  border-radius: 50%;
+}
 
 @media (max-width: 1200px) {
   .home-projects-container {
@@ -149,6 +153,13 @@ a {
   .name-home {
     font-size: 20px;
     letter-spacing: 3px;
+  }
+  .sir {
+    margin-top: 20px;
+    border: 2px solid#3282b8;
+  }
+  .home-projects-title {
+    margin-top: 155px;
   }
 }
 
