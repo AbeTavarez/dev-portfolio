@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import "./Projects.css";
 import Layout from "../../shared/Layout";
@@ -13,7 +13,7 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: 445,
   },
   media: {
     height: 200,
@@ -24,9 +24,12 @@ export default function Projects() {
   const classes = useStyles();
 
   return (
-    <Layout>
+    <Fragment>
       <div className="project-title">
-        <h1>RECENT PROJECTS</h1>
+        <div className="recent">
+          RECENT PROJECTS{" "}
+          <img src="https://img.icons8.com/officel/60/000000/deployment.png" />
+        </div>
       </div>
       <div className="projects-container">
         <div className="card-section">
@@ -242,6 +245,6 @@ export default function Projects() {
           </Card>
         </div> */}
       </div>
-    </Layout>
+    </Fragment>
   );
 }

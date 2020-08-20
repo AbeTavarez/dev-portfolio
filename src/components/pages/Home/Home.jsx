@@ -118,10 +118,21 @@ export default function Home() {
             style={{ padding: "10px" }}
             alt="git-icon"
           />
+
+          <img
+            src="https://img.icons8.com/color/48/000000/console.png"
+            style={{ padding: "10px" }}
+            alt="command-line-icon"
+          />
+          <img
+            src="https://img.icons8.com/color/48/000000/api.png"
+            style={{ padding: "10px" }}
+            alt="api-icon"
+          />
           <img
             src="
             https://img.icons8.com/bubbles/48/000000/amazon.png"
-            style={{ padding: "10px" }}
+            style={{ padding: "15px" }}
             alt="aws-icon"
           />
         </div>

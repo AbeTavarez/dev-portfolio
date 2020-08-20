@@ -3,8 +3,9 @@
 
 .projects-container {
   display: flex;
-  justify-content: center;
-  margin: auto;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  margin: 0 auto;
   padding: 40px;
   height: auto;
   padding-bottom: 172px;
@@ -20,6 +21,9 @@
   font-family: "Bebas Neue", cursive;
   letter-spacing: 10px;
   padding-top: 20px;
+  color: #fff;
+  background-color: #1b262c;
+  font-size: 45px;
 }
 
 @media (max-width: 1200px) {

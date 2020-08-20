@@ -47,6 +47,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     width: "100%",
+    backgroundColor: "#1b262c;",
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -279,7 +280,7 @@ export default function Header(props) {
           />
         </Button>
 
-        <h1 style={{ color: "white" }}>Hello Friend</h1>
+        <h1 style={{ color: "white" }}>Welcome</h1>
         <Paper className={classes.tabContainer}>
           <Tabs value={value} onChange={handleChange}>
             {routes.map((route, index) => (

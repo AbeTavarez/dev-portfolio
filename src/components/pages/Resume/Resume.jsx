@@ -31,7 +31,7 @@ class Resume extends Component {
             </div>
             <hr
               style={{
-                borderTop: "3px solid rgba(51, 121, 135)",
+                borderTop: "3px solid #3282b8",
                 width: "100%",
               }}
             />
@@ -42,8 +42,8 @@ class Resume extends Component {
 
             <Education
               startYear="3/2020"
-              endYear={2020}
-              schoolName="General Assembly"
+              endYear="Current"
+              schoolName="Software Engineer, General Assembly"
               schoolDescription={
                 "General Assembly is a pioneer in education and career transformation, specializing in today’s most in-demand skills. The leading source for training, staffing, and career transitions, we foster a flourishing community of professionals pursuing careers they love."
               }
@@ -51,14 +51,30 @@ class Resume extends Component {
             <Education
               startYear={2019}
               endYear={2019}
-              schoolName="Noble Desktop"
+              schoolName="iOS Developer, Noble Desktop"
               schoolDescription={
-                "NYC’s leading design & coding school for  years, we have perfected the craft of teaching. We use our own time-tested curriculum and custom workbooks we wrote. Noble’s “learn, then practice” teaching method results in students learning and retaining much more than traditional “follow along” classes."
+                "NYC’s leading design & coding school for  years, we have perfected the craft of teaching. We use our own time-tested curriculum and custom workbooks we wrote. Noble’s “learn, then practice” teaching method results in students learning and retaining much more than traditional “follow along” classes. After learning foundational object-oriented programming concepts in Xcode and Swift, you’ll build several apps in class and conclude with creating your own app."
+              }
+            />
+            <Education
+              startYear={2006}
+              endYear={2007}
+              schoolName="Audio Engineer, Touro College"
+              schoolDescription={
+                "Audio engineering is a very wide discipline as well as an exciting one! It blends both technology and creativity to help create and refine sounds used in music, media, and performance technology. A bachelor’s degree in audio engineering, or a related field such as music technology, recording arts, sound engineering…the list goes on, is a solid stepping stone towards a career in this competitive industry.."
+              }
+            />
+            <Education
+              startYear={2004}
+              endYear={2006}
+              schoolName="Audio Engineer/Art, BCC College"
+              schoolDescription={
+                "The college was established in 1957. Hall of Fame for Great Americans, the country’s first hall of fame. In October 2012, our campus was declared a National Historic Landmark, becoming the country’s first community college campus to receive such a designation.."
               }
             />
           </Container>
 
-          <hr style={{ borderTop: "3px solid rgba(166, 67, 97)" }} />
+          <hr style={{ borderTop: "3px solid #0f4c75" }} />
 
           <Container col={8} className="resume-right-col">
             <h2>Experience</h2>
@@ -72,7 +88,7 @@ class Resume extends Component {
             <Experience
               startYear={2010}
               endYear={2020}
-              jobName="Team Associate, Coca Cola"
+              jobName="Inventory IT Specialist, Coca Cola"
               jobDescription="Ability to work in a large and fast paced team environment dealing with multiple tasks and individuals. Conduct daily inventories, produce reports and inspect area of work for any safety hazards. Coordinate customer orders and deliveries assuring client satisfacion. In charge of train new associates in company’s multiple software systems and procedures."
             />
           </Container>
@@ -81,6 +97,10 @@ class Resume extends Component {
 
           <Container col={8} className="resume-right-col">
             <h2>Skills</h2>
+            <div>
+              HTML - CSS - JavaScript - React - NodeJS - Express - Webpack - GIT
+              - SQL - MongoDB - PostgreSQL - Ruby - RAILS - Python - AWS
+            </div>
             <div style={{ padding: "15px" }}>
               <img
                 src="https://img.icons8.com/dusk/64/000000/html-5.png"
@@ -136,6 +156,12 @@ class Resume extends Component {
                 src="https://img.icons8.com/color/48/000000/api.png"
                 style={{ padding: "3px" }}
                 alt="api-icon"
+              />
+              <img
+                src="
+            https://img.icons8.com/bubbles/48/000000/amazon.png"
+                style={{ padding: "3px" }}
+                alt="aws-icon"
               />
             </div>
           </Container>
