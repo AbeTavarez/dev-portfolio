@@ -35,7 +35,7 @@ import "./Header.css";
 const useStyles = makeStyles((theme) => ({
   toolbarMargin: {
     ...theme.mixins.toolbar,
-    marginBottom: "16em",
+    marginBottom: "8em",
     [theme.breakpoints.down("md")]: {
       marginBottom: "5.5em",
     },
@@ -48,6 +48,11 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     width: "100%",
     backgroundColor: "#1b262c;",
+  },
+  topContent: {
+    display: "flex",
+    justifyContent: "space-between",
+    padding: "10px",
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -63,12 +68,12 @@ const useStyles = makeStyles((theme) => ({
     alignSelf: "flex-end",
   },
   logo: {
-    height: "5em",
+    height: "4em",
     [theme.breakpoints.down("md")]: {
-      height: "3em",
+      height: "2em",
     },
     [theme.breakpoints.down("xs")]: {
-      height: "3.5em",
+      height: "2.5em",
     },
   },
   logoContainer: {
@@ -271,21 +276,23 @@ export default function Header(props) {
   const tabs = (
     <Fragment>
       <div className="message">
-        <Button
-          component={Link}
-          to="/"
-          disableRipple
-          onClick={() => setValue(0)}
-          className={classes.logoContainer}
-        >
-          <img
-            src="https://cdn0.iconfinder.com/data/icons/avatar-15/512/ninja-512.png"
-            alt="avatar"
-            className={classes.logo}
-          />
-        </Button>
+        <div className={classes.topContent}>
+          <h3 style={{ color: "white" }}>Welcome</h3>
+          <Button
+            component={Link}
+            to="/"
+            disableRipple
+            onClick={() => setValue(0)}
+            className={classes.logoContainer}
+          >
+            <img
+              src="https://cdn0.iconfinder.com/data/icons/avatar-15/512/ninja-512.png"
+              alt="avatar"
+              className={classes.logo}
+            />
+          </Button>
+        </div>
 
-        <h1 style={{ color: "white" }}>Welcome</h1>
         <Paper className={classes.tabContainer}>
           <Tabs value={value} onChange={handleChange}>
             {routes.map((route, index) => (
@@ -305,14 +312,14 @@ export default function Header(props) {
         </Paper>
 
         <div className="estimate">
-          <Button
+          {/* <Button
             variant="contained"
             color="primary"
             className={classes.button}
             disabled
           >
             Free Estimate
-          </Button>
+          </Button> */}
           <Menu
             id="simple-menu"
             anchorEl={anchorEl}
@@ -364,7 +371,6 @@ export default function Header(props) {
             className={classes.logo}
           />
         </Button>
-        <h3>WELCOME</h3>
       </div>
       <SwipeableDrawer
         disableBackdropTransition={!iOS}
