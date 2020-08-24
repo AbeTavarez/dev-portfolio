@@ -4,31 +4,25 @@
 .footer-container {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 20px;
-  height: 165px;
+  /* height: 115px; */
   width: 100%;
   bottom: 0;
   left: 0;
   background-color: #3282b8;
   color: #fff;
 }
-.terms {
-  display: flex;
-}
+
 .links {
   display: flex;
   flex-direction: column;
 }
 .social-links {
   display: flex;
+  padding-bottom: 10px;
 
   flex-direction: row;
 }
-.contact {
-  display: flex;
-  flex-direction: column;
-  padding-left: 15px;
-}
+
 .getintouch {
   text-align: center;
 }
