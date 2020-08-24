@@ -37,10 +37,10 @@ const useStyles = makeStyles((theme) => ({
     ...theme.mixins.toolbar,
     marginBottom: "8em",
     [theme.breakpoints.down("md")]: {
-      marginBottom: "5.5em",
+      marginBottom: "4.5em",
     },
     [theme.breakpoints.down("xs")]: {
-      marginBottom: "5.5em",
+      marginBottom: "4.5em",
     },
   },
 
@@ -62,6 +62,12 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "flex-start",
     paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(2),
+    [theme.breakpoints.down("md")]: {
+      minHeight: 80,
+    },
+    [theme.breakpoints.down("xs")]: {
+      minHeight: 80,
+    },
   },
   title: {
     flexGrow: 1,
@@ -69,11 +75,12 @@ const useStyles = makeStyles((theme) => ({
   },
   logo: {
     height: "4em",
+    paddingRight: "100px",
     [theme.breakpoints.down("md")]: {
-      height: "2em",
+      height: "4em",
     },
     [theme.breakpoints.down("xs")]: {
-      height: "2.5em",
+      height: "3.5em",
     },
   },
   logoContainer: {
@@ -277,7 +284,7 @@ export default function Header(props) {
     <Fragment>
       <div className="message">
         <div className={classes.topContent}>
-          <h3 style={{ color: "white" }}>Welcome</h3>
+          <h3>Welcome</h3>
           <Button
             component={Link}
             to="/"
@@ -371,6 +378,7 @@ export default function Header(props) {
             className={classes.logo}
           />
         </Button>
+        <h4>Welcome</h4>
       </div>
       <SwipeableDrawer
         disableBackdropTransition={!iOS}
