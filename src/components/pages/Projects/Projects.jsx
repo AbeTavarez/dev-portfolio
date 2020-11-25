@@ -126,7 +126,7 @@ export default function Projects() {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="https://res.cloudinary.com/abetavarez/image/upload/v1597804933/image1_rbedb6.png"
+                image="https://res.cloudinary.com/abetavarez/image/upload/v1606275294/IMG_1343_2_dbqszh.jpg"
                 title="motorcycle-project-website"
               />
               <CardContent>
@@ -140,7 +140,7 @@ export default function Projects() {
                   business by setting search engine optimization.
                 </Typography>
                 <Typography variant="body2" color="textPrimary" component="p">
-                  Technologies: HTML, CSS, JavaScript, SEO, UXUI, Deployment.
+                  Stack: HTML, CSS, JavaScript, SEO, UXUI, Deployment.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -148,7 +148,7 @@ export default function Projects() {
               <Button
                 size="small"
                 color="primary"
-                href="https://davidtireshop.netlify.app/"
+                href="https://www.davidsmechanic.shop/"
                 target="_blank"
               >
                 Visit Site
