@@ -178,6 +178,7 @@ export default function Home() {
                 <Button
                   size="small"
                   color="primary"
+                  variant='outlined'
                   href="http://instacart-costco.surge.sh/welcome"
                   target="_blank"
                 >
@@ -186,6 +187,7 @@ export default function Home() {
                 <Button
                   size="small"
                   color="primary"
+                  variant='outlined'
                   href="https://github.com/AbeTavarez/Instacart-Costco"
                   target="_blank"
                 >
@@ -225,6 +227,7 @@ export default function Home() {
                 <Button
                   size="small"
                   color="primary"
+                  variant='outlined'
                   href="https://www.stayhomecookhome.com/"
                   target="_blank"
                 >
@@ -233,6 +236,7 @@ export default function Home() {
                 <Button
                   size="small"
                   color="primary"
+                  variant='outlined'
                   href="https://github.com/AbeTavarez/-StayHomeCookHome"
                   target="_blank"
                 >
@@ -268,7 +272,8 @@ export default function Home() {
             <CardActions>
               <Button
                 size="small"
-                color="primary"
+                  color="primary"
+                  variant='outlined'
                 href="https://www.davidsmechanic.shop/"
                 target="_blank"
               >
@@ -276,7 +281,8 @@ export default function Home() {
               </Button>
               <Button
                 size="small"
-                color="primary"
+                  color="primary"
+                  variant='outlined'
                 href="https://github.com/AbeTavarez/david_tire_shop"
                 target="_blank"
               >

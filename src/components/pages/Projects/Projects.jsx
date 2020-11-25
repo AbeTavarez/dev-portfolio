@@ -25,7 +25,7 @@ export default function Projects() {
   const classes = useStyles();
 
   return (
-    <Container maxWidth='fixed'>
+    <Container maxWidth='fixed' className='main-cont'>
       <div className="project-title">
         <div className="recent">
           RECENT PROJECTS{" "}
@@ -35,7 +35,8 @@ export default function Projects() {
           />
         </div>
       </div>
-      <div className="projects-container">
+      
+      <div  className="projects-container">
         <h2>Frelance Projects</h2>
         <div className="card-section">
           <Card className={classes.root}>
@@ -62,6 +63,7 @@ export default function Projects() {
               <Button
                 size="small"
                 color="primary"
+                variant='outlined'
                 href="https://www.stayhomecookhome.com/"
                 target="_blank"
               >
@@ -70,6 +72,7 @@ export default function Projects() {
               <Button
                 size="small"
                 color="primary"
+                variant='outlined'
                 href="https://github.com/AbeTavarez/-StayHomeCookHome"
                 target="_blank"
               >
@@ -106,6 +109,7 @@ export default function Projects() {
               <Button
                 size="small"
                 color="primary"
+                variant='outlined'
                 href="https://www.davidsmechanic.shop/"
                 target="_blank"
               >
@@ -114,6 +118,7 @@ export default function Projects() {
               <Button
                 size="small"
                 color="primary"
+                variant='outlined'
                 href="https://github.com/AbeTavarez/david_tire_shop"
                 target="_blank"
               >
@@ -122,7 +127,10 @@ export default function Projects() {
             </CardActions>
           </Card>
         </div>
-<div>
+
+
+
+<div className='projects-container'>
         <h2>Hackatons/Group Projects</h2>
         <div className="card-section">
           <Card className={classes.root}>
@@ -139,7 +147,7 @@ export default function Projects() {
                 <Typography variant="body2" color="textSecondary" component="p">
                   I had the amazing oportunity to collaborate with a team of
                   software engineers and UI/UX designers, to replicate the
-                  e-commerce site InstaCart.
+                  eCommerce site InstaCart.
                 </Typography>
                 <Typography variant="body2" color="textPrimary" component="p">
                   Technologies: React, JavaScript, NodeJS, Express, Mongoose,
@@ -150,14 +158,16 @@ export default function Projects() {
             <CardActions>
               <Button
                 size="small"
-                color="primary"
+                  color="primary"
+                  variant='outlined'
                 href="http://instacart-costco.surge.sh/welcome"
                 target="_blank"
               >
                 Visit Site
               </Button>
               <Button
-                size="small"
+                  size="small"
+                  variant='outlined'
                 color="primary"
                 href="https://github.com/AbeTavarez/Instacart-Costco"
                 target="_blank"
@@ -169,25 +179,24 @@ export default function Projects() {
         </div>
         </div>
 
-        <div>
+        <div className='projects-container'>
           <h2>Personal Projects</h2>
           <div className="card-section">
           <Card className={classes.root}>
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="https://res.cloudinary.com/abetavarez/image/upload/v1592622098/Screen_Shot_2020-06-19_at_11.01.22_PM_nds2kr.png"
-                title="command-blog-website"
+                image="https://res.cloudinary.com/abetavarez/image/upload/v1606278124/IMG_1344_ki7u5g.jpg"
+                title="content-type store"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  CommandBlog
+                <Typography gutterBottom variant="h6" component="h2">
+                  Content-Type: Store
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Full Stack Blog Application build with Authentication using
-                  JWT Tokens. Users that sign-up can create and post articles.
+                 Fully functional eCommerce web-site using ReactJS, Redux, NodeJS, Express and BootStrap.
                   <Typography variant="body2" color="textPrimary" component="p">
-                    Stack: ReactJS, Ruby on Rails, PostgreSQL.
+                    Stack: ReactJS, NodeJS, Redux, Express.
                   </Typography>
                 </Typography>
               </CardContent>
@@ -196,14 +205,16 @@ export default function Projects() {
               <Button
                 size="small"
                 color="primary"
-                href="https://commandblog.netlify.app/"
+                variant='outlined'
+                href="http://www.theoriginalprogrammerwristband.com/"
                 target="_blank"
               >
                 Visit site
               </Button>
               <Button
                 size="small"
-                color="primary"
+                  color="primary"
+                  variant='outlined'
                 href="https://github.com/AbeTavarez/CmdBlog"
                 target="_blank"
               >

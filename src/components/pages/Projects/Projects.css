@@ -1,15 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.main-cont {
+  background-color: #1b262c;
+}
 
 .projects-container {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 40px;
   height: auto;
   padding-bottom: 172px;
-  background-color: #1b262c;
   color: #fff;
 }
 .card-section {
@@ -18,11 +22,10 @@
 .project-title {
   font-size: 18px;
   text-align: center;
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Bebas Neue', cursive;
   letter-spacing: 10px;
   padding-top: 20px;
   color: #fff;
-  background-color: #1b262c;
   font-size: 45px;
 }
 
