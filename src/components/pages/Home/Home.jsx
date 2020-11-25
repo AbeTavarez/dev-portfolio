@@ -123,6 +123,7 @@ export default function Home() {
 
         <div className='name-home'>
           <h2>Articles</h2>
+          <hr/>
           <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
@@ -170,7 +171,7 @@ export default function Home() {
           className="sir"
         />
 
-        <div className="home-projects-container">
+        <div className="">
           <div className="card-section">
             <hr />
 
@@ -217,7 +218,7 @@ export default function Home() {
           </div>
 
           <div className="card-section">
-            <hr />
+    
             <Card className={classes.root}>
             <CardActionArea>
               <CardMedia

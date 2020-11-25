@@ -1,14 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 nav {
   flex: 1;
   width: 100%;
   z-index: 1;
   top: 0;
   left: 0;
-}
-.ninja-header {
-  /* width: 3em;
-  height: 3em; */
 }
 
 .header-container {
@@ -19,7 +15,7 @@ nav {
   box-shadow: 1px 1px 1px 0.3px #cecece;
 }
 .message {
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Bebas Neue', cursive;
   text-align: center;
   font-weight: bold;
   font-size: 22px;

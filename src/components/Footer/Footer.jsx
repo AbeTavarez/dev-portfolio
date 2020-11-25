@@ -6,7 +6,6 @@ export default function Footer() {
   return (
     <div className="footer-container">
       <div className="contact">
-        <p>abetavarez@icloud.com</p>
         <p>© 2020</p>
       </div>
       <div className="links">
