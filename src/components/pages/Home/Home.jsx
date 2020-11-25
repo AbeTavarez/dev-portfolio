@@ -137,7 +137,7 @@ export default function Home() {
           />
         </div>
 
-        <div className='home-projects-title name-home'>
+        <div className='name-home'>
           <h2>Articles</h2>
           <Card className={classes.root}>
               <CardActionArea>
@@ -148,19 +148,18 @@ export default function Home() {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    InstaCart
+                    What's the difference between JSON and BSON ?
                   </Typography>
                   <Typography
                     variant="body2"
                     color="textSecondary"
                     component="p"
                   >
-                    I had the amazing oportunity to collaborate with a team of
-                    software engineers and UI/UX designers, to replicate the
-                    e-commerce site InstaCart.
+                  While working in project I been as many time now about, what's BSON and how is it difference than JSON, which one is better or faster?
+                  In this short but awesome article you'll find the answer to all this questions. 
                   </Typography>
                   <Typography variant="body2" color="textPrimary" component="p">
-                    Stack: ReactJS, NodeJS.
+                  Published at Dev.to
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -172,16 +171,7 @@ export default function Home() {
                   href="http://instacart-costco.surge.sh/welcome"
                   target="_blank"
                 >
-                  Visit Site
-                </Button>
-                <Button
-                  size="small"
-                  color="primary"
-                  variant='outlined'
-                  href="https://github.com/AbeTavarez/Instacart-Costco"
-                  target="_blank"
-                >
-                  Visit Repo
+                  Go to Article
                 </Button>
               </CardActions>
             </Card>

@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .home-container {
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 22px;
 }
 
@@ -39,6 +39,10 @@ a {
   font-size: 32px;
   padding: 5px;
 }
+.name-home h2 {
+  display: flex;
+  justify-content: center;
+}
 
 .name-home img {
   display: flex;
@@ -48,7 +52,7 @@ a {
   margin-bottom: 20px;
 }
 .name-home {
-  font-family: "Bebas Neue";
+  font-family: 'Bebas Neue';
   font-size: 35px;
   letter-spacing: 5px;
 }
@@ -61,7 +65,7 @@ a {
   display: flex;
   justify-content: center;
   font-size: 65px;
-  font-family: "Bebas Neue";
+  font-family: 'Bebas Neue';
   padding-top: 100px;
 }
 
