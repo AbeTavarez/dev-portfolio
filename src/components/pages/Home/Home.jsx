@@ -241,53 +241,52 @@ export default function Home() {
               </CardActions>
             </Card>
           </div>
+          
           <div className="card-section">
-            <Card className={classes.root}>
-              <CardActionArea>
-                <CardMedia
-                  className={classes.media}
-                  image="https://res.cloudinary.com/abetavarez/image/upload/v1597804933/image1_rbedb6.png"
-                  title="motorcycle-project-website"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    Motorcycle & Tire Shop Business Website
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
-                    Consulted and created a website for a small business owner.
-                    Worked with the client throughout the project to help them
-                    create an online presence and driving new clients to their
-                    business by setting search engine optimization.
-                  </Typography>
-                  <Typography variant="body2" color="textPrimary" component="p">
-                    Technologies: HTML, CSS, JavaScript, SEO, UXUI, Deployment.
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Button
-                  size="small"
-                  color="primary"
-                  href="https://davidtireshop.netlify.app/"
-                  target="_blank"
-                >
-                  Visit Site
-                </Button>
-                <Button
-                  size="small"
-                  color="primary"
-                  href="https://github.com/AbeTavarez/david_tire_shop"
-                  target="_blank"
-                >
-                  Visit Repo
-                </Button>
-              </CardActions>
-            </Card>
-          </div>
+          <Card className={classes.root}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image="https://res.cloudinary.com/abetavarez/image/upload/v1606275294/IMG_1343_2_dbqszh.jpg"
+                title="motorcycle-project-website"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  Motorcycle & Tire Shop Business Website
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  Consulted and created a website for a small business owner.
+                  Worked with the client throughout the project to help them
+                  create an online presence and driving new clients to their
+                  business by setting search engine optimization.
+                </Typography>
+                <Typography variant="body2" color="textPrimary" component="p">
+                  Stack: HTML, CSS, JavaScript, SEO, UXUI, Deployment.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.davidsmechanic.shop/"
+                target="_blank"
+              >
+                Visit Site
+              </Button>
+              <Button
+                size="small"
+                color="primary"
+                href="https://github.com/AbeTavarez/david_tire_shop"
+                target="_blank"
+              >
+                Visit Repo
+              </Button>
+            </CardActions>
+          </Card>
+        </div>
+
+
         </div>
 
         <div className="home-projects-container">

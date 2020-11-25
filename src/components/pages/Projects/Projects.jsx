@@ -10,6 +10,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import { Container } from "@material-ui/core";
 
 const useStyles = makeStyles({
   root: {
@@ -24,7 +25,7 @@ export default function Projects() {
   const classes = useStyles();
 
   return (
-    <Fragment>
+    <Container maxWidth='fixed'>
       <div className="project-title">
         <div className="recent">
           RECENT PROJECTS{" "}
@@ -35,6 +36,7 @@ export default function Projects() {
         </div>
       </div>
       <div className="projects-container">
+        <h2>Frelance Projects</h2>
         <div className="card-section">
           <Card className={classes.root}>
             <CardActionArea>
@@ -69,50 +71,6 @@ export default function Projects() {
                 size="small"
                 color="primary"
                 href="https://github.com/AbeTavarez/-StayHomeCookHome"
-                target="_blank"
-              >
-                Visit Repo
-              </Button>
-            </CardActions>
-          </Card>
-        </div>
-
-        <div className="card-section">
-          <Card className={classes.root}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image="https://media.giphy.com/media/MF1XrtS1F0YrC21R3K/giphy.gif"
-                title="instacart-project-website"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  InstaCart
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  I had the amazing oportunity to collaborate with a team of
-                  software engineers and UI/UX designers, to replicate the
-                  e-commerce site InstaCart.
-                </Typography>
-                <Typography variant="body2" color="textPrimary" component="p">
-                  Technologies: React, JavaScript, NodeJS, Express, Mongoose,
-                  MongoDB, UXUI.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                href="http://instacart-costco.surge.sh/welcome"
-                target="_blank"
-              >
-                Visit Site
-              </Button>
-              <Button
-                size="small"
-                color="primary"
-                href="https://github.com/AbeTavarez/Instacart-Costco"
                 target="_blank"
               >
                 Visit Repo
@@ -164,6 +122,98 @@ export default function Projects() {
             </CardActions>
           </Card>
         </div>
+<div>
+        <h2>Hackatons/Group Projects</h2>
+        <div className="card-section">
+          <Card className={classes.root}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image="https://media.giphy.com/media/MF1XrtS1F0YrC21R3K/giphy.gif"
+                title="instacart-project-website"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  InstaCart
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  I had the amazing oportunity to collaborate with a team of
+                  software engineers and UI/UX designers, to replicate the
+                  e-commerce site InstaCart.
+                </Typography>
+                <Typography variant="body2" color="textPrimary" component="p">
+                  Technologies: React, JavaScript, NodeJS, Express, Mongoose,
+                  MongoDB, UXUI.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                href="http://instacart-costco.surge.sh/welcome"
+                target="_blank"
+              >
+                Visit Site
+              </Button>
+              <Button
+                size="small"
+                color="primary"
+                href="https://github.com/AbeTavarez/Instacart-Costco"
+                target="_blank"
+              >
+                Visit Repo
+              </Button>
+            </CardActions>
+          </Card>
+        </div>
+        </div>
+
+        <div>
+          <h2>Personal Projects</h2>
+          <div className="card-section">
+          <Card className={classes.root}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image="https://res.cloudinary.com/abetavarez/image/upload/v1592622098/Screen_Shot_2020-06-19_at_11.01.22_PM_nds2kr.png"
+                title="command-blog-website"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  CommandBlog
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  Full Stack Blog Application build with Authentication using
+                  JWT Tokens. Users that sign-up can create and post articles.
+                  <Typography variant="body2" color="textPrimary" component="p">
+                    Stack: ReactJS, Ruby on Rails, PostgreSQL.
+                  </Typography>
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                href="https://commandblog.netlify.app/"
+                target="_blank"
+              >
+                Visit site
+              </Button>
+              <Button
+                size="small"
+                color="primary"
+                href="https://github.com/AbeTavarez/CmdBlog"
+                target="_blank"
+              >
+                Visit Repo
+              </Button>
+            </CardActions>
+          </Card>
+        </div>
+        </div>
+
 
         {/* <div className="card-section">
           <Card className={classes.root}>
@@ -248,6 +298,6 @@ export default function Projects() {
           </Card>
         </div> */}
       </div>
-    </Fragment>
+    </Container>
   );
 }
