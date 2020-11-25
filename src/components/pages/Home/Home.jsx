@@ -123,7 +123,8 @@ export default function Home() {
 
         <div className='name-home'>
           <h2>Articles</h2>
-          <hr/>
+          <hr />
+          <div className='h-card-section'>
           <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
@@ -144,7 +145,7 @@ export default function Home() {
                   In this short but awesome article I wrote you'll find the answer to all these questions. 
                   </Typography>
                   <Typography variant="body2" color="textPrimary" component="p">
-                  Published at Dev.to
+                  Published on Dev.to
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -160,6 +161,7 @@ export default function Home() {
                 </Button>
               </CardActions>
             </Card>
+            </div>
         </div>
 
 
@@ -172,7 +174,7 @@ export default function Home() {
         />
 
         <div className="">
-          <div className="card-section">
+          <div className="h-card-section">
             <hr />
 
             <Card className={classes.root}>
@@ -217,7 +219,7 @@ export default function Home() {
           </Card>
           </div>
 
-          <div className="card-section">
+          <div className="h-card-section">
     
             <Card className={classes.root}>
             <CardActionArea>
@@ -261,7 +263,7 @@ export default function Home() {
           </Card>
           </div>
           
-          <div className="card-section">
+          <div className="h-card-section">
           <Card className={classes.root}>
             <CardActionArea>
               <CardMedia
@@ -270,7 +272,7 @@ export default function Home() {
                 title="motorcycle-project-website"
               />
               <CardContent>
-                <Typography gutterBottom variant="h4" component="h2">
+                <Typography gutterBottom variant="h5" component="h2">
                   Motorcycle & Tire Shop Business Website
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">

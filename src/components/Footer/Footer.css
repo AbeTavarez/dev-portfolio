@@ -26,3 +26,9 @@
 .getintouch {
   text-align: center;
 }
+
+@media (max-width: 320px) {
+  .contact p {
+    margin: 25px 0;
+  }
+}

@@ -92,6 +92,12 @@ a {
   border-radius: 50%;
 }
 
+.h-card-section {
+  display: flex;
+  justify-content: center;
+  margin: 100px 10px;
+}
+
 @media (max-width: 1200px) {
   .home-projects-container {
     flex-direction: column;
