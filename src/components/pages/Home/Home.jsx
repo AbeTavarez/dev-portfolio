@@ -201,100 +201,89 @@ export default function Home() {
             <hr />
 
             <Card className={classes.root}>
-              <CardActionArea>
-                <CardMedia
-                  className={classes.media}
-                  image="https://media.giphy.com/media/MF1XrtS1F0YrC21R3K/giphy.gif"
-                  title="instacart-project-website"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    InstaCart
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
-                    I had the amazing oportunity to collaborate with a team of
-                    software engineers and UI/UX designers, to replicate the
-                    e-commerce site InstaCart.
-                  </Typography>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image="https://res.cloudinary.com/abetavarez/image/upload/v1606279133/IMG_1346_2_ehte5p.jpg"
+                title="content-type store"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h4" component="h2">
+                  Content-Type: Store
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                 Fully functional eCommerce web-site using ReactJS, Redux, NodeJS, Express and BootStrap.
                   <Typography variant="body2" color="textPrimary" component="p">
-                    Stack: ReactJS, NodeJS.
+                    Stack: ReactJS, NodeJS, Redux, Express.
                   </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Button
-                  size="small"
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                variant='outlined'
+                href="http://www.theoriginalprogrammerwristband.com/"
+                target="_blank"
+              >
+                Visit site
+              </Button>
+              <Button
+                size="small"
                   color="primary"
                   variant='outlined'
-                  href="http://instacart-costco.surge.sh/welcome"
-                  target="_blank"
-                >
-                  Visit Site
-                </Button>
-                <Button
-                  size="small"
-                  color="primary"
-                  variant='outlined'
-                  href="https://github.com/AbeTavarez/Instacart-Costco"
-                  target="_blank"
-                >
-                  Visit Repo
-                </Button>
-              </CardActions>
-            </Card>
+                href="https://github.com/AbeTavarez/CmdBlog"
+                target="_blank"
+              >
+                Visit Repo
+              </Button>
+            </CardActions>
+          </Card>
           </div>
 
           <div className="card-section">
             <hr />
             <Card className={classes.root}>
-              <CardActionArea>
-                <CardMedia
-                  className={classes.media}
-                  image="https://res.cloudinary.com/abetavarez/image/upload/v1592620250/Screen_Shot_2020-06-19_at_10.30.27_PM_wofq1e.png"
-                  title="stayhomecookhome-website"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    #StayHomeCookHome
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
-                    Provides easy recipies and information to the public to stay
-                    save when shopping during #covid19 virus.
-                  </Typography>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image="https://res.cloudinary.com/abetavarez/image/upload/v1606279384/IMG_1348_gmhkvo.jpg"
+                title="influencercv"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h4" component="h2">
+                  Influencer CV
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                 Social media site for Influencers, Content-Creators, Stremers and more...
                   <Typography variant="body2" color="textPrimary" component="p">
-                    Stack: HTML, CSS, JavaScript.
+                    Stack: ReactJS, NodeJS, Redux, Express.
                   </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Button
-                  size="small"
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                variant='outlined'
+                href="http://www.theoriginalprogrammerwristband.com/"
+                target="_blank"
+              >
+                Visit site
+              </Button>
+              <Button
+                size="small"
                   color="primary"
                   variant='outlined'
-                  href="https://www.stayhomecookhome.com/"
-                  target="_blank"
-                >
-                  Visit Site
-                </Button>
-                <Button
-                  size="small"
-                  color="primary"
-                  variant='outlined'
-                  href="https://github.com/AbeTavarez/-StayHomeCookHome"
-                  target="_blank"
-                >
-                  Visit Repo
-                </Button>
-              </CardActions>
-            </Card>
+                href="https://github.com/AbeTavarez/CmdBlog"
+                target="_blank"
+              >
+                Visit Repo
+              </Button>
+            </CardActions>
+          </Card>
           </div>
           
           <div className="card-section">
@@ -306,7 +295,7 @@ export default function Home() {
                 title="motorcycle-project-website"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography gutterBottom variant="h4" component="h2">
                   Motorcycle & Tire Shop Business Website
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">

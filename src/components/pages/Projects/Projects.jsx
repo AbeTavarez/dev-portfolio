@@ -232,7 +232,7 @@ export default function Projects() {
               <CardMedia
                 className={classes.media}
                 image="https://res.cloudinary.com/abetavarez/image/upload/v1606279384/IMG_1348_gmhkvo.jpg"
-                title="content-type store"
+                title="influencercv"
               />
               <CardContent>
                 <Typography gutterBottom variant="h3" component="h2">
