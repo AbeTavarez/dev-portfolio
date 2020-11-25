@@ -79,11 +79,6 @@ export default function Home() {
             alt="html-icon"
           />
           <img
-            src="https://img.icons8.com/dusk/64/000000/css3.png"
-            style={{ padding: "10px" }}
-            alt="css-icons"
-          />
-          <img
             src="https://img.icons8.com/dusk/64/000000/javascript.png"
             style={{ padding: "10px" }}
             alt="javascript-icon"
@@ -98,10 +93,10 @@ export default function Home() {
             style={{ padding: "10px" }}
             alt="node-js-icon"
           />
-          <img
-            src="https://img.icons8.com/dusk/64/000000/ruby-programming-language.png"
-            style={{ padding: "10px" }}
-            alt="ruby-icon"
+           <img
+            src="https://img.icons8.com/color/48/000000/mongodb.png"
+            style={{ padding: "15px" }}
+            alt="mongodb-icon"
           />
           <img
             src="https://img.icons8.com/dusk/64/000000/python.png"
@@ -115,26 +110,15 @@ export default function Home() {
           />
           <img
             src="https://img.icons8.com/color/48/000000/git.png"
-            style={{ padding: "10px" }}
+            style={{ padding: "12px" }}
             alt="git-icon"
-          />
-
-          <img
-            src="https://img.icons8.com/color/48/000000/console.png"
-            style={{ padding: "10px" }}
-            alt="command-line-icon"
           />
           <img
             src="https://img.icons8.com/color/48/000000/api.png"
             style={{ padding: "10px" }}
             alt="api-icon"
           />
-          <img
-            src="
-            https://img.icons8.com/bubbles/48/000000/amazon.png"
-            style={{ padding: "15px" }}
-            alt="aws-icon"
-          />
+         
         </div>
 
         <div className='name-home'>
@@ -155,8 +139,8 @@ export default function Home() {
                     color="textSecondary"
                     component="p"
                   >
-                  While working in project I been as many time now about, what's BSON and how is it difference than JSON, which one is better or faster?
-                  In this short but awesome article you'll find the answer to all this questions. 
+                  While working in projects specially with MongoDb I been as many times now about, what's BSON and how is it difference than JSON, which one is better or faster?
+                  In this short but awesome article I wrote you'll find the answer to all these questions. 
                   </Typography>
                   <Typography variant="body2" color="textPrimary" component="p">
                   Published at Dev.to
