@@ -137,6 +137,57 @@ export default function Home() {
           />
         </div>
 
+        <div className='home-projects-title name-home'>
+          <h2>Articles</h2>
+          <Card className={classes.root}>
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image="https://res.cloudinary.com/abetavarez/image/upload/v1606278870/IMG_1345_3_dxnsql.jpg"
+                  title="instacart-project-website"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    InstaCart
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    I had the amazing oportunity to collaborate with a team of
+                    software engineers and UI/UX designers, to replicate the
+                    e-commerce site InstaCart.
+                  </Typography>
+                  <Typography variant="body2" color="textPrimary" component="p">
+                    Stack: ReactJS, NodeJS.
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button
+                  size="small"
+                  color="primary"
+                  variant='outlined'
+                  href="http://instacart-costco.surge.sh/welcome"
+                  target="_blank"
+                >
+                  Visit Site
+                </Button>
+                <Button
+                  size="small"
+                  color="primary"
+                  variant='outlined'
+                  href="https://github.com/AbeTavarez/Instacart-Costco"
+                  target="_blank"
+                >
+                  Visit Repo
+                </Button>
+              </CardActions>
+            </Card>
+        </div>
+
+
         <div className="home-projects-title name-home">RECENT PROJECTS</div>
         <img
           src="

@@ -47,7 +47,7 @@ export default function Projects() {
                 title="stayhomecookhome-website"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography gutterBottom variant="h4" component="h2">
                   #StayHomeCookHome
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -91,7 +91,7 @@ export default function Projects() {
                 title="motorcycle-project-website"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography gutterBottom variant="h4" component="h2">
                   Motorcycle & Tire Shop Business Website
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -141,7 +141,7 @@ export default function Projects() {
                 title="instacart-project-website"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography gutterBottom variant="h3" component="h2">
                   InstaCart
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -186,11 +186,11 @@ export default function Projects() {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="https://res.cloudinary.com/abetavarez/image/upload/v1606278124/IMG_1344_ki7u5g.jpg"
+                image="https://res.cloudinary.com/abetavarez/image/upload/v1606279133/IMG_1346_2_ehte5p.jpg"
                 title="content-type store"
               />
               <CardContent>
-                <Typography gutterBottom variant="h6" component="h2">
+                <Typography gutterBottom variant="h4" component="h2">
                   Content-Type: Store
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -222,7 +222,55 @@ export default function Projects() {
               </Button>
             </CardActions>
           </Card>
-        </div>
+          </div>
+
+        
+          
+          <div className="card-section">
+          <Card className={classes.root}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image="https://res.cloudinary.com/abetavarez/image/upload/v1606279384/IMG_1348_gmhkvo.jpg"
+                title="content-type store"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h3" component="h2">
+                  Influencer CV
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                 Social media site for Influencers, Content-Creators, Stremers and more...
+                  <Typography variant="body2" color="textPrimary" component="p">
+                    Stack: ReactJS, NodeJS, Redux, Express.
+                  </Typography>
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                variant='outlined'
+                href="http://www.theoriginalprogrammerwristband.com/"
+                target="_blank"
+              >
+                Visit site
+              </Button>
+              <Button
+                size="small"
+                  color="primary"
+                  variant='outlined'
+                href="https://github.com/AbeTavarez/CmdBlog"
+                target="_blank"
+              >
+                Visit Repo
+              </Button>
+            </CardActions>
+          </Card>
+            </div>
+           
+          
+
         </div>
 
 
