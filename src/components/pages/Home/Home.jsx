@@ -29,10 +29,10 @@ export default function Home() {
       <div className="home-container">
         <div className="welcome-message">
           <div className="name-home">
-            <h1>hi, I'm Abraham</h1>
+            <h1>Hi, I'm Abraham</h1>
             <img src={clouds} alt="cloud" className="cloud" />
           </div>
-          <h2>I'm a Junior Software Engineer</h2>
+          <h2>I'm a Software Engineer / Developer</h2>
         </div>
 
         <div className="aboutme">
@@ -44,31 +44,25 @@ export default function Home() {
             {" "}
             <p>
               I'm a New Yorker who is passionate about tech and software
-              development. I get to attend many tech events and meetups all
-              around the city which have all been an amazing experience.
+              development. 
             </p>
+            <p>What I love the most about software development is the ability to create tools that can reach and change the life of millions of people around the world.</p>
             <p>
-              I have been using a wide range of technologies to create fun and
-              modern websites and webapps including:
+              I've been using a wide range of technologies to create fun, secure, and functional modern web-applications and desktop utilities using:
             </p>
-            <p>
-              <span style={{ fontStyle: "italic" }}> Javascript</span>,
-              <span style={{ fontStyle: "italic" }}> React</span>,{" "}
-              <span style={{ fontStyle: "italic" }}> Node</span>,{" "}
-              <span style={{ fontStyle: "italic" }}> Express</span>,
-              <span style={{ fontStyle: "italic" }}> MongoDB</span>,
-              <span style={{ fontStyle: "italic" }}> PostgreSQL</span>,
-              <span style={{ fontStyle: "italic" }}> Ruby </span>
-              <span style={{ fontStyle: "italic" }}> Rails</span>,
-              <span style={{ fontStyle: "italic" }}> Python</span> and more.
+            <p className="lang">JavaScript, React, Redux, NodeJS. Express, MongoDB, Python, PostgreSQL, Ruby, Rails and other frameworks and libraries. 
               <br /> <br />
             </p>
           </div>
 
-          <p className="last-p">
-            I'm seeking a challenging and fun position, where I can share
-            everything I have to offer to the tech community.
+          <div>
+          <p >
+              I'm seeking a challenging and fun position, where I can share
+              and work together with a hard working team to develop new and exciting tools and applications.
           </p>
+          <p>Please take a few minutes to check my lastest projects.</p>
+            
+         </div>
           <hr />
         </div>
 

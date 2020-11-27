@@ -75,7 +75,11 @@ a {
   font-size: 22px;
 }
 .bio {
-  text-align: left;
+  text-align: center;
+}
+.lang {
+  font-style: italic;
+  color: #3282b8;
 }
 .icons-media {
   display: flex;
