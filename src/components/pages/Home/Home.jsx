@@ -148,7 +148,7 @@ export default function Home() {
                   size="small"
                   color="primary"
                   variant='outlined'
-                  href="http://instacart-costco.surge.sh/welcome"
+                  href="https://dev.to/abetavarez/json-vs-bson-2f6b"
                   target="_blank"
                 >
                   Go to Article
@@ -204,7 +204,7 @@ export default function Home() {
                 size="small"
                   color="primary"
                   variant='outlined'
-                href="https://github.com/AbeTavarez/CmdBlog"
+                href="https://github.com/AbeTavarez"
                 target="_blank"
               >
                 Visit Repo
@@ -239,7 +239,7 @@ export default function Home() {
                 size="small"
                 color="primary"
                 variant='outlined'
-                href="http://www.theoriginalprogrammerwristband.com/"
+                href="http://influencercv.com/"
                 target="_blank"
               >
                 Visit site
@@ -248,7 +248,7 @@ export default function Home() {
                 size="small"
                   color="primary"
                   variant='outlined'
-                href="https://github.com/AbeTavarez/CmdBlog"
+                href="https://github.com/AbeTavarez"
                 target="_blank"
               >
                 Visit Repo
