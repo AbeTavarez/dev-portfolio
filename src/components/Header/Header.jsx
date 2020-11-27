@@ -34,9 +34,9 @@ import "./Header.css";
 const useStyles = makeStyles((theme) => ({
   toolbarMargin: {
     ...theme.mixins.toolbar,
-    marginBottom: "8em",
+    marginBottom: "6em",
     [theme.breakpoints.down("md")]: {
-      marginBottom: "4.5em",
+      marginBottom: "2.5em",
     },
     [theme.breakpoints.down("xs")]: {
       marginBottom: "2.5em",
@@ -75,11 +75,14 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     height: "4em",
     paddingRight: "100px",
+    
     [theme.breakpoints.down("md")]: {
       height: "4em",
+      paddingTop: '0.5rem'
     },
     [theme.breakpoints.down("xs")]: {
       height: "3.5em",
+      paddingTop: '1rem'
     },
   },
   logoContainer: {
