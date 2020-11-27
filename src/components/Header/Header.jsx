@@ -283,7 +283,7 @@ export default function Header(props) {
     <Fragment>
       <div className="message">
         <div className={classes.topContent}>
-          <h3>Welcome</h3>
+          {/* <h3>Welcome</h3> */}
           <Button
             component={Link}
             to="/"
@@ -292,7 +292,8 @@ export default function Header(props) {
             className={classes.logoContainer}
           >
             <img
-              src="https://cdn0.iconfinder.com/data/icons/avatar-15/512/ninja-512.png"
+              // src="https://cdn0.iconfinder.com/data/icons/avatar-15/512/ninja-512.png"
+              src='https://res.cloudinary.com/abetavarez/image/upload/v1606448148/apple-touch-icon_suqnuf.png'
               alt="avatar"
               className={classes.logo}
             />
