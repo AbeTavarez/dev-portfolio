@@ -12,11 +12,11 @@ import { Container } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 445,
+    maxWidth: 1100,
     maxHeight: 800,
   },
   media: {
-    height: 200,
+    height: 500,
   },
 });
 
@@ -24,7 +24,7 @@ const OpenSource = () => {
   const classes = useStyles()
   return (
     <Container maxWidth='fixed' className='os-container'>
-       <div className="h-card-section">
+       <div className="os-card-section">
             <Card className={classes.root}>
             <CardActionArea>
               <CardMedia
