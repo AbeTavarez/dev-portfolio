@@ -7,6 +7,7 @@ import Home from "../pages/Home/Home";
 import Projects from "../pages/Projects/Projects";
 import Resume from "../pages/Resume/Resume";
 // import Contact from "../pages/Contact/Contact";
+import OpenSource from "../pages/OpenSource/OpenSource";
 
 import "./Main.css";
 import underConstruction from "../shared/underConstruction";
@@ -21,8 +22,8 @@ export default function Main() {
         <Route path="/resume" component={() => <Resume />} />
         <Route path="/services" component={() => <Resume />} />
         <Route path="/opensource" component={() => <Resume />} />
-        {/* <Route path="/services" component={() => <Services />} />
-        <Route path="/opensource" component={() => <OpenSource />} /> */}
+        <Route path="/opensource" component={() => <OpenSource />} />
+        {/* <Route path="/services" component={() => <Services />} /> */}
       </Switch>
     </Route>
   );
