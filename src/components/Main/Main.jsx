@@ -21,7 +21,6 @@ export default function Main() {
         <Route path="/projects" component={() => <Projects />} />
         <Route path="/resume" component={() => <Resume />} />
         <Route path="/services" component={() => <Resume />} />
-        <Route path="/opensource" component={() => <Resume />} />
         <Route path="/opensource" component={() => <OpenSource />} />
         {/* <Route path="/services" component={() => <Services />} /> */}
       </Switch>
