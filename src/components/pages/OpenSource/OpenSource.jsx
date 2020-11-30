@@ -7,6 +7,8 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import Layout from '../../shared/Layout';
+import { Container } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
@@ -21,10 +23,8 @@ const useStyles = makeStyles({
 const OpenSource = () => {
   const classes = useStyles()
   return (
-    <div>
+    <Container maxWidth='fixed' className='os-container'>
        <div className="h-card-section">
-            <hr />
-
             <Card className={classes.root}>
             <CardActionArea>
               <CardMedia
@@ -57,7 +57,7 @@ const OpenSource = () => {
             </CardActions>
           </Card>
           </div>
-    </div>
+    </Container>
   )
 }
 

@@ -1,0 +1,194 @@
+.os-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  /* background-color: rgb(91, 97, 166); */
+  /* background-color: rgb(16, 168, 166); */
+  /* background-color: #200f21; */
+  /* background-color: #7b88ff; */
+  background-color: #1b262c;
+  color: #fff;
+}
+
+.profile-img {
+  border-radius: 100%;
+  border: 2px solid white;
+  height: 200px;
+  width: 200px;
+}
+.img-title {
+  display: flex;
+  flex-direction: column;
+}
+.welcome-message {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 22px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+a {
+  font-size: 32px;
+  padding: 5px;
+}
+.name-home h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.name-home img {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  width: 150px;
+  margin-bottom: 20px;
+}
+.name-home {
+  font-family: 'Bebas Neue';
+  font-size: 35px;
+  letter-spacing: 5px;
+}
+.home-projects-container {
+  display: flex;
+  flex-direction: row;
+  margin: 40px;
+}
+.home-projects-title {
+  display: flex;
+  justify-content: center;
+  font-size: 65px;
+  font-family: 'Bebas Neue';
+  padding-top: 100px;
+}
+
+.aboutme {
+  padding-top: 40px;
+  text-align: center;
+  font-size: 22px;
+}
+.bio {
+  text-align: center;
+}
+.lang {
+  font-style: italic;
+  color: #3282b8;
+}
+.icons-media {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  padding: 15px;
+}
+.last-p {
+  margin-bottom: 80px;
+  text-align: left;
+}
+.sir {
+  border: 2px solid#3282b8;
+  border-radius: 50%;
+}
+
+.os-card-section {
+  display: flex;
+  justify-content: center;
+  margin: 200px 10px;
+}
+
+@media (max-width: 1200px) {
+  .home-projects-container {
+    flex-direction: column;
+  }
+  .aboutme {
+    width: 600px;
+    margin: 0 15px;
+  }
+  .icons-media {
+    width: 200px;
+    height: 80px;
+    padding: 15px;
+  }
+  .welcome-message {
+    font-size: 14px;
+  }
+  .img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+  .img-title {
+    display: flex;
+    flex-direction: column;
+  }
+  .name-home {
+    font-size: 25px;
+    letter-spacing: 3px;
+    animation-name: name-animation;
+    animation-duration: 3s;
+  }
+}
+
+@media (max-width: 800px) {
+  .welcome-message {
+    font-size: 10px;
+  }
+  .aboutme {
+    font-size: 18px;
+    width: 400px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .icons-media {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-wrap: normal;
+    /* width: 40px;
+    height: auto; */
+    padding: 15px;
+    padding-bottom: 300px;
+  }
+
+  .img-title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name-home {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  .sir {
+    margin-top: 20px;
+    border: 2px solid#3282b8;
+  }
+  .home-projects-title {
+    margin-top: 155px;
+  }
+}
+
+@media (max-width: 570px) {
+  .name-home {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 530px) {
+  .welcome-message {
+    width: auto;
+  }
+
+  .aboutme {
+    width: 300px;
+  }
+}
