@@ -8,7 +8,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { Container } from '@material-ui/core';
-
+import './OpenSource.css'
 const useStyles = makeStyles({
   root: {
     maxWidth: 500,
@@ -22,8 +22,11 @@ const useStyles = makeStyles({
 const OpenSource = () => {
   const classes = useStyles()
   return (
-    <Container maxWidth='fixed' >
-       {/* <div className="os-card-section"> */}
+    <div maxWidth='fixed' className='os-container'>
+      <h1>
+        Open Source Projetcs
+      </h1>
+       <div className="os-card-section">
             <Card className={classes.root}>
             <CardActionArea>
               <CardMedia
@@ -55,8 +58,8 @@ const OpenSource = () => {
               </Button>
             </CardActions>
           </Card>
-          {/* </div> */}
-    </Container>
+          </div>
+    </div>
   )
 }
 
