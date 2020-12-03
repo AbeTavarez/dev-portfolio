@@ -27,13 +27,10 @@ export default function Projects() {
   return (
     <Container maxWidth='fixed' className='main-cont'>
       <div className="project-title">
-        <h1 className="recent">
-          RECENT PROJECTS{" "}
-          <img
-            src="https://img.icons8.com/officel/60/000000/deployment.png"
-            className="p-img"
-          />
+        <h1>
+          RECENT PROJECTS
         </h1>
+        <hr/>
       </div>
       
       <div  className="projects-container">

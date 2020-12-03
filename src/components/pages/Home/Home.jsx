@@ -115,9 +115,13 @@ export default function Home() {
          
         </div>
 
-        <div className='name-home'>
-          <h2>Articles</h2>
+        <div className='h-header'>
+        <h2>Articles</h2>
           <hr />
+        </div>
+
+        <div className='name-home'>
+          
           <div className='h-card-section'>
           <Card className={classes.root}>
               <CardActionArea>
@@ -158,14 +162,12 @@ export default function Home() {
             </div>
         </div>
 
-
-        <div className="home-projects-title name-home">RECENT PROJECTS</div>
-        <img
-          src="
-          https://img.icons8.com/color/68/000000/jenkins.png"
-          alt="deployment-icon"
-          className="sir"
-        />
+        <div className="h-header">
+          <h2>RECENT </h2>
+          <h2>PROJECTS</h2>
+        <hr/>
+        </div>
+        
 
         <div className="">
           <div className="h-card-section">

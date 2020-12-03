@@ -39,22 +39,28 @@ a {
   font-size: 32px;
   padding: 5px;
 }
-.name-home h2 {
-  display: flex;
-  justify-content: center;
+.name-home hr {
+  width: 100%;
 }
 
-.name-home img {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0 auto;
-  width: 150px;
-  margin-bottom: 20px;
-}
 .name-home {
   font-family: 'Bebas Neue';
-  font-size: 35px;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
+}
+
+.h-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 10px 20px;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+  width: 50%;
+}
+.h-header hr {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 55px;
 }
 .home-projects-container {
   display: flex;
@@ -62,9 +68,6 @@ a {
   margin: 40px;
 }
 .home-projects-title {
-  display: flex;
-  justify-content: center;
-  font-size: 65px;
   font-family: 'Bebas Neue';
   padding-top: 100px;
 }
@@ -168,10 +171,6 @@ a {
   .name-home {
     font-size: 20px;
     letter-spacing: 3px;
-  }
-  .sir {
-    margin-top: 20px;
-    border: 2px solid#3282b8;
   }
   .home-projects-title {
     margin-top: 155px;

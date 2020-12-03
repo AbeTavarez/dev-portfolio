@@ -42,12 +42,13 @@ const OpenSource = () => {
   return (
     <div maxWidth='fixed' className='os-container'>
       <div className='os-header'>
-      <h2>
+      <h1>
           Open Source Projects
-      </h2>
+      </h1>
       <hr/>
       </div>
 
+      <div className="tabs-container">
       <Paper className={classes.root}>
         <Tabs value={value}
           indicartorColor='primary'
@@ -55,17 +56,14 @@ const OpenSource = () => {
           onChange={handleChange}
           centered
         >
-          <Tab label='ESCLU'/>
-          <Tab label='ESCLU'/>
-          <Tab label='ESCLU'/>
-
+          <Tab label='ESCLU' href='https://github.com/AbeTavarez/ESCLU' target='_blank'/>
         </Tabs>
-
       </Paper>
-     
+      </div>
+      
        <div className="os-card-section">
             <Card className={classes.root}>
-            <CardActionArea>
+            <CardActionArea href="https://github.com/AbeTavarez/ESCLU" target='_blank'>
               <CardMedia
                 className={classes.media}
                 image="https://res.cloudinary.com/abetavarez/image/upload/v1606500088/Screen_Shot_2020-11-27_at_12.59.31_PM_xvfse4.png"
@@ -84,15 +82,6 @@ const OpenSource = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button
-                size="small"
-                  color="primary"
-                  variant='outlined'
-                href="https://github.com/AbeTavarez/ESCLU"
-                target="_blank"
-              >
-                Visit Repo
-              </Button>
             </CardActions>
           </Card>
           </div>

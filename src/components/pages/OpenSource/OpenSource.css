@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 .os-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   width: auto;
   /* background-color: rgb(91, 97, 166); */
   /* background-color: rgb(16, 168, 166); */
@@ -15,7 +18,9 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-bottom: 0;
+  margin: 10px 20px;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
 }
 .os-header hr {
   width: 100%;
@@ -27,6 +32,10 @@
   display: flex;
   justify-content: center;
   margin: 22px 10px 215px;
+}
+.tabs-container {
+  display: flex;
+  justify-content: center;
 }
 
 .profile-img {
