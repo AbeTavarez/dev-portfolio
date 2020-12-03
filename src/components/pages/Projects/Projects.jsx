@@ -35,6 +35,7 @@ export default function Projects() {
       
       <div  className="projects-container">
         <h2>Frelance Projects</h2>
+        <hr/>
 
         
         <div className="card-section">
@@ -132,7 +133,8 @@ export default function Projects() {
 
 
     <div className='projects-container'>
-      <h2>Hackatons/Group Projects</h2>
+        <h2>Hackatons/Group Projects</h2>
+        <hr/>
         <div className="card-section">
           <Card className={classes.root}>
             <CardActionArea>
@@ -181,7 +183,8 @@ export default function Projects() {
         </div>
 
         <div className='projects-container'>
-          <h2>Personal Projects</h2>
+        <h2>Personal Projects</h2>
+        <hr/>
           <div className="card-section">
           <Card className={classes.root}>
             <CardActionArea>

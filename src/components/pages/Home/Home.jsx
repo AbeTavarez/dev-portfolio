@@ -116,7 +116,7 @@ export default function Home() {
         </div>
 
         <div className='h-header'>
-        <h2>Articles</h2>
+        <h1>Articles</h1>
           <hr />
         </div>
 
@@ -163,8 +163,7 @@ export default function Home() {
         </div>
 
         <div className="h-header">
-          <h2>RECENT </h2>
-          <h2>PROJECTS</h2>
+          <h1>RECENT PROJECTS</h1>
         <hr/>
         </div>
         
