@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -7,25 +7,62 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import Paper from '@material-ui/core/Paper';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
 import { Container } from '@material-ui/core';
 import './OpenSource.css'
+
+//* UseStyles
 const useStyles = makeStyles({
   root: {
     maxWidth: 500,
     maxHeight: 500,
+    flexGrow: 1,
   },
   media: {
     height: 200,
   },
 });
 
+
 const OpenSource = () => {
   const classes = useStyles()
+
+  //* Tabs State
+  const [value, setValue] = useState(0)
+
+  const handleChange = (event, newValue) => {
+  setValue(newValue);
+};
+
+  
+
+
   return (
     <div maxWidth='fixed' className='os-container'>
-      <h1>
-        Open Source Projetcs
-      </h1>
+      <div className='os-header'>
+      <h2>
+          Open Source Projects
+      </h2>
+      <hr/>
+      </div>
+
+      <Paper className={classes.root}>
+        <Tabs value={value}
+          indicartorColor='primary'
+          textColor='primary'
+          onChange={handleChange}
+          centered
+        >
+          <Tab label='ESCLU'/>
+          <Tab label='ESCLU'/>
+          <Tab label='ESCLU'/>
+
+        </Tabs>
+
+      </Paper>
+     
        <div className="os-card-section">
             <Card className={classes.root}>
             <CardActionArea>
