@@ -1,7 +1,6 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 import "./Projects.css";
-import Layout from "../../shared/Layout";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -28,7 +27,7 @@ export default function Projects() {
     <Container maxWidth='fixed' className='main-cont'>
       <div className="project-title">
         <h1>
-          RECENT PROJECTS
+          PROJECTS
         </h1>
         <hr/>
       </div>
