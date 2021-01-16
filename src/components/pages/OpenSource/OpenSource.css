@@ -78,9 +78,7 @@ a {
   margin-bottom: 20px;
 }
 .name-home {
-  font-family: 'Bebas Neue';
   font-size: 35px;
-  letter-spacing: 5px;
 }
 .home-projects-container {
   display: flex;

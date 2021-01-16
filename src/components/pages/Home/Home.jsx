@@ -32,7 +32,7 @@ export default function Home() {
             <h1>Hi, I'm Abraham</h1>
             <img src={clouds} alt="cloud" className="cloud" />
           </div>
-          <h2>I'm a Software Engineer / Developer</h2>
+          <h2>I'm a Software Engineer / Developer / DevOps .</h2>
         </div>
 
         <div className="aboutme">
@@ -50,7 +50,7 @@ export default function Home() {
             <p>
               I've been using a wide range of technologies to create fun, secure, and functional modern web-applications and desktop utilities using:
             </p>
-            <p className="lang">JavaScript, React, Redux, NodeJS. Express, MongoDB, Python, PostgreSQL, Ruby, Rails and other frameworks and libraries. 
+            <p className="lang">JavaScript, React, Redux, NodeJS, Express, MongoDB, Python, Linux, Docker, Apache, PostgreSQL, Ruby, Rails and other technologies. 
               <br /> <br />
             </p>
           </div>
