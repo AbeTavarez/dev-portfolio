@@ -32,7 +32,7 @@ export default function Home() {
             <h1>Hi, I'm Abraham</h1>
             <img src={clouds} alt="cloud" className="cloud" />
           </div>
-          <h2>I'm a Software Engineer / Developer / DevOps .</h2>
+          <h2>I'm a Software Engineer / Developer / DevOps.</h2>
         </div>
 
         <div className="aboutme">
@@ -48,7 +48,7 @@ export default function Home() {
             </p>
             <p>What I love the most about software development is the ability to create tools that can reach and change the life of millions of people around the world.</p>
             <p>
-              I've been using a wide range of technologies to create fun, secure, and functional modern web-applications and desktop utilities using:
+              I've been using a wide range of technologies to create functional and secure modern desktop/web applications and command line utilities using:
             </p>
             <p className="lang">JavaScript, React, Redux, NodeJS, Express, MongoDB, Python, Linux, Docker, Apache, PostgreSQL, Ruby, Rails and other technologies. 
               <br /> <br />
@@ -57,8 +57,8 @@ export default function Home() {
 
           <div>
           <p >
-              I'm seeking a challenging and fun position, where I can share
-              and work together with a hard working team to develop new and exciting tools and applications.
+              I'm seeking a challenging and fun position, where I can contribute
+              and be part of a hard working team to develop new and exciting tools and applications.
           </p>
           <p>Please take a few minutes to check my lastest projects.</p>
             
