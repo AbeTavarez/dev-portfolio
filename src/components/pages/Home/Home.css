@@ -51,7 +51,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin: 150px 20px;
+  /* margin: 150px 10px; */
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 2px;
   width: 50%;
@@ -59,7 +59,7 @@ a {
 .h-header hr {
   width: 100%;
   margin-top: 0;
-  margin-bottom: 55px;
+  margin-bottom: 5px;
 }
 .home-projects-container {
   display: flex;
@@ -139,6 +139,9 @@ a {
     animation-name: name-animation;
     animation-duration: 3s;
   }
+  .h-header {
+    margin-top: 100px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -174,6 +177,9 @@ a {
   .home-projects-title {
     margin-top: 155px;
   }
+  .h-header {
+    margin-top: 100px;
+  }
 }
 
 @media (max-width: 570px) {
@@ -189,5 +195,8 @@ a {
 
   .aboutme {
     width: 300px;
+  }
+  .h-header {
+    margin-top: 100px;
   }
 }

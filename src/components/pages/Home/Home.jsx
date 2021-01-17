@@ -68,7 +68,7 @@ export default function Home() {
 
         <div className="icons-media">
           <img
-            src="https://img.icons8.com/dusk/64/000000/html-5.png"
+            src="https://img.icons8.com/dusk/64/000000/data-configuration.png"
             style={{ padding: "10px" }}
             alt="html-icon"
           />
