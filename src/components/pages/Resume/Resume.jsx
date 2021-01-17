@@ -27,6 +27,7 @@ class Resume extends Component {
                     alt="pdf-icon"
                   />
                 </a>
+                <span>Download</span>
               </div>
             </div>
             <hr
@@ -103,37 +104,37 @@ class Resume extends Component {
             </div>
             <div style={{ padding: "15px" }}>
               <img
-                src="https://img.icons8.com/dusk/64/000000/html-5.png"
+                src="https://img.icons8.com/color/48/000000/html-5.png"
                 style={{ padding: "3px" }}
                 alt="html-icon"
               />
               <img
-                src="https://img.icons8.com/dusk/64/000000/css3.png"
+                src="https://img.icons8.com/color/48/000000/css3.png"
                 style={{ padding: "3px" }}
                 alt="css-icons"
               />
               <img
-                src="https://img.icons8.com/dusk/64/000000/javascript.png"
+                src="https://img.icons8.com/color/48/000000/javascript.png"
                 style={{ padding: "3px" }}
                 alt="javascript-icon"
               />
               <img
-                src="https://img.icons8.com/offices/60/000000/react.png"
+                src="https://img.icons8.com/offices/48/000000/react.png"
                 style={{ padding: "3px" }}
                 alt="react-js-icon"
               />
               <img
-                src="https://img.icons8.com/color/64/000000/nodejs.png"
+                src="https://img.icons8.com/color/48/000000/nodejs.png"
                 style={{ padding: "3px" }}
                 alt="node-js-icon"
               />
               <img
-                src="https://img.icons8.com/dusk/64/000000/ruby-programming-language.png"
+                src="https://img.icons8.com/color/48/000000/ruby-programming-language.png"
                 style={{ padding: "3px" }}
                 alt="ruby-icon"
               />
               <img
-                src="https://img.icons8.com/dusk/64/000000/python.png"
+                src="https://img.icons8.com/color/48/000000/python.png"
                 style={{ padding: "3px" }}
                 alt="python-icon"
               />
@@ -157,11 +158,27 @@ class Resume extends Component {
                 style={{ padding: "3px" }}
                 alt="api-icon"
               />
+              
+
+              
+              <img src="https://img.icons8.com/color/48/000000/linux.png"
+              style={{ padding: "3px" }}
+              alt="html-icon"
+              />
+
               <img
-                src="
-            https://img.icons8.com/bubbles/48/000000/amazon.png"
+                src="https://img.icons8.com/color/48/000000/data-configuration.png"
                 style={{ padding: "3px" }}
-                alt="aws-icon"
+                alt="html-icon"
+              />
+
+              <img src="https://img.icons8.com/color/48/000000/wired-network.png"
+              style={{ padding: "3px" }}
+              alt="aws-icon"
+              />
+              <img src="https://img.icons8.com/color/48/000000/docker-container.png"
+              style={{ padding: "3px" }}
+              alt="aws-icon"
               />
             </div>
           </Container>

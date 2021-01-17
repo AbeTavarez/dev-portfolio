@@ -32,7 +32,154 @@ export default function Projects() {
         <hr/>
       </div>
       
-      <div  className="projects-container">
+      
+        <div className='projects-container'>
+        
+        <h2>Personal Projects</h2>
+        <hr/>
+          <div className="card-section">
+          <Card className={classes.root}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image="https://res.cloudinary.com/abetavarez/image/upload/v1606279133/IMG_1346_2_ehte5p.jpg"
+                title="content-type store"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  Content-Type: Store
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                 Fully functional eCommerce web-site using ReactJS, Redux, NodeJS, Express and BootStrap.
+                  <Typography variant="body2" color="textPrimary" component="p">
+                    Stack: ReactJS, NodeJS, Redux, Express.
+                  </Typography>
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                variant='outlined'
+                href="http://www.theoriginalprogrammerwristband.com/"
+                target="_blank"
+              >
+                Visit site
+              </Button>
+              <Button
+                size="small"
+                  color="primary"
+                  variant='outlined'
+                href="https://github.com/AbeTavarez/CmdBlog"
+                target="_blank"
+              >
+                Visit Repo
+              </Button>
+            </CardActions>
+          </Card>
+          </div>
+
+        
+          
+          <div className="card-section">
+          <Card className={classes.root}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image="https://res.cloudinary.com/abetavarez/image/upload/v1606279384/IMG_1348_gmhkvo.jpg"
+                title="influencercv"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  Influencer CV
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                 Social media site for Influencers, Content-Creators, Stremers and more...
+                  <Typography variant="body2" color="textPrimary" component="p">
+                    Stack: ReactJS, NodeJS, Redux, Express.
+                  </Typography>
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                variant='outlined'
+                href="http://www.theoriginalprogrammerwristband.com/"
+                target="_blank"
+              >
+                Visit site
+              </Button>
+              <Button
+                size="small"
+                  color="primary"
+                  variant='outlined'
+                href="https://github.com/AbeTavarez/CmdBlog"
+                target="_blank"
+              >
+                Visit Repo
+              </Button>
+            </CardActions>
+          </Card>
+          </div>   
+      </div>
+      
+
+      
+    <div className='projects-container'>
+        <h2>Hackatons/Group Projects</h2>
+        <hr/>
+        <div className="card-section">
+          <Card className={classes.root}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image="https://media.giphy.com/media/MF1XrtS1F0YrC21R3K/giphy.gif"
+                title="instacart-project-website"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  InstaCart
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  I had the amazing oportunity to collaborate with a team of
+                  software engineers and UI/UX designers, to replicate the
+                  eCommerce site InstaCart.
+                </Typography>
+                <Typography variant="body2" color="textPrimary" component="p">
+                  Technologies: React, JavaScript, NodeJS, Express, Mongoose,
+                  MongoDB, UXUI.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                  color="primary"
+                  variant='outlined'
+                href="http://instacart-costco.surge.sh/welcome"
+                target="_blank"
+              >
+                Visit Site
+              </Button>
+              <Button
+                  size="small"
+                  variant='outlined'
+                color="primary"
+                href="https://github.com/AbeTavarez/Instacart-Costco"
+                target="_blank"
+              >
+                Visit Repo
+              </Button>
+            </CardActions>
+          </Card>
+        </div>
+        </div>
+
+      
+        <div  className="projects-container">
         <h2>Frelance Projects</h2>
         <hr/>
 
@@ -130,149 +277,6 @@ export default function Projects() {
         </div>
 
 
-
-    <div className='projects-container'>
-        <h2>Hackatons/Group Projects</h2>
-        <hr/>
-        <div className="card-section">
-          <Card className={classes.root}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image="https://media.giphy.com/media/MF1XrtS1F0YrC21R3K/giphy.gif"
-                title="instacart-project-website"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  InstaCart
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  I had the amazing oportunity to collaborate with a team of
-                  software engineers and UI/UX designers, to replicate the
-                  eCommerce site InstaCart.
-                </Typography>
-                <Typography variant="body2" color="textPrimary" component="p">
-                  Technologies: React, JavaScript, NodeJS, Express, Mongoose,
-                  MongoDB, UXUI.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                  color="primary"
-                  variant='outlined'
-                href="http://instacart-costco.surge.sh/welcome"
-                target="_blank"
-              >
-                Visit Site
-              </Button>
-              <Button
-                  size="small"
-                  variant='outlined'
-                color="primary"
-                href="https://github.com/AbeTavarez/Instacart-Costco"
-                target="_blank"
-              >
-                Visit Repo
-              </Button>
-            </CardActions>
-          </Card>
-        </div>
-        </div>
-
-        <div className='projects-container'>
-        <h2>Personal Projects</h2>
-        <hr/>
-          <div className="card-section">
-          <Card className={classes.root}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image="https://res.cloudinary.com/abetavarez/image/upload/v1606279133/IMG_1346_2_ehte5p.jpg"
-                title="content-type store"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  Content-Type: Store
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                 Fully functional eCommerce web-site using ReactJS, Redux, NodeJS, Express and BootStrap.
-                  <Typography variant="body2" color="textPrimary" component="p">
-                    Stack: ReactJS, NodeJS, Redux, Express.
-                  </Typography>
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                variant='outlined'
-                href="http://www.theoriginalprogrammerwristband.com/"
-                target="_blank"
-              >
-                Visit site
-              </Button>
-              <Button
-                size="small"
-                  color="primary"
-                  variant='outlined'
-                href="https://github.com/AbeTavarez/CmdBlog"
-                target="_blank"
-              >
-                Visit Repo
-              </Button>
-            </CardActions>
-          </Card>
-          </div>
-
-        
-          
-          <div className="card-section">
-          <Card className={classes.root}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image="https://res.cloudinary.com/abetavarez/image/upload/v1606279384/IMG_1348_gmhkvo.jpg"
-                title="influencercv"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  Influencer CV
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                 Social media site for Influencers, Content-Creators, Stremers and more...
-                  <Typography variant="body2" color="textPrimary" component="p">
-                    Stack: ReactJS, NodeJS, Redux, Express.
-                  </Typography>
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                variant='outlined'
-                href="http://www.theoriginalprogrammerwristband.com/"
-                target="_blank"
-              >
-                Visit site
-              </Button>
-              <Button
-                size="small"
-                  color="primary"
-                  variant='outlined'
-                href="https://github.com/AbeTavarez/CmdBlog"
-                target="_blank"
-              >
-                Visit Repo
-              </Button>
-            </CardActions>
-          </Card>
-          </div>
-          
-        </div>
     </Container>
   );
 }
