@@ -69,17 +69,17 @@ export default function Home() {
         <div className="icons-media">
         <img
                 src="https://img.icons8.com/color/48/000000/html-5.png"
-                style={{ padding: "3px" }}
+               
                 alt="html-icon"
               />
               <img
                 src="https://img.icons8.com/color/48/000000/css3.png"
-                style={{ padding: "3px" }}
+             
                 alt="css-icons"
               />
               <img
                 src="https://img.icons8.com/color/48/000000/javascript.png"
-                style={{ padding: "3px" }}
+           
                 alt="javascript-icon"
               />
               <img
@@ -94,54 +94,52 @@ export default function Home() {
               />
               <img
                 src="https://img.icons8.com/color/48/000000/ruby-programming-language.png"
-                style={{ padding: "3px" }}
+           
                 alt="ruby-icon"
               />
               <img
                 src="https://img.icons8.com/color/48/000000/python.png"
-                style={{ padding: "3px" }}
+               
                 alt="python-icon"
               />
               <img
                 src="https://img.icons8.com/color/48/000000/npm.png"
-                style={{ padding: "3px" }}
+             
                 alt="npm-icon"
               />
               <img
                 src="https://img.icons8.com/color/48/000000/git.png"
-                style={{ padding: "3px" }}
+            
                 alt="git-icon"
               />
               <img
                 src="https://img.icons8.com/color/48/000000/console.png"
-                style={{ padding: "3px" }}
+            
                 alt="command-line-icon"
               />
               <img
                 src="https://img.icons8.com/color/48/000000/api.png"
-                style={{ padding: "3px" }}
+               
                 alt="api-icon"
               />
               
-
-              
               <img src="https://img.icons8.com/color/48/000000/linux.png"
-              style={{ padding: "3px" }}
+           
               alt="html-icon"
               />
 
               <img
                 src="https://img.icons8.com/color/48/000000/data-configuration.png"
-                style={{ padding: "3px" }}
+              
                 alt="html-icon"
               />
 
               <img src="https://img.icons8.com/color/48/000000/wired-network.png"
-              style={{ padding: "3px" }}
+            
               alt="aws-icon"
               />
               <img src="https://img.icons8.com/color/48/000000/docker-container.png"
-              style={{ padding: "3px" }}
+              
               alt="aws-icon"
               />
          
