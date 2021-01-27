@@ -19,8 +19,18 @@
   height: 300px;
 }
 .service-card i {
-  padding: 5px;
+  padding: 10px;
   border: white solid 1px;
   border-radius: 50%;
   border-color: white;
+}
+
+.service-card h2 {
+  padding-top: 20px;
+  
+}
+
+.scard-details{
+  background-color: rebeccapurple
+  ;
 }
