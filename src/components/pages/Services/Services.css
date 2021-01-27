@@ -11,6 +11,9 @@
   color: #fff;
   align-items: center;
 }
+.services-title {
+  margin-bottom: 20px;
+}
 
 .service-card {
   display: flex;
@@ -27,10 +30,9 @@
 
 .service-card h2 {
   padding-top: 20px;
-  
+
 }
 
 .scard-details{
-  background-color: rebeccapurple
-  ;
+ 
 }
