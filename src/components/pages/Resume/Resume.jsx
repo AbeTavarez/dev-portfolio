@@ -18,7 +18,7 @@ class Resume extends Component {
               </div>
               <div className="resume-top-right">
                 <a
-                  href="https://docdro.id/SbFxLdJ"
+                  href="https://ccs-products.s3.amazonaws.com/EfrenTavarez_Resumev5.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
