@@ -14,7 +14,7 @@ class Resume extends Component {
             <div className="resume-top">
               <div className="resume-top-left">
                 <h2>Efren Abraham Tavarez</h2>
-                <h4 style={{ padding: "5px" }}>Junior Software Engineer</h4>
+                <h4 style={{ padding: "5px" }}>Software Engineer - Developer - DevOps</h4>
               </div>
               <div className="resume-top-right">
                 <a
@@ -42,6 +42,16 @@ class Resume extends Component {
             <h2>Education</h2>
 
             <Education
+              startYear="01/2021"
+              endYear="Currently Enrolled"
+              schoolName="PerScholas AWS re/Start"
+              schoolDescription="AWS re/Start curriculum teaches AWS Cloud fundamentals to help
+              learners succeed in	a	new	career	with	AWS. Through real-world,
+              scenario-based exercises, labs, and coursework, learners build
+              Linux, Python, networking, security, and relational database skills."
+            />
+
+            <Education
               startYear="3/2020"
               endYear="5/2020"
               schoolName="Software Engineer, General Assembly"
@@ -49,30 +59,8 @@ class Resume extends Component {
                 "Completed a 12-week full-stack web development and programming bootcamp. JavaScript for DOM manipulation and API using the fetch API and ES6 async await. React single page applications using hooks and classes. Node and Express for the backend to create RESTful APIs.Redux for application	state management. MongoDB and PostgreSQL databases."
               }
             />
-            <Education
-              startYear={2019}
-              endYear={2019}
-              schoolName="iOS Developer, Noble Desktop"
-              schoolDescription={
-                "NYC’s leading design & coding school for  years, we have perfected the craft of teaching. We use our own time-tested curriculum and custom workbooks we wrote. Noble’s “learn, then practice” teaching method results in students learning and retaining much more than traditional “follow along” classes. After learning foundational object-oriented programming concepts in Xcode and Swift, you’ll build several apps in class and conclude with creating your own app."
-              }
-            />
-            <Education
-              startYear={2006}
-              endYear={2007}
-              schoolName="Audio Engineer, Touro College"
-              schoolDescription={
-                "Audio engineering is a very wide discipline as well as an exciting one! It blends both technology and creativity to help create and refine sounds used in music, media, and performance technology. A bachelor’s degree in audio engineering, or a related field such as music technology, recording arts, sound engineering…the list goes on, is a solid stepping stone towards a career in this competitive industry.."
-              }
-            />
-            <Education
-              startYear={2004}
-              endYear={2006}
-              schoolName="Audio Engineer/Art, BCC College"
-              schoolDescription={
-                "The college was established in 1957. Hall of Fame for Great Americans, the country’s first hall of fame. In October 2012, our campus was declared a National Historic Landmark, becoming the country’s first community college campus to receive such a designation.."
-              }
-            />
+            
+            
           </Container>
 
           <hr style={{ borderTop: "3px solid #0f4c75" }} />
@@ -81,15 +69,15 @@ class Resume extends Component {
             <h2>Experience</h2>
             <Experience
               startYear="3/2020"
-              endYear={2020}
+              endYear="5/2020"
               jobName="Software Engineer Fellow, General Assembly"
               jobDescription="Developed competitive skills in Javascript, React, ExpressJS, NodeJS, MongoDB, Ruby On Rails, Jest, Test Driven Development, HTML, and CSS. Learned in-depth implementation of RESTful APIs, HTTP response-request cycle and principles object oriented programming through JavaScript and Ruby. Understanding of UX and UI through foundational knowledge of HTML, CSS Grid, Flexbox, ReactJS libraries and frameworks. Computer Science fundamentals and Algorithms and Data Structures."
             />
 
             <Experience
-              startYear={2010}
-              endYear={2020}
-              jobName="Inventory IT Specialist, Coca Cola"
+              startYear="09/2010"
+              endYear="03/2020"
+              jobName="Inventory Associate, Coca Cola"
               jobDescription="Ability to work in a large and fast paced team environment dealing with multiple tasks and individuals. Conduct daily inventories, produce reports and inspect area of work for any safety hazards. Coordinate customer orders and deliveries assuring client satisfacion. In charge of train new associates in company’s multiple software systems and procedures."
             />
           </Container>
