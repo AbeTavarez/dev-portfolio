@@ -29,10 +29,10 @@ export default function Home() {
       <div className="home-container">
         <div className="welcome-message">
           <div className="name-home">
-            <h1>Hi, I'm Abraham</h1>
+            <h2>Hi, I'm Abraham</h2>
             <img src={clouds} alt="cloud" className="cloud" />
           </div>
-          <h2>I'm a Software Engineer / Developer / DevOps.</h2>
+          <h3>I'm a Software Engineer / Developer / DevOps.</h3>
         </div>
         
         <div className="social-links">
