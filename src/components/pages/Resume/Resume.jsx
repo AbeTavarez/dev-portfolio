@@ -43,10 +43,10 @@ class Resume extends Component {
 
             <Education
               startYear="3/2020"
-              endYear="Current"
+              endYear="5/2020"
               schoolName="Software Engineer, General Assembly"
               schoolDescription={
-                "General Assembly is a pioneer in education and career transformation, specializing in today’s most in-demand skills. The leading source for training, staffing, and career transitions, we foster a flourishing community of professionals pursuing careers they love."
+                "Completed a 12-week full-stack web development and programming bootcamp. JavaScript for DOM manipulation and API using the fetch API and ES6 async await. React single page applications using hooks and classes. Node and Express for the backend to create RESTful APIs.Redux for application	state management. MongoDB and PostgreSQL databases."
               }
             />
             <Education
