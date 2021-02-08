@@ -23,6 +23,14 @@
   display: flex;
   flex-direction: column;
 }
+.user-pic {
+  border-radius: 10%;
+  width: 280px;
+  height: 200px;
+}
+.abe {
+  font-style: italic;
+}
 .welcome-message {
   display: flex;
   flex-direction: column;
@@ -160,8 +168,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     overflow-wrap: normal;
-    /* width: 40px;
-    height: auto; */
+    width: 40px;
+    height: auto;
     padding: 15px;
     padding-bottom: 300px;
   }

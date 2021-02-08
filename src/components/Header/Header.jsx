@@ -294,7 +294,7 @@ export default function Header(props) {
             className={classes.logoContainer}
           >
             <img
-              src="https://img.icons8.com/bubbles/50/000000/admin-settings-male.png"
+              src="https://res.cloudinary.com/abetavarez/image/upload/v1612810433/cloud-computing.06226a2a_1_d1af7g.png"
               alt="avatar"
               className={classes.logo}
             />
@@ -374,7 +374,7 @@ export default function Header(props) {
           className={classes.logoContainer}
         >
           <img
-            src="https://img.icons8.com/bubbles/50/000000/admin-settings-male.png"
+            src="https://res.cloudinary.com/abetavarez/image/upload/v1612810433/cloud-computing.06226a2a_1_d1af7g.png"
             alt="avatar"
             className={classes.logo}
           />

@@ -180,7 +180,7 @@ export default function Projects() {
 
       
         <div  className="projects-container">
-        <h2>Frelance Projects</h2>
+        <h2>Freelance Projects</h2>
         <hr/>
 
         

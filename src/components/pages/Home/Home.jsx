@@ -10,7 +10,6 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import clouds from "../../../assets/cloud-computing.png";
 
 const useStyles = makeStyles({
   root: {
@@ -29,10 +28,11 @@ export default function Home() {
       <div className="home-container">
         <div className="welcome-message">
           <div className="name-home">
-            <h2>Hi, I'm Abraham</h2>
-            <img src={clouds} alt="cloud" className="cloud" />
+            <h2>Welcome</h2>
+            <img src="https://res.cloudinary.com/abetavarez/image/upload/v1612810161/WIN_20210204_10_33_48_Pro-removebg-preview_5_npx6we.png" alt="user-pic" className="user-pic" />
+            <h3>My name is <span className="abe">Abraham</span></h3>
           </div>
-          <h3>I'm a Software Engineer / Developer / DevOps.</h3>
+          <h3>Software Engineer | DevOps | Cloud Computing</h3>
         </div>
         
         <div className="social-links">

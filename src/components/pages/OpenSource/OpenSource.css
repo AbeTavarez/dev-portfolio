@@ -65,7 +65,7 @@ a {
   font-size: 32px;
   padding: 5px;
 }
-.name-home h2 {
+/* .name-home h2 {
   display: flex;
   justify-content: center;
 }
@@ -78,8 +78,8 @@ a {
   margin-bottom: 20px;
 }
 .name-home {
-  font-size: 35px;
-}
+  font-size: 35px; */
+/* } */
 .home-projects-container {
   display: flex;
   flex-direction: row;
