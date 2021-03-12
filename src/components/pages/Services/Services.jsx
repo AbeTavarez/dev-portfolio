@@ -73,10 +73,10 @@ const Services = () => {
       
         {/* </div> */}
 
-      <div>
+      <div className="getintouch">
         <h1>Get in touch</h1>
         <img src="https://img.icons8.com/dusk/84/000000/paper-plane.png" alt="paper plane"/>
-        <p>Do you like my work? Want to get in touch? Send me an Email: dev.etavarez@gmail.com</p>
+        <p>Want to get in touch? Send me an Email: <span>abetavarez@gmail.com</span></p>
       </div>
 
     </div>
