@@ -89,10 +89,6 @@ export default function Home() {
           </div>
 
           <div>
-          <p >
-              I'm seeking a challenging and fun position, where I can contribute
-              and be part of a hard working team to develop new and exciting tools and applications.
-          </p>
           <p>Please take a few minutes to check my lastest projects.</p>
             
          </div>
