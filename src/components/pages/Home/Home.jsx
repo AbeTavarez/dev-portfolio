@@ -28,7 +28,7 @@ export default function Home() {
       <div className="home-container">
         <div className="welcome-message">
           <div className="name-home">
-            <h2>Welcome</h2>
+            <h2>Welcome...</h2>
             <img src="https://res.cloudinary.com/abetavarez/image/upload/v1612810161/WIN_20210204_10_33_48_Pro-removebg-preview_5_npx6we.png" alt="user-pic" className="user-pic" />
             <h3>My name is <span className="abe">Abraham</span></h3>
           </div>
