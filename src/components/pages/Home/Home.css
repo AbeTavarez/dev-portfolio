@@ -66,6 +66,7 @@ a {
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 2px;
   width: 50%;
+  padding-top: 100px;
 }
 .h-header hr {
   width: 100%;
@@ -94,7 +95,8 @@ a {
 }
 .lang {
   font-style: italic;
-  color: #3282b8;
+  /* color: #3282b8; */
+  color: white;
 }
 .icons-media {
   display: flex;
@@ -125,7 +127,7 @@ a {
     width: 600px;
     margin: 0 15px;
   }
-  .icons-media {
+  .icons-media-home {
     width: 200px;
     height: 80px;
     padding: 15px;

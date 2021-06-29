@@ -32,6 +32,7 @@ export default function Home() {
             <img src="https://res.cloudinary.com/abetavarez/image/upload/v1612810161/WIN_20210204_10_33_48_Pro-removebg-preview_5_npx6we.png" alt="user-pic" className="user-pic" />
             
           </div>
+          <h3>Instructor</h3>
           <h3>Software Engineer | AWS Cloud Engineer | DevOps</h3>
         </div>
         
@@ -71,31 +72,25 @@ export default function Home() {
         <div className="aboutme">
           <hr />
           <div>
-            <h2>Whoami ?</h2>
+            <h2>Whoami?</h2>
           </div>
           <div className="bio">
             {" "}
             <p>
-              I'm a New Yorker who is passionate about tech and software
-              development. 
+              Hello World! My name is Abraham. I'm an AWS re/Start and Software Engineer Instructor at Per Scholas.
+              I love to shared my expirence and help other excel in their new journey. 
             </p>
-            <p>What I love the most about software development is the ability to create tools that can reach and change the life of millions of people around the world.</p>
             <p>
-              I've been using a wide range of technologies to create functional and secure modern desktop/web applications and command line utilities using:
+              When I'm not teaching I like to work on personal development projects. 
+              I enjoy riding my BMX bike on my time off and escaping to a beach on vacation!
             </p>
-            <p className="lang">JavaScript, React, Redux, NodeJS, Express, MongoDB, Python, Linux, Docker, Apache, PostgreSQL, Ruby, Rails and other technologies. 
-              <br /> <br />
+            <p className="lang"> Happy Hacking!
             </p>
           </div>
-
-          <div>
-          <p>Please take a few minutes to check my lastest projects.</p>
-            
-         </div>
           <hr />
         </div>
 
-        <div className="icons-media">
+        <div className="icons-media-home">
         <img
                 src="https://img.icons8.com/color/48/000000/html-5.png"
                
@@ -104,7 +99,7 @@ export default function Home() {
               <img
                 src="https://img.icons8.com/color/48/000000/css3.png"
              
-                alt="css-icons"
+                alt="css-icon"
               />
               <img
                 src="https://img.icons8.com/color/48/000000/javascript.png"
@@ -121,40 +116,46 @@ export default function Home() {
                 style={{ padding: "3px" }}
                 alt="node-js-icon"
               />
-              <img
-                src="https://img.icons8.com/color/48/000000/ruby-programming-language.png"
-           
-                alt="ruby-icon"
-              />
-              <img
-                src="https://img.icons8.com/color/48/000000/python.png"
-               
-                alt="python-icon"
-              />
-              <img
-                src="https://img.icons8.com/color/48/000000/npm.png"
-             
-                alt="npm-icon"
-              />
+
               <img
                 src="https://img.icons8.com/color/48/000000/git.png"
             
                 alt="git-icon"
               />
+
               <img
-                src="https://img.icons8.com/color/48/000000/console.png"
-            
-                alt="command-line-icon"
+                src="https://img.icons8.com/color/48/000000/npm.png"
+             
+                alt="npm-icon"
               />
+             
               <img
-                src="https://img.icons8.com/color/48/000000/api.png"
+                src="https://img.icons8.com/color/48/000000/python.png"
                
-                alt="api-icon"
+                alt="python-icon"
               />
               
               <img src="https://img.icons8.com/color/48/000000/linux.png"
            
               alt="html-icon"
+              />
+
+              <img
+                src="https://img.icons8.com/color/48/000000/console.png"
+            
+                alt="command-line-icon"
+              />
+
+              <img src="https://img.icons8.com/color/48/000000/docker-container.png"
+              
+              alt="aws-icon"
+              />
+         
+
+              <img
+                src="https://img.icons8.com/color/48/000000/ruby-programming-language.png"
+           
+                alt="ruby-icon"
               />
 
               <img
@@ -167,14 +168,10 @@ export default function Home() {
             
               alt="aws-icon"
               />
-              <img src="https://img.icons8.com/color/48/000000/docker-container.png"
               
-              alt="aws-icon"
-              />
-         
         </div>
 
-        <div className='h-header'>
+        {/* <div className='h-header'>
         <h1>Articles</h1>
           <hr />
         </div>
@@ -401,7 +398,7 @@ export default function Home() {
         </div>
 
 
-        </div>
+        </div> */}
 
         <div className="home-projects-container">
           <div className="card-section">
