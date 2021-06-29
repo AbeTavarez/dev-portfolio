@@ -212,22 +212,22 @@ export default function Header(props) {
 
     { name: "Projects", link: "/projects", activeIndex: 1 },
     { name: "Resume", link: "/resume", activeIndex: 2 },
-    {
-      name: "Services",
-      link: "/services",
-      activeIndex: 3,
-      ariaOwns: anchorEl ? "simple-menu" : undefined,
-      ariaPopup: anchorEl ? true : undefined,
-      mouseOver: (e) => handleClick(e),
-      isDisable: false
-    },
+    // {
+    //   name: "Services",
+    //   link: "/services",
+    //   activeIndex: 3,
+    //   ariaOwns: anchorEl ? "simple-menu" : undefined,
+    //   ariaPopup: anchorEl ? true : undefined,
+    //   mouseOver: (e) => handleClick(e),
+    //   isDisable: false
+    // },
 
-    {
-      name: "Open Source",
-      link: "/opensource",
-      activeIndex: 4,
-      isDisable: false,
-    },
+    // {
+    //   name: "Open Source",
+    //   link: "/opensource",
+    //   activeIndex: 4,
+    //   isDisable: false,
+    // },
   ];
   //Menu Items Array
   const menuOptions = [
