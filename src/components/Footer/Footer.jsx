@@ -6,7 +6,8 @@ export default function Footer() {
   return (
     <div className="footer-container">
       <div className="contact">
-        <p>Copyright 2021 &copy; Abraham E.Tavarez </p>
+        <p>Copyright 2021 &copy;</p>
+        <p>Abraham E.Tavarez</p>
       </div>
       <div className="links">
         <div className="getintouch">
