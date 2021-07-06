@@ -28,7 +28,11 @@ export default function Home() {
       <div className="home-container">
         <div className="welcome-message">
           <div className="name-home">
-          <h3>Abraham E. Tavarez</h3>
+         
+          <div>
+            <h2>>_ Abraham E. Tavarez</h2>
+            <hr />
+          </div>
             <img src="https://res.cloudinary.com/abetavarez/image/upload/v1612810161/WIN_20210204_10_33_48_Pro-removebg-preview_5_npx6we.png" alt="user-pic" className="user-pic" />
             
           </div>
@@ -70,22 +74,18 @@ export default function Home() {
         </div>
 
         <div className="aboutme">
-          <hr />
-          <div>
-            <h2>Whoami?</h2>
-          </div>
+          
           <div className="bio">
             {" "}
             <p>
-              Hello World! My name is Abraham. I'm an AWS re/Start and Software Engineer Instructor at Per Scholas.
-              I love to shared my expirence and help other excel in their new journey. 
+              >_ Whoami? I'am a self motivated AWS re/Start and Software Engineer Instructor at Per Scholas.
+              I've experience on Cloud Computing, Linux, Windows, Networking, Cloud Security, Programming, Automation, Software Development Life Cycle and Databases.
             </p>
             <p>
               When I'm not teaching I like to work on personal development projects. 
-              I enjoy riding my BMX bike on my time off and escaping to a beach on vacation!
+              I enjoy riding my BMX bike on my time off and escaping to a beach whe I go on vacation!
             </p>
-            <p className="lang"> Happy Hacking!
-            </p>
+            
           </div>
           <hr />
         </div>
@@ -170,6 +170,8 @@ export default function Home() {
               />
               
         </div>
+
+        <div className=""></div>
 
         {/* <div className='h-header'>
         <h1>Articles</h1>

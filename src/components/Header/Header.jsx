@@ -128,7 +128,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   drawer: {
-    backgroundColor: theme.palette.common.lightBlue,
+    backgroundColor: theme.palette.common.lighBlue,
   },
   drawerItem: {
     ...theme.typography.tab,
