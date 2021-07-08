@@ -220,7 +220,7 @@ export default function Home() {
             </div>
         </div>
 
-      <div className="h-header">
+      {/* <div className="h-header">
           <h1>RECENT PROJECTS</h1>
         <hr/>
         </div>
@@ -398,11 +398,10 @@ export default function Home() {
             </CardActions>
           </Card>
         </div>
+      </div>  */}
 
-
-        </div> 
-
-        <div className="home-projects-container">
+      
+        {/* <div className="home-projects-container">
           <div className="card-section"> 
              <Card className={classes.root}>
               <CardActionArea>
@@ -499,7 +498,7 @@ export default function Home() {
               </CardActions>
             </Card> 
           </div>
-        </div>
+        </div> */}
       </div>
     </Layout>
   );
