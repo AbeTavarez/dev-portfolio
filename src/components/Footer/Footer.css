@@ -4,12 +4,13 @@
 .footer-container {
   display: flex;
   justify-content: space-evenly;
-  /* height: 115px; */
+  height: 300px;
+  position: relative;
   width: 100%;
   bottom: 0;
   left: 0;
-  /* background-color: #3282b8; */
-  background-color: #1b262c;
+  overflow: hidden;
+  background-color: #3282b8;
   color: #fff;
 }
 

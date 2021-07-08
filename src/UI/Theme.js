@@ -5,8 +5,7 @@ const abePurple = "#5f6caf";
 const abeOrange = "#f77754";
 const abeDarkBlue = "#0f4c75";
 const abeBlack = "#1b262c";
-// const abeLightBlue = "#3282b8";
-const abeLightBlue = "#1b262c";
+const abeLightBlue = "#3282b8";
 const abeBabyBlue = "#bbe1fa";
 
 export default createMuiTheme({

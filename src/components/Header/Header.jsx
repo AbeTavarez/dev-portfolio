@@ -106,7 +106,7 @@ const useStyles = makeStyles((theme) => ({
     height: "45px",
   },
   menu: {
-    backgroundColor: theme.palette.common.lightBlue,
+    backgroundColor: theme.palette.common.lighBlue,
     color: "white",
     borderRadius: 0,
   },
@@ -128,7 +128,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   drawer: {
-    backgroundColor: theme.palette.common.lighBlue,
+    backgroundColor: theme.palette.common.lightBlue,
   },
   drawerItem: {
     ...theme.typography.tab,
@@ -136,7 +136,7 @@ const useStyles = makeStyles((theme) => ({
     opacity: 0.7,
   },
   drawerItemEstimate: {
-    backgroundColor: theme.palette.common.purple,
+    backgroundColor: theme.palette.common.lightBlue,
   },
   drawItemSelected: {
     "& .MuiListItemText-root": {
@@ -409,7 +409,7 @@ export default function Header(props) {
               </ListItemText>
             </ListItem>
           ))}
-          <ListItem
+          {/* <ListItem
             oonClick={() => {
               setOpenDrawer(false);
               setValue(5);
@@ -428,7 +428,7 @@ export default function Header(props) {
             <ListItemText className={classes.drawerItem} disableTypography>
               Free Estimate
             </ListItemText>
-          </ListItem>
+          </ListItem> */}
         </List>
       </SwipeableDrawer>
       <IconButton

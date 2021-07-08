@@ -173,7 +173,7 @@ export default function Home() {
 
         <div className=""></div>
 
-        {/* <div className='h-header'>
+      <div className='h-header'>
         <h1>Articles</h1>
           <hr />
         </div>
@@ -220,7 +220,7 @@ export default function Home() {
             </div>
         </div>
 
-        <div className="h-header">
+      <div className="h-header">
           <h1>RECENT PROJECTS</h1>
         <hr/>
         </div>
@@ -400,11 +400,11 @@ export default function Home() {
         </div>
 
 
-        </div> */}
+        </div> 
 
         <div className="home-projects-container">
-          <div className="card-section">
-            {/* <Card className={classes.root}>
+          <div className="card-section"> 
+             <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
                   className={classes.media}
@@ -446,11 +446,11 @@ export default function Home() {
                   Visit Repo
                 </Button>
               </CardActions>
-            </Card> */}
+            </Card> 
           </div>
 
-          <div className="card-section">
-            {/* <Card className={classes.root}>
+          <div className="card-section"> 
+            <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
                   className={classes.media}
@@ -497,7 +497,7 @@ export default function Home() {
                   Visit Repo
                 </Button>
               </CardActions>
-            </Card> */}
+            </Card> 
           </div>
         </div>
       </div>
