@@ -28,16 +28,16 @@ export default function Home() {
            <div className='img-h3'>
            <img src="https://res.cloudinary.com/abetavarez/image/upload/v1612810161/WIN_20210204_10_33_48_Pro-removebg-preview_5_npx6we.png" alt="user-pic" className="user-pic" />
             <div className='titles'>
-            <p>Software Engineer</p>
-            <p>AWS Cloud Engineer</p>
-            <p>DevOps</p>
+            <h4>Software Engineer</h4>
+            <h4>AWS Cloud Engineer</h4>
+            <h4>DevOps</h4>
             </div>
            </div>
           </div>
           {/* <h3>Software Engineer | AWS Cloud Engineer | DevOps</h3> */}
         </div>
         
-        <div className="social-links">
+        <div className="social-links-home">
           <a
             href="https://www.linkedin.com/in/abrahametavarez/"
             rel="noopener noreferrer"

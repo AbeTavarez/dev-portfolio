@@ -8,6 +8,7 @@
   align-items: center;
   width: auto;
   background-color: rgb(255, 255, 255);
+  /* background-color: #282c34; */
   color: rgb(65,74,76);
 }
 .profile-img {
@@ -48,10 +49,9 @@
   font-size: 22px;
 }
 
-.social-links {
-  display: flex;
-  flex-direction: row;
+.social-links-home a {
   justify-content: space-evenly;
+  color: rgb(65,74,76);
   
 }
 a {
