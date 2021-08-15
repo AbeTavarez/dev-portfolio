@@ -364,11 +364,11 @@ export default function Header(props) {
           onClick={() => setValue(0)}
           className={classes.logoContainer}
         >
-          <img
+          {/* <img
             src="https://res.cloudinary.com/abetavarez/image/upload/v1612810161/WIN_20210204_10_33_48_Pro-removebg-preview_5_npx6we.png" alt="user-pic" className="user-pic"
             alt="avatar"
             className={classes.logo}
-          />
+          /> */}
         </Button>
       </div>
       <SwipeableDrawer

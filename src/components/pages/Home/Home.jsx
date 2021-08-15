@@ -31,8 +31,8 @@ export default function Home() {
         <div className="welcome-message">
           <div className="name-home">
          
-          <div>
-            <h2>Abraham E. Tavarez</h2>
+          <div className='abraham'>
+            <h1>Abraham E. Tavarez</h1>
             <hr />
           </div>
            <div className='img-h3'>
