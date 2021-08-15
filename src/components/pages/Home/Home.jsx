@@ -1,7 +1,12 @@
-import React from "react";
+import React , {useEffect}from "react";
 import Layout from "../../shared/Layout";
 import "./Home.css";
+import YearCard from "../../helpers/YearCard/YearCard";
 import { makeStyles } from "@material-ui/core/styles";
+
+//* Google Analytics 
+import ReactGA, { pageview } from 'react-ga';
+ReactGA.initialize('G-NKMV7EFHDN')
 
 const useStyles = makeStyles({
   root: {
@@ -14,6 +19,11 @@ const useStyles = makeStyles({
 });
 
 export default function Home() {
+  useEffect (() => {
+    ReactGA.pageview(window.location.pathname);
+  })
+ 
+
   const classes = useStyles();
   return (
     <Layout>
@@ -34,7 +44,6 @@ export default function Home() {
             </div>
            </div>
           </div>
-          {/* <h3>Software Engineer | AWS Cloud Engineer | DevOps</h3> */}
         </div>
         
         <div className="social-links-home">
@@ -79,7 +88,7 @@ export default function Home() {
               I've experience on Cloud Computing, Linux, Windows, Networking, Cloud Security, Programming, Automation, Software Development Life Cycle and Databases.
             </p>
             <p>
-              When I'm not teaching I like to work on personal development projects. 
+              When I'm not teaching, I like to work on personal development projects. 
               I enjoy riding my BMX bike on my time off and escaping to a beach whe I go on vacation!
             </p>
             
@@ -168,7 +177,20 @@ export default function Home() {
               
         </div>
 
-        <div className=""></div>
+        <div className="">
+          <div>
+            <h2>2021</h2>
+          </div>
+         <YearCard 
+          title='Nationwide and Per Scholas Software Engineering Program' 
+          time='July' 
+          description='Taught over twenty new programmers and assisted instructors.'/>
+         <YearCard 
+          title='Nationwide and Per Scholas Software Engineering Program' 
+          time='July' 
+          description='Taught over twenty new programmers and assisted instructors.'/>
+        </div>
+        
 
      
       </div>

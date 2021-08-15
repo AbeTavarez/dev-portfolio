@@ -5,16 +5,20 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <div className="footer-container">
+
       <div className="contact">
         <p>Copyright 2021 &copy;</p>
-        <p>Abraham E.Tavarez</p>
+        <p>Abraham E. Tavarez</p>
       </div>
+
+
       <div className="links">
         <div className="getintouch">
           <h2>Get in touch </h2>
         </div>
+
         {/* LinkedIn */}
-        <div className="social-links">
+        <div className="social-links-footer">
           <a
             href="https://www.linkedin.com/in/abrahametavarez/"
             rel="noopener noreferrer"
@@ -47,6 +51,8 @@ export default function Footer() {
           </a>
         </div>
       </div>
+
+      
     </div>
   );
 }
