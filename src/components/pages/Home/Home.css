@@ -143,7 +143,7 @@ a {
     margin: 0 15px;
   }
   .icons-media-home {
-    width: 200px;
+    width: 600px;
     height: 80px;
     padding: 15px;
   }
@@ -186,6 +186,7 @@ a {
   }
 
   .icons-media {
+    background-color: brown;
     display: flex;
     flex-wrap: wrap;
     overflow-wrap: normal;
@@ -212,13 +213,16 @@ a {
   }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 650px) {
+  .icons-media-home{
+    width: 300px;
+  }
   .name-home {
     font-size: 22px;
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 541px) {
   .welcome-message {
     width: auto;
   }
