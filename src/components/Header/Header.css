@@ -39,7 +39,7 @@ nav {
 
 a {
   text-decoration: none;
-  color: white;
+  color: rgb(65,74,76);
 }
 /*medium screens to large screens*/
 @media (max-width: 1200px) {
@@ -61,9 +61,7 @@ a {
     box-shadow: 1px 1px 5px 0.3px #cecece;
     width: 100%;
   }
-}
 
-@media (max-width: 1200px) {
   .nav-links {
     justify-content: space-evenly;
     padding: 0 20px;

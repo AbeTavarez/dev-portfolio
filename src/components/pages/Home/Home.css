@@ -7,14 +7,8 @@
   flex-direction: column;
   align-items: center;
   width: auto;
-  /* background-color: rgb(91, 97, 166); */
-  /* background-color: rgb(16, 168, 166); */
-  /* background-color: #200f21; */
-  /* background-color: #7b88ff; */
-  /* background-color: #1b262c; */
-  background-color: #232F3E;
-  /* background-color: white; */
-  color: #fff;
+  background-color: rgb(255, 255, 255);
+  color: rgb(65,74,76);
 }
 .profile-img {
   border-radius: 100%;
@@ -27,18 +21,30 @@
   flex-direction: column;
 }
 .user-pic {
-  border-radius: 10%;
-  width: 300px;
-  height: 200px;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
 }
 .abe {
   font-style: italic;
 }
+
+.img-h3 {
+  display: flex;
+  flex-direction: row;
+  /* align-items: flex-end; */
+  /* justify-content: space-between; */
+}
+
+.titles {
+  margin-left: 10px;
+}
+
 .welcome-message {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-family: 'IBM Plex Mono';
+  font-family: 'Montserrat';
   font-size: 22px;
 }
 
@@ -46,6 +52,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  
 }
 a {
   font-size: 32px;
@@ -56,7 +63,7 @@ a {
 }
 
 .name-home {
-  font-family: 'IBM Plex Mono';
+  font-family: 'Bebas Neue';
 }
 
 .h-header {
@@ -85,14 +92,14 @@ a {
 }
 
 .aboutme {
-  font-family: 'IBM Plex Mono';
+  font-family: 'Bebas Neue';
   padding-top: 40px;
   text-align: center;
   font-size: 22px;
   width: 800px;
 }
 .bio {
-  text-align: center;
+  padding: 20px;
 }
 .lang {
   font-style: italic;

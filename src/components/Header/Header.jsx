@@ -26,11 +26,8 @@ import MenuIcon from "@material-ui/icons/Menu";
 
 import "./Header.css";
 
-//* ///////////////////////////////////////////////////////////
-//* //////////////////////////////////////////////////////////
-//* Styles //////////////////////////////////////////////////
-//* ////////////////////////////////////////////////////////
-//* ///////////////////////////////////////////////////////
+//* ==================== Styles 
+
 const useStyles = makeStyles((theme) => ({
   toolbarMargin: {
     ...theme.mixins.toolbar,
@@ -75,6 +72,7 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     height: "4em",
     paddingRight: "100px",
+   
     
     [theme.breakpoints.down("md")]: {
       height: "4em",
@@ -148,11 +146,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-//* //////////////////////////////////////////////////////////
-//* /////////////////////////////////////////////////////////
-//* /////////////// Scroll control /////////////////////////
-//* ///////////////////////////////////////////////////////
-//* //////////////////////////////////////////////////////
+
+//* ===================== Scroll control 
+
 
 function ElevationScroll(props) {
   const { children } = props;
@@ -166,11 +162,9 @@ function ElevationScroll(props) {
   });
 }
 
-//* //////////////////////////////////////////////////////////
-//* /////////////////////////////////////////////////////////
-//* /////////////////////Main Function /////////////////////
-//* ///////////////////////////////////////////////////////
-//* //////////////////////////////////////////////////////
+
+//* ================   Main Function 
+
 
 export default function Header(props) {
   const classes = useStyles();
@@ -256,11 +250,9 @@ export default function Header(props) {
       selectedIndex: 3,
     },
   ];
-  //* ///////////////////////////////////////////////////////////
-  //* //////////////////////////////////////////////////////////
-  //* ///////////////ACTIVE TAB REFRESH////////////////////////
-  //* ////////////////////////////////////////////////////////
-  //* ///////////////////////////////////////////////////////
+
+  //* ====================  ACTIVE TAB REFRESH
+
   useEffect(() => {
     [...menuOptions, ...routes].forEach((route) => {
       switch (window.location.pathname) {
@@ -277,10 +269,9 @@ export default function Header(props) {
       }
     });
   }, [value, menuOptions, selectedIndex, routes]);
-  //* /////////////////////////////////////////////////////////
-  //* //////////////////TABS /////////////////////////////////
-  //* ///////////////////////////////////////////////////////
-  //* //////////////////////////////////////////////////////
+
+  //* ===================== TABS 
+
 
   const tabs = (
     <Fragment>
@@ -293,11 +284,11 @@ export default function Header(props) {
             onClick={() => setValue(0)}
             className={classes.logoContainer}
           >
-            <img
-              src="https://res.cloudinary.com/abetavarez/image/upload/v1612810433/cloud-computing.06226a2a_1_d1af7g.png"
+            {/* <img
+              src="https://res.cloudinary.com/abetavarez/image/upload/v1612810161/WIN_20210204_10_33_48_Pro-removebg-preview_5_npx6we.png" alt="user-pic" className="user-pic"
               alt="avatar"
               className={classes.logo}
-            />
+            /> */}
           </Button>
         </div>
 
@@ -362,7 +353,7 @@ export default function Header(props) {
     </Fragment>
   );
 
-  //* DRAWER ////////////////////////////////////////////////////////////////////////////////
+  //* ====================== DRAWER 
   const drawer = (
     <Fragment>
       <div className="">
@@ -374,7 +365,7 @@ export default function Header(props) {
           className={classes.logoContainer}
         >
           <img
-            src="https://res.cloudinary.com/abetavarez/image/upload/v1612810433/cloud-computing.06226a2a_1_d1af7g.png"
+            src="https://res.cloudinary.com/abetavarez/image/upload/v1612810161/WIN_20210204_10_33_48_Pro-removebg-preview_5_npx6we.png" alt="user-pic" className="user-pic"
             alt="avatar"
             className={classes.logo}
           />

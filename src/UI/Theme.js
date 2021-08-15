@@ -7,6 +7,7 @@ const abeDarkBlue = "#0f4c75";
 const abeBlack = "#1b262c";
 const abeLightBlue = "#3282b8";
 const abeBabyBlue = "#bbe1fa";
+const abeWhite = '#ffff';
 
 export default createMuiTheme({
   palette: {
@@ -20,10 +21,10 @@ export default createMuiTheme({
       babyBlue: `${abeBabyBlue}`,
     },
     primary: {
-      main: `${abeLightBlue}`,
+      main: `${abeBlue}`,
     },
     secondary: {
-      main: `${abeLightBlue}`,
+      main: `${abeBlue}`,
     },
   },
   typography: {
