@@ -7,7 +7,7 @@ export default function YearCard ({title, time, description}) {
         <div className='year-card'>
             <div className='time'>
                 <img src="https://img.icons8.com/material-outlined/24/000000/clock--v1.png"/>
-                <p>{time}</p>
+                <strong>{time}</strong>
             </div>
            <div className='details'>
                 <h3>{title}</h3>

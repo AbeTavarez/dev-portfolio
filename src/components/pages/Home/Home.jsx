@@ -171,20 +171,22 @@ export default function Home() {
         </div>
 
         <div className="">
-          <h2>Timeline and Events</h2>
+          <h2>Timeline of Events</h2>
           <hr />
           <div>
             <h2>2021</h2>
           </div>
          <YearCard 
-          title='Taught over 20 new programmers for Nationwide.' 
-          time='July' 
-          description='Nationwide and Per Scholas Software Engineering Program'/>
+            title='Taught over 20 new programmers for Nationwide.' 
+            time='July' 
+            description='Nationwide and Per Scholas Software Engineering Program'
+        />
          
          <YearCard 
-          title='Taught over 20 new AWS Professionals for the AWS re/Start Program.' 
-          time='June' 
-          description='Taught over twenty new programmers and assisted instructors.'/>
+            title='Taught over 20 new AWS Professionals for the AWS re/Start Program.' 
+            ime='June' 
+            description='Taught over twenty new programmers and assisted instructors.'
+        />
         </div>
         
 

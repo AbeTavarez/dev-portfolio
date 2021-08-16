@@ -12,6 +12,7 @@
     align-items: center;
 }
 
-.time p {
+.time strong{
     padding-left: 10px;
+    text-decoration: bold;
 }
