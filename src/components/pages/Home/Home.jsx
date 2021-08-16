@@ -37,7 +37,7 @@ export default function Home() {
           </div>
            <div className='img-h3'>
            {/* <img src="https://res.cloudinary.com/abetavarez/image/upload/v1612810161/WIN_20210204_10_33_48_Pro-removebg-preview_5_npx6we.png" alt="user-pic" className="user-pic" /> */}
-           <img src="https://efrentavarez-resume.s3.us-east-2.amazonaws.com/z-2.PNG" alt="user-pic" className="user-pic" />
+           <img src="https://efrentavarez-resume.s3.us-east-2.amazonaws.com/profile-pic.png" alt="user-pic" className="user-pic" />
             {/* <div className="user-pic"></div> */}
             <div className='titles'>
             <h4>Software Engineer</h4>
@@ -87,11 +87,11 @@ export default function Home() {
             <h2>>_ Whoami?</h2>
             <p>
                I'm a self motivated AWS re/Start and Software Engineer Instructor at Per Scholas.
-              I've experience on Cloud Computing, Linux, Windows, Networking, Cloud Security, Programming, Automation, Software Development Life Cycle and Databases.
+              I've experience on Cloud Computing, Linux, Networking, Cloud Security, Programming: Frontend and Backend, Automation, Software Development Life Cycle and Databases.
             </p>
             <p>
-              When I'm not teaching, I like to work on personal development projects. 
-              I enjoy riding my BMX bike on my time off and escaping to a beach whe I go on vacation!
+              When I'm not teaching, I like to work on my personal programming projects, and read a book. 
+              I enjoy riding my bmx bike on my time off and escaping to a beach when I'm on vacation!
             </p>
             
           </div>

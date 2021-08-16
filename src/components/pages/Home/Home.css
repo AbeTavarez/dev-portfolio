@@ -24,8 +24,8 @@
 }
 .user-pic {
   border-radius: 50%;
-  max-width: 250px;
-  max-height: 400px;
+  max-width: 150px;
+  max-height: 150px;
   /* background-image: url('https://efrentavarez-resume.s3.us-east-2.amazonaws.com/z-2.PNG'); */
   background-size: cover;
 }
@@ -62,8 +62,9 @@
 }
 
 .social-links-home a {
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   color: rgb(65,74,76);
+  margin-left: 20px;
   
 }
 a {
@@ -112,11 +113,10 @@ a {
   /* color: #3282b8; */
   color: white;
 }
-.icons-media {
+.icons-media-home {
   display: flex;
   justify-content: center;
-  height: 80px;
-  padding: 15px;
+  padding-bottom: 50px;
 }
 .last-p {
   margin-bottom: 80px;
