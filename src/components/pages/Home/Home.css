@@ -133,6 +133,10 @@ a {
   margin: 100px 10px;
 }
 
+.timeline-container {
+  padding: 0 20px;
+}
+
 @media (max-width: 1200px) {
   .home-projects-container {
     flex-direction: column;
@@ -184,17 +188,6 @@ a {
     padding-right: 40px;
   }
 
-  .icons-media {
-    background-color: brown;
-    display: flex;
-    flex-wrap: wrap;
-    overflow-wrap: normal;
-    width: 40px;
-    height: auto;
-    padding: 15px;
-    padding-bottom: 300px;
-  }
-
   .img-title {
     display: flex;
     flex-direction: column;
@@ -212,16 +205,25 @@ a {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
   .icons-media-home{
-    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-wrap: normal;
+    width: 40px;
+    height: auto;
+    padding: 15px;
+  
   }
   .name-home {
     font-size: 22px;
   }
 }
 
-@media (max-width: 541px) {
+@media (max-width: 500px) {
+  .img-h3 {
+    padding-left: 40px;
+  }
   .welcome-message {
     width: auto;
   }

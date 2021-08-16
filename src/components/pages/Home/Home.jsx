@@ -170,7 +170,7 @@ export default function Home() {
               
         </div>
 
-        <div className="">
+        <div className="timeline-container">
           <h2>Timeline of Events</h2>
           <hr />
           <div>
@@ -179,13 +179,15 @@ export default function Home() {
          <YearCard 
             title='Taught over 20 new programmers for Nationwide.' 
             time='July' 
-            description='Nationwide and Per Scholas Software Engineering Program'
+            description1='I had the amazing opportunity to work with Nationwide and Per Scholas 
+            to train over 20 new learners at their IT and Software Engineering Program.'
         />
          
          <YearCard 
             title='Taught over 20 new AWS Professionals for the AWS re/Start Program.' 
             time='June' 
-            description='Taught over twenty new programmers and assisted instructors.'
+            description1='This is an amazing opportunity that AWS and Per Scholas bring to learners who wants to make a career switch into tech.'
+            description2='The AWS re/Start Program has an intense curriculum were learners get exposed to Cloud Computing, Networking, Linux, Programming and much more.'
         />
         </div>
         

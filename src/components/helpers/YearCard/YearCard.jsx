@@ -2,7 +2,7 @@ import React from "react";
 import './YearCard.css'
 
 
-export default function YearCard ({title, time, description}) {
+export default function YearCard ({title, time, description1, description2, description3}) {
     return (
         <div className='year-card'>
             <div className='time'>
@@ -17,7 +17,9 @@ export default function YearCard ({title, time, description}) {
 
            <div className='details'>
                 <h3>{title}</h3>
-                <p>{description}</p>
+                <p>{description1}</p>
+                <p>{description2}</p>
+                <p>{description3}</p>
            </div>
 
         </div>
