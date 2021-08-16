@@ -10,24 +10,23 @@ import Footer from "./components/Footer/Footer";
 import ReactGA, { pageview } from 'react-ga';
 ReactGA.initialize('G-NKMV7EFHDN' )
 
+
 function App() {
+//* GA
+const pageViewstracking = props => {
+  const pathname = props.match.path;
 
-  const pageViewstracking = props => {
-    const pathname = props.match.path;
-
-    let pageView;
-    if (pathname === '*') pageView = '/not-found';
-    else pageview = pathname
-    // sending GA page view
-    ReactGA.pageview(pageView)
-  }
-
-
-
+  let pageView;
+  if (pathname === '*') pageView = '/not-found';
+  else pageview = pathname
+  // sending GA page view
+  ReactGA.pageview(pageView)
+};
+  
   return (
     <ThemeProvider theme={theme}>
       <Header />
-      <Main />
+      <Main pageViews={pageViewstracking}/>
       <Footer />
     </ThemeProvider>
   );

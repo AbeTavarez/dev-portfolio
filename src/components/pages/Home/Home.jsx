@@ -4,10 +4,6 @@ import "./Home.css";
 import YearCard from "../../helpers/YearCard/YearCard";
 import { makeStyles } from "@material-ui/core/styles";
 
-//* Google Analytics 
-import ReactGA, { pageview } from 'react-ga';
-ReactGA.initialize('G-NKMV7EFHDN')
-
 const useStyles = makeStyles({
   root: {
     maxWidth: 445,
@@ -19,11 +15,6 @@ const useStyles = makeStyles({
 });
 
 export default function Home() {
-  useEffect (() => {
-    ReactGA.pageview(window.location.pathname);
-  })
- 
-
   const classes = useStyles();
   return (
     <Layout>

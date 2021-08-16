@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Route, Switch } from "react-router-dom";
 
 // import Landing from "../pages/Landing/Landing";
@@ -13,7 +13,17 @@ import Services from "../pages/Services/Services.jsx";
 import "./Main.css";
 import underConstruction from "../shared/underConstruction";
 
-export default function Main() {
+//* Google Analytics 
+import ReactGA, { pageview } from 'react-ga';
+ReactGA.initialize('G-NKMV7EFHDN')
+
+export default function Main({pageViews}) {
+
+  useEffect (() => {
+    ReactGA.pageview(window.location.pathname);
+    // pageViews();
+  })
+
   return (
     <Route>
       <Switch>
