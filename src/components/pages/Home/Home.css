@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .home-container {
   display: flex;
@@ -22,9 +23,11 @@
   flex-direction: column;
 }
 .user-pic {
-  border-radius: 100%;
-  width: 150px;
-  height: 150px;
+  border-radius: 50%;
+  max-width: 250px;
+  max-height: 400px;
+  /* background-image: url('https://efrentavarez-resume.s3.us-east-2.amazonaws.com/z-2.PNG'); */
+  background-size: cover;
 }
 .abe {
   font-style: italic;
@@ -53,8 +56,9 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-family: 'Montserrat';
-  font-size: 22px;
+  /* font-family: 'Montserrat'; */
+  font-family: 'Roboto';
+
 }
 
 .social-links-home a {
@@ -71,7 +75,9 @@ a {
 }
 
 .name-home {
-  font-family: 'Bebas Neue';
+  /* font-family: 'Bebas Neue'; */
+  /* font-family: 'Bebas Neue'; */
+  /* font-family: 'Roboto'; */
 }
 
 .h-header {
@@ -79,7 +85,8 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   /* margin: 150px 10px; */
-  font-family: 'Bebas Neue', cursive;
+  /* font-family: 'Bebas Neue', cursive; */
+  /* font-family: 'Roboto'; */
   letter-spacing: 2px;
   width: 50%;
   padding-top: 100px;
@@ -89,18 +96,9 @@ a {
   margin-top: 0;
   margin-bottom: 5px;
 }
-.home-projects-container {
-  display: flex;
-  flex-direction: row;
-  margin: 40px;
-}
-.home-projects-title {
-  font-family: 'Bebas Neue';
-  padding-top: 100px;
-}
 
 .aboutme {
-  font-family: 'Bebas Neue';
+  /* font-family: 'Bebas Neue'; */
   padding-top: 40px;
   text-align: center;
   font-size: 22px;

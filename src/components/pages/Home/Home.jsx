@@ -36,7 +36,9 @@ export default function Home() {
             <hr />
           </div>
            <div className='img-h3'>
-           <img src="https://res.cloudinary.com/abetavarez/image/upload/v1612810161/WIN_20210204_10_33_48_Pro-removebg-preview_5_npx6we.png" alt="user-pic" className="user-pic" />
+           {/* <img src="https://res.cloudinary.com/abetavarez/image/upload/v1612810161/WIN_20210204_10_33_48_Pro-removebg-preview_5_npx6we.png" alt="user-pic" className="user-pic" /> */}
+           <img src="https://efrentavarez-resume.s3.us-east-2.amazonaws.com/z-2.PNG" alt="user-pic" className="user-pic" />
+            {/* <div className="user-pic"></div> */}
             <div className='titles'>
             <h4>Software Engineer</h4>
             <h4>AWS Cloud Engineer</h4>
@@ -169,16 +171,19 @@ export default function Home() {
         </div>
 
         <div className="">
+          <h2>Timeline and Events</h2>
+          <hr />
           <div>
             <h2>2021</h2>
           </div>
          <YearCard 
-          title='Nationwide and Per Scholas Software Engineering Program' 
+          title='Taught over 20 new programmers for Nationwide.' 
           time='July' 
-          description='Taught over twenty new programmers and assisted instructors.'/>
+          description='Nationwide and Per Scholas Software Engineering Program'/>
+         
          <YearCard 
-          title='Nationwide and Per Scholas Software Engineering Program' 
-          time='July' 
+          title='Taught over 20 new AWS Professionals for the AWS re/Start Program.' 
+          time='June' 
           description='Taught over twenty new programmers and assisted instructors.'/>
         </div>
         
