@@ -4,7 +4,7 @@
 }
 
 .year-card .details {
-    padding-left: 20px;
+    padding-left: 50px;
 }
 
 .time {
@@ -12,7 +12,12 @@
     align-items: center;
 }
 
+.time img {
+    padding-left: 12px;
+}
+
 .time strong{
     padding-left: 10px;
     text-decoration: bold;
 }
+

@@ -184,7 +184,7 @@ export default function Home() {
          
          <YearCard 
             title='Taught over 20 new AWS Professionals for the AWS re/Start Program.' 
-            ime='June' 
+            time='June' 
             description='Taught over twenty new programmers and assisted instructors.'
         />
         </div>
