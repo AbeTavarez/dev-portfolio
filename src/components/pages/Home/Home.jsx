@@ -168,17 +168,24 @@ export default function Home() {
             <h2>2021</h2>
           </div>
          <YearCard 
-            title='Taught over 20 new programmers for Nationwide.' 
-            time='July' 
-            description1='I had the amazing opportunity to work with Nationwide and Per Scholas 
-            to train over 20 new learners at their IT and Software Engineering Program.'
+            title='Taught over Twenty new Programmers/DevOps for Nationwide.' 
+            time='September' 
+            description1='I had the amazing opportunity to work with Nationwide and Per Scholas'
+            description2='to train over twenty new candidates for their IT and Software Engineering Apprenticeship Program.'
         />
          
          <YearCard 
             title='Taught over 20 new AWS Professionals for the AWS re/Start Program.' 
-            time='June' 
-            description1='This is an amazing opportunity that AWS and Per Scholas bring to learners who wants to make a career switch into tech.'
-            description2='The AWS re/Start Program has an intense curriculum were learners get exposed to Cloud Computing, Networking, Linux, Programming and much more.'
+            time='September' 
+            description1='Helped over twenty new learner to graduate from the AWS re/Start Program and get their CCP and SA certifications.'
+            
+        />
+        
+        <YearCard 
+          title='New job with Per Scholas as an IA/Co-Instructor.'
+          time='June'
+          description1='At the end of June after completing the AWS re/Start training I was offered a job position as an IA / Co-Instructor at'
+          description2="the AWS re/Start Program at Per Scholas."
         />
         </div>
         
