@@ -214,13 +214,13 @@ export default function Home() {
         <YearCard
           time='August'
           title="Studied Redux"
-          description1="I self-studied Redux."
+          description1="Self-studied Redux by building an e-commerce store website."
         />
 
         <YearCard
           time='July'
           title="Studied Angular and TypeScript"
-          description1="I self-studied Angular and TypeScript, two technologies that I had heard a lot about and I wanted to learn more about them."
+          description1="Self-studied Angular and TypeScript."
         />
 
         <YearCard 
