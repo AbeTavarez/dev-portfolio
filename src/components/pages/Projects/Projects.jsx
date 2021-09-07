@@ -103,7 +103,7 @@ export default function Projects() {
                   InstaCart
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  I had the amazing oportunity to collaborate with a team of
+                  I had the amazing opportunity to collaborate with a team of
                   software engineers and UI/UX designers, to replicate the
                   eCommerce site InstaCart.
                 </Typography>
@@ -156,13 +156,13 @@ export default function Projects() {
                   Motorcycle & Tire Shop Business Website
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Consulted and created a website for a small business owner.
+                  Consulted and created a website for a small business.
                   Worked with the client throughout the project to help them
                   create an online presence and driving new clients to their
                   business by setting search engine optimization.
                 </Typography>
                 <Typography variant="body2" color="textPrimary" component="p">
-                  Stack: HTML, CSS, JavaScript, SEO, UXUI, Deployment.
+                  Stack: HTML, CSS, JavaScript, SEO, UX-UI, Deployment.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -203,7 +203,7 @@ export default function Projects() {
                   #StayHomeCookHome
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Provides easy recipies and information to the public to stay
+                  Provides easy recipes and information to the public to stay
                   save when shopping during #covid19 virus.
                 </Typography>
                 <Typography variant="body2" color="textPrimary" component="p">

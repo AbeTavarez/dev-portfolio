@@ -73,7 +73,8 @@ export default function Home() {
         </div>
 
         <div className="aboutme">
-          
+          <img src="https://abe-assets-cloud.s3.us-east-2.amazonaws.com/aws-certified-cloud-practitioner.png" alt="" />
+          <img src="https://abe-assets-cloud.s3.us-east-2.amazonaws.com/aws-re-start-graduate+(1).png" alt="" />
           <div className="bio">
             <h2>>_ Whoami?</h2>
             <p>
@@ -169,16 +170,18 @@ export default function Home() {
           </div>
          <YearCard 
             title='Taught over Twenty new Programmers/DevOps for Nationwide.' 
-            time='September' 
-            description1='I had the amazing opportunity to work with Nationwide and Per Scholas'
+            time='October' 
+            description1='I had the amazing opportunity to work with Nationwide and Per Scholas,'
             description2='to train over twenty new candidates for their IT and Software Engineering Apprenticeship Program.'
+            
         />
          
          <YearCard 
-            title='Taught over 20 new AWS Professionals for the AWS re/Start Program.' 
+            title='Taught over twenty new AWS Professionals for the AWS re/Start Program.' 
             time='September' 
-            description1='Helped over twenty new learner to graduate from the AWS re/Start Program and get their CCP and SA certifications.'
-            
+            description1='I helped over twenty new learners to graduate from the AWS re/Start Program and get their AWS CCP and SA certifications.'
+            imgUrl='https://abe-assets-cloud.s3.us-east-2.amazonaws.com/first-aws-class-gards.jpg'
+            btnUrl='https://www.linkedin.com/feed/update/urn:li:activity:6839596361080553472/?commentUrn=urn%3Ali%3Acomment%3A(activity%3A6839596361080553472%2C6839597113148616704)&replyUrn=urn%3Ali%3Acomment%3A(activity%3A6839596361080553472%2C6839617242049724416)'
         />
         
         <YearCard 
@@ -186,6 +189,61 @@ export default function Home() {
           time='June'
           description1='At the end of June after completing the AWS re/Start training I was offered a job position as an IA / Co-Instructor at'
           description2="the AWS re/Start Program at Per Scholas."
+          imgUrl='https://abe-assets-cloud.s3.us-east-2.amazonaws.com/starting-perscholas.jpg'
+          btnUrl='https://www.linkedin.com/embed/feed/update/urn:li:share:6805503872241676288'
+        />
+
+        <YearCard 
+          title='Graduated from the AWS re/Start Program'
+          time='May'
+          imgUrl='https://abe-assets-cloud.s3.us-east-2.amazonaws.com/AWS-Restart-Graduate-Badge-Foundational.png'
+          btnUrl='https://www.credly.com/badges/bbd3dc83-1559-461e-8e22-8e993d33f8df/linked_in'
+        />
+
+        <YearCard 
+          title='Started the AWS re/Start Program'
+          time='January'
+          description1='The AWS re/Start Program is a 15 weeks of hands on technical training on Cloud Computing, AWS Cloud, Linux,'
+          description2='Python, Networking, Databases, Cybersecurity, CI/CD and more.'
+        />
+
+        <div>
+            <h2>2020</h2>
+        </div>
+
+        <YearCard
+          time='August'
+          title="Studied Redux"
+          description1="I self-studied Redux."
+        />
+
+        <YearCard
+          time='July'
+          title="Studied Angular and TypeScript"
+          description1="I self-studied Angular and TypeScript, two technologies that I had heard a lot about and I wanted to learn more about them."
+        />
+
+        <YearCard 
+          time='June'
+          title='Graduated from the GA Software Engineering Program'
+          description1='Completed a 12 weeks immersive Software Engineering Program.'
+        />
+
+        <YearCard 
+          time='March'
+          title='Started the GA Software Engineering Immersive Program'
+          description1='The GA SE Immersive Program is a 12 weeks intense training program with focus on Frontend and Backend technologies in'
+          description2='HTML, CSS, JavaScript, NodeJS, React, Ruby, Data Structures, and many other web development technologies.'
+        />
+
+        <div>
+            <h2>2019</h2>
+        </div>
+
+        <YearCard
+        title='Started learning Swift and iOS Development'
+        time='March'
+        description1='Completed a iOS Development Bootcamp in SOHO NYC.'
         />
         </div>
         
