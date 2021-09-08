@@ -214,7 +214,7 @@ export default function Home() {
         <YearCard
           time='August'
           title="Studied Redux"
-          description1="Self-studied Redux by building an e-commerce store website."
+          description1="Build an e-commerce web-application using React and Redux."
         />
 
         <YearCard
