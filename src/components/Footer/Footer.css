@@ -17,7 +17,13 @@
 
 .social-links-footer a {
   color: #fff;
+  font-size: 5em;
 }
+.social-links-footer a:hover {
+  /* color: #212121; */
+  color: coral;;
+}
+
 
 .links {
   display: flex;
@@ -31,7 +37,19 @@
 }
 
 .getintouch {
+  font-size: 2em;
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .social-links-footer a {
+    color: #fff;
+    font-size: 22px;
+  }
+  .getintouch {
+    font-size: 22px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 525px) {

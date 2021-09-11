@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .main-cont {
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: #212121;
+  color: #fff;
 }
 
 .projects-container {
@@ -13,7 +15,8 @@
   margin: 0 auto;
   height: auto;
   /* background-color: #232F3E; */
-  background-color: #fff;
+  /* background-color: #fff; */
+  
   /* padding-bottom: 172px; */
 }
 .card-section {

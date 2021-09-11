@@ -24,7 +24,7 @@ export default function Home() {
           <div className="name-home">
          
           <div className='abraham'>
-            <h2>Abraham E. Tavarez</h2>
+            <h1>Abraham E. Tavarez</h1>
             <hr />
           </div>
            <div className='img-h3'>
@@ -83,7 +83,7 @@ export default function Home() {
               I've experience on Cloud Computing, Linux, Networking, Cloud Security, Programming: Frontend and Backend, Automation, Software Development Life Cycle and Databases.
             </p>
             <p>
-              When I'm not teaching, I like to work on my personal programming projects, and read a book. 
+              When I'm not teaching, I like to work on my personal programming projects, play video games, and read a book. 
               I enjoy riding my bmx bike on my time off and escaping to a beach when I'm on vacation!
             </p>
             
@@ -169,13 +169,13 @@ export default function Home() {
           <div>
             <h2>2021</h2>
           </div>
-         <YearCard 
+         {/* <YearCard 
             title='Taught over Twenty new Programmers/DevOps for Nationwide.' 
             time='October' 
             description1='I had the amazing opportunity to work with Nationwide and Per Scholas,'
             description2='to train over twenty new candidates for their IT and Software Engineering Apprenticeship Program.'
             
-        />
+        /> */}
          
          <YearCard 
             title='Taught over twenty new AWS Professionals for the AWS re/Start Program.' 

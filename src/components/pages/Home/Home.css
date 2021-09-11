@@ -9,7 +9,6 @@
   align-items: center;
   width: auto;
   background-color: rgb(255, 255, 255);
-  /* background-color: #282c34; */
   color: rgb(65,74,76);
   font-family: 'Montserrat';
 }
@@ -34,8 +33,8 @@
   font-style: italic;
 }
 
-.abraham h {
-  color: #0B72B9;
+.abraham h1 {
+  color:  #ef6c00;
   font-family: 'Monserrat';
 }
 .img-h3 {
@@ -64,16 +63,21 @@
 
 }
 
-.top {
- 
-}
-
 .social-links-home a {
   /* justify-content: space-evenly; */
-  color: rgb(65,74,76);
+  /* color: rgb(65,74,76); */
+  /* color: #212121; */
+ 
+  color: #ef6c00;
+  font-size: 2em;
   margin-left: 20px;
   
 }
+.social-links-home a:hover {
+  color: #0B72B9;
+  font-size: 2.5em;
+}
+
 a {
   font-size: 32px;
   padding: 5px;
