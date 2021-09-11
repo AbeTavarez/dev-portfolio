@@ -11,6 +11,7 @@
   background-color: rgb(255, 255, 255);
   /* background-color: #282c34; */
   color: rgb(65,74,76);
+  font-family: 'Montserrat';
 }
 .profile-img {
   border-radius: 100%;
@@ -33,7 +34,7 @@
   font-style: italic;
 }
 
-.abraham h1 {
+.abraham h {
   color: #0B72B9;
   font-family: 'Monserrat';
 }
@@ -59,7 +60,12 @@
   text-align: center;
   /* font-family: 'Montserrat'; */
   font-family: 'Roboto';
+  
 
+}
+
+.top {
+ 
 }
 
 .social-links-home a {

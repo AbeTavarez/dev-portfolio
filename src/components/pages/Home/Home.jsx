@@ -19,11 +19,12 @@ export default function Home() {
   return (
     <Layout>
       <div className="home-container">
+        
         <div className="welcome-message">
           <div className="name-home">
          
           <div className='abraham'>
-            <h1>Abraham E. Tavarez</h1>
+            <h2>Abraham E. Tavarez</h2>
             <hr />
           </div>
            <div className='img-h3'>
@@ -159,7 +160,7 @@ export default function Home() {
             
               alt="aws-icon"
               />
-              
+           
         </div>
 
         <div className="timeline-container">
