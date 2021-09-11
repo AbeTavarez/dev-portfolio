@@ -51,6 +51,7 @@ export default function YearCard ({title, time, description1, description2, desc
                 image={imgUrl}
               />
 
+              <div className="visit-btn">
               <Button
                 size="small"
                 color="primary"
@@ -60,6 +61,7 @@ export default function YearCard ({title, time, description1, description2, desc
               >
                 Visit site
               </Button>
+              </div>
             </CardActionArea>
           </Card>
         </div>
