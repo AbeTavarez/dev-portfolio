@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .main-cont {
-  /* background-color: #fff; */
-  background-color: #212121;
-  color: #fff;
+  background-color: #fff;
 }
 
 .projects-container {
