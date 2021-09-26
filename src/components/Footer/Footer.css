@@ -16,15 +16,13 @@
 
 .social-links-footer a {
   color: #fff;
-  font-size: 3em;
 }
 .social-links-footer a:hover {
-  color: #0B72B9;
+  color: #ef6c00;
 }
 
 .links {
-  background-color: coral;
-  padding: 5px
+  /* padding: 5px */
 }
 .social-links-footer {
   margin-left: 35px;
