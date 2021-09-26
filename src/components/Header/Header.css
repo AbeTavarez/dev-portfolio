@@ -7,6 +7,11 @@ nav {
   left: 0;
 }
 
+.user-name {
+  display: flex;
+  align-items: center;
+}
+
 .header-container {
   display: flex;
   padding: 20px 0;

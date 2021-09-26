@@ -276,6 +276,10 @@ export default function Header(props) {
   const tabs = (
     <Fragment>
       <div className="message">
+      <div className="user-name">
+          <img src="https://img.icons8.com/dotty/50/000000/user.png"/>
+          <div className="">Abraham Tavarez</div>
+          </div>
         <div className={classes.topContent}>
           <Button
             component={Link}
@@ -311,6 +315,7 @@ export default function Header(props) {
         </Paper>
 
         <div className="estimate">
+          
           {/* <Button
             variant="contained"
             color="primary"

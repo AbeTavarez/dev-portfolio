@@ -77,7 +77,7 @@ export default function Home() {
           <img src="https://abe-assets-cloud.s3.us-east-2.amazonaws.com/aws-certified-cloud-practitioner.png" alt="" />
           <img src="https://abe-assets-cloud.s3.us-east-2.amazonaws.com/aws-re-start-graduate+(1).png" alt="" />
           <div className="bio">
-            <h2>>_ Whoami?</h2>
+            <h2>Welcome! My name is Abraham.</h2>
             <p>
                I'm a self motivated AWS re/Start and Software Engineer Instructor at Per Scholas.
               I've experience on Cloud Computing, Linux, Networking, Cloud Security, Programming: Frontend and Backend, Automation, Software Development Life Cycle and Databases.
