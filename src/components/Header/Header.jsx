@@ -200,7 +200,7 @@ export default function Header(props) {
     setSelectedIndex(idx);
   };
 
-  //* @routes - all routes
+  //* ================== @routes - all routes
   const routes = [
     { name: "Home", link: "/", activeIndex: 0 },
 

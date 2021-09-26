@@ -11,6 +11,7 @@
   background-color: rgb(255, 255, 255);
   color: rgb(65,74,76);
   font-family: 'Montserrat';
+  margin-top: 100px;
 }
 .profile-img {
   border-radius: 100%;
@@ -75,7 +76,7 @@
 }
 .social-links-home a:hover {
   color: #0B72B9;
-  font-size: 2.5em;
+  /* font-size: 2.1em; */
 }
 
 a {

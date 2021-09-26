@@ -24,8 +24,8 @@ export default function Home() {
           <div className="name-home">
          
           <div className='abraham'>
-            <h1>Abraham E. Tavarez</h1>
-            <hr />
+            {/* <h1>Abraham E. Tavarez</h1> */}
+            {/* <hr /> */}
           </div>
            <div className='img-h3'>
            {/* <img src="https://res.cloudinary.com/abetavarez/image/upload/v1612810161/WIN_20210204_10_33_48_Pro-removebg-preview_5_npx6we.png" alt="user-pic" className="user-pic" /> */}
