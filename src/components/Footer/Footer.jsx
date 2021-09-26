@@ -3,16 +3,18 @@ import React from "react";
 import "./Footer.css";
 
 export default function Footer() {
+  const year = new Date().getFullYear();
+  
   return (
     <div className="footer-container">
 
       <div className="contact">
-        <p>Copyright 2021 &copy;</p>
+        <p>Copyright {year} &copy;</p>
         <p>Abraham E. Tavarez</p>
       </div>
 
 
-      <div className="links">
+      <div className="footer-links">
         <div className="getintouch">
           <h2>Get in touch </h2>
         </div>

@@ -21,8 +21,8 @@
   color: #ef6c00;
 }
 
-.links {
-  /* padding: 5px */
+.footer-links {
+  /* padding-top: 50px; */
 }
 .social-links-footer {
   display: flex;
@@ -30,7 +30,6 @@
 }
 
 .getintouch {
-  font-size: 2em;
   text-align: center;
 }
 
