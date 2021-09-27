@@ -58,14 +58,19 @@
 }
 
 @media (max-width: 540px) {
+  .footer-container {
+
+  }
   .contact p {
     margin: 25px 0;
     padding-left: 5px;
   }
   .social-links-footer {
     display: flex;
-    justify-content: space-around;
-    /* font-size: 20px; */
+    flex-direction: column;
+  }
+  .social-links-footer a {
+    font-size: 20-px;
   }
   .getintouch {
     font-size: 14px;
