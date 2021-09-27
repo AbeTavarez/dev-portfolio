@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 .home-container {
   display: flex;
   flex-direction: column;
@@ -12,6 +12,11 @@
   color: rgb(65,74,76);
   font-family: 'Montserrat';
   margin-top: 100px;
+}
+.home-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .profile-img {
   border-radius: 100%;
@@ -24,51 +29,46 @@
   flex-direction: column;
 }
 .user-pic {
-  border-radius: 50%;
-  max-width: 150px;
-  max-height: 150px;
+  border-radius: 5%;
+  max-width: 250px;
+  max-height: 250px;
   /* background-image: url('https://efrentavarez-resume.s3.us-east-2.amazonaws.com/z-2.PNG'); */
   background-size: cover;
 }
 .abe {
-  font-style: italic;
+  color: #ef6c00;
 }
 
-.abraham h1 {
-  color:  #ef6c00;
-  font-family: 'Monserrat';
-}
 .img-h3 {
   display: flex;
   flex-direction: row;
+  /* margin-top: 50px; */
   /* align-items: flex-end; */
   /* justify-content: space-between; */
 }
 
-.img-h3 h4 {
+.bio {
+  font-size: 18px;
+}
+
+.img-h3 h3 {
   color: #0B72B9;
-  /* color: #f77754; */
 }
 
-.titles {
-  margin-left: 10px;
-}
-
-.welcome-message {
+.home-message {
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* font-family: 'Montserrat'; */
-  font-family: 'Roboto';
-  
-
+  font-family: 'Roboto Slab';
+  margin-top: 15px;
 }
-
+.social-links-home{
+  margin-top: 30px;
+}
 .social-links-home a {
   /* justify-content: space-evenly; */
   /* color: rgb(65,74,76); */
   /* color: #212121; */
- 
   color: #ef6c00;
   font-size: 2em;
   margin-left: 20px;
@@ -87,10 +87,8 @@ a {
   width: 100%;
 }
 
-.name-home {
-  /* font-family: 'Bebas Neue'; */
-  /* font-family: 'Bebas Neue'; */
-  /* font-family: 'Roboto'; */
+.bio h2 {
+  color: #ef6c00;
 }
 
 .h-header {
