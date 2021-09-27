@@ -57,18 +57,19 @@
  
 }
 
-/* @media (max-width: 525px) {
+@media (max-width: 540px) {
   .contact p {
     margin: 25px 0;
     padding-left: 5px;
   }
-  .social-links-footer a {
-    color: #fff;
-    font-size: 20px;
+  .social-links-footer {
+    display: flex;
+    justify-content: space-around;
+    /* font-size: 20px; */
   }
   .getintouch {
     font-size: 14px;
-    text-align: center;
+    /* text-align: center; */
   }
   .links {
     margin-top: 5px;
@@ -79,4 +80,4 @@
   .contact p {
     margin: 25px 0;
   }
-} */
+}

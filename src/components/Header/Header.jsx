@@ -362,6 +362,10 @@ export default function Header(props) {
   const drawer = (
     <Fragment>
       <div className="">
+      <div className="user-name">
+          <img src="https://img.icons8.com/dotty/50/000000/user.png"/>
+          <div className="">Abraham Tavarez</div>
+          </div>
         <Button
           component={Link}
           to="/"

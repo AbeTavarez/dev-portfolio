@@ -187,6 +187,16 @@ a {
   }
 }
 
+@media (max-width: 955px) {
+  .home-top {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-container {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 800px) {
   .welcome-message {
     font-size: 10px;
