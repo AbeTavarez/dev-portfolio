@@ -49,9 +49,8 @@ export default function Home() {
                 alt="user-pic"
                 className="user-pic"
               />
-              {/* <div className="user-pic"></div> */}
-              
             </div>
+            
             <div className="social-links-home">
               <a
                 href="https://www.linkedin.com/in/abrahametavarez/"
@@ -151,7 +150,7 @@ export default function Home() {
         </div>
 
         <div className="timeline-container">
-          <h2>Timeline of Events</h2>
+          <h1>Timeline of Events</h1>
           <hr />
           <div>
             <h2>2021</h2>

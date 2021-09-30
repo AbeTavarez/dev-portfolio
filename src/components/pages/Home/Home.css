@@ -6,7 +6,7 @@
 .home-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   width: auto;
   background-color: rgb(255, 255, 255);
   color: rgb(65,74,76);
@@ -16,59 +16,30 @@
 .home-top {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-}
-.profile-img {
-  border-radius: 100%;
-  border: 2px solid white;
-  height: 200px;
-  width: 200px;
-}
-.img-title {
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
+  background-color: azure;
+  width: 100%;
 }
 .user-pic {
   border-radius: 5%;
   max-width: 250px;
   max-height: 250px;
-  /* background-image: url('https://efrentavarez-resume.s3.us-east-2.amazonaws.com/z-2.PNG'); */
+  margin-top: 90px;
   background-size: cover;
 }
 .abe {
   color: #ef6c00;
 }
 
-.img-h3 {
-  display: flex;
-  flex-direction: row;
-  /* margin-top: 50px; */
-  /* align-items: flex-end; */
-  /* justify-content: space-between; */
-}
-
 .bio {
   font-size: 18px;
 }
-
-.img-h3 h3 {
-  color: #0B72B9;
-}
-
 .home-message {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  font-family: 'Roboto Slab';
   margin-top: 15px;
 }
-.social-links-home{
-  margin-top: 30px;
-}
 .social-links-home a {
-  /* justify-content: space-evenly; */
-  /* color: rgb(65,74,76); */
-  /* color: #212121; */
   color: #ef6c00;
   font-size: 2em;
   margin-left: 20px;
@@ -76,7 +47,6 @@
 }
 .social-links-home a:hover {
   color: #0B72B9;
-  /* font-size: 2.1em; */
 }
 
 a {
@@ -95,9 +65,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* margin: 150px 10px; */
-  /* font-family: 'Bebas Neue', cursive; */
-  /* font-family: 'Roboto'; */
   letter-spacing: 2px;
   width: 50%;
   padding-top: 100px;
@@ -109,7 +76,6 @@ a {
 }
 
 .aboutme {
-  /* font-family: 'Bebas Neue'; */
   padding-top: 40px;
   text-align: center;
   font-size: 22px;
@@ -126,7 +92,8 @@ a {
 .icons-media-home {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  width: 100%;
+  background-color: azure;
 }
 .last-p {
   margin-bottom: 80px;
@@ -145,6 +112,7 @@ a {
 
 .timeline-container {
   padding: 0 20px;
+  margin: 50px;
 }
 
 @media (max-width: 1200px) {
@@ -156,9 +124,7 @@ a {
     margin: 0 15px;
   }
   .icons-media-home {
-    width: 600px;
-    height: 80px;
-    padding: 15px;
+    display: none;
   }
   .welcome-message {
     font-size: 14px;
@@ -184,6 +150,12 @@ a {
   }
   .h-header {
     margin-top: 100px;
+  }
+}
+
+@media (max-width: 956px) {
+  .user-pic{
+    margin-top: 0px;
   }
 }
 
@@ -226,28 +198,12 @@ a {
 }
 
 @media (max-width: 600px) {
-  .icons-media-home{
-    display: flex;
-    flex-wrap: wrap;
-    overflow-wrap: normal;
-    width: 40px;
-    height: auto;
-    padding: 15px;
-  
-  }
   .name-home {
     font-size: 22px;
   }
 }
 
 @media (max-width: 500px) {
-  .img-h3 {
-    padding-left: 40px;
-  }
-  .welcome-message {
-    width: auto;
-  }
-
   .aboutme {
     width: 300px;
   }
