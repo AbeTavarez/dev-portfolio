@@ -6,6 +6,10 @@ nav {
   top: 0;
   left: 0;
 }
+.my-name {
+  color: #3282b8;
+  padding: 10px;
+}
 
 .user-name {
   display: flex;

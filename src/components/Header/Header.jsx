@@ -297,7 +297,7 @@ export default function Header(props) {
               className={classes.logo}
             /> */}
           </Button>
-            <div className="">Abraham Tavarez</div>
+            <div className="my-name">Abraham Tavarez</div>
         </div>
 
         <Paper className={classes.tabContainer} elevation='5' variant="elevation">
