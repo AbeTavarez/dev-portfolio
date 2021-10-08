@@ -43,21 +43,20 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     width: "100%",
-    backgroundColor: "#1b262c;",
   },
   topContent: {
     display: "flex",
     justifyContent: "space-between",
-    padding: "10px",
+    padding: "0px",
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(1),
   },
   toolbar: {
-    minHeight: 128,
+    minHeight: 120,
     alignItems: "flex-start",
     paddingTop: theme.spacing(1),
-    paddingBottom: theme.spacing(2),
+    paddingBottom: theme.spacing(0),
     [theme.breakpoints.down("md")]: {
       minHeight: 80,
     },
@@ -93,18 +92,21 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-evenly",
     marginLeft: "auto",
     flexGrow: 1,
+    backgroundColor: 'rgb(40,44, 52)'
+    // height: '30px'
   },
   tab: {
     ...theme.typography.tab,
     minWidth: 10,
     marginLeft: "25px",
+    color: 'white'
   },
   button: {
     ...theme.typography.estimate,
-    height: "45px",
+    height: "25px",
   },
   menu: {
-    backgroundColor: theme.palette.common.lighBlue,
+    backgroundColor: theme.palette.common.reactBlack,
     color: "white",
     borderRadius: 0,
   },
@@ -118,15 +120,16 @@ const useStyles = makeStyles((theme) => ({
   drawerIcon: {
     height: "50px",
     width: "50px",
+    color: 'white'
   },
   drawerIconContainer: {
     marginLeft: "auto",
     "&:hover": {
-      backgroundColor: "transparent",
+      backgroundColor: "#282c34",
     },
   },
   drawer: {
-    backgroundColor: theme.palette.common.lightBlue,
+    backgroundColor: theme.palette.common.reactBlack,
   },
   drawerItem: {
     ...theme.typography.tab,
@@ -134,7 +137,7 @@ const useStyles = makeStyles((theme) => ({
     opacity: 0.7,
   },
   drawerItemEstimate: {
-    backgroundColor: theme.palette.common.lightBlue,
+    backgroundColor: theme.palette.common.reactBlack,
   },
   drawItemSelected: {
     "& .MuiListItemText-root": {
@@ -277,8 +280,8 @@ export default function Header(props) {
     <Fragment>
       <div className="message">
       <div className="user-name">
-          <img src="https://img.icons8.com/dotty/50/000000/user.png"/>
-          <div className="">Abraham Tavarez</div>
+          {/* <img src="https://img.icons8.com/dotty/50/000000/user.png"/> */}
+        
           </div>
         <div className={classes.topContent}>
           <Button
@@ -294,9 +297,10 @@ export default function Header(props) {
               className={classes.logo}
             /> */}
           </Button>
+            <div className="">Abraham Tavarez</div>
         </div>
 
-        <Paper className={classes.tabContainer}>
+        <Paper className={classes.tabContainer} elevation='5' variant="elevation">
           <Tabs value={value} onChange={handleChange}>
             {routes.map((route, index) => (
               <Tab
@@ -445,7 +449,7 @@ export default function Header(props) {
     <Fragment>
       <ElevationScroll>
         <div className={classes.root}>
-          <AppBar position="fixed" color="secondary" className={classes.appbar}>
+          <AppBar position="" color="primary" className={classes.appbar}>
             <Toolbar className={classes.toolbar}>
               {matches ? drawer : tabs}
             </Toolbar>

@@ -53,7 +53,7 @@ export default function Home() {
             
             <div className="social-links-home">
               <a
-                href="https://www.linkedin.com/in/abrahametavarez/"
+                href="www.linkedin.com/in/abrahametavarez"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -155,18 +155,26 @@ export default function Home() {
           <div>
             <h2>2021</h2>
           </div>
-          {/* <YearCard 
-            title='Taught over Twenty new Programmers/DevOps for Nationwide.' 
+          <YearCard 
+            title='IT Engineering Program  for Nationwide and Per Scholas.' 
             time='October' 
             description1='I had the amazing opportunity to work with Nationwide and Per Scholas,'
             description2='to train over twenty new candidates for their IT and Software Engineering Apprenticeship Program.'
             
-        /> */}
+        />
+          <YearCard 
+            title='Job Promotion (Teaching Fellow).' 
+            time='October' 
+            description1='In just three months after staring as an IA at Per Scholas,'
+            description2="I was promoted to a Teaching Fellow position."
+            
+        />
 
           <YearCard
-            title="Taught over twenty new AWS Professionals for the AWS re/Start Program."
+            title="AWS re/Start Program Cohort 8."
             time="September"
-            description1="I helped over twenty new learners to graduate from the AWS re/Start Program and get their AWS CCP and SA certifications."
+            description1="Assisted over twenty new learners to graduate from the AWS re/Start Program and"
+            description2=" get their AWS CCP and SA certifications."
             imgUrl="https://abe-assets-cloud.s3.us-east-2.amazonaws.com/first-aws-class-gards.jpg"
             btnUrl="https://www.linkedin.com/feed/update/urn:li:activity:6839596361080553472/?commentUrn=urn%3Ali%3Acomment%3A(activity%3A6839596361080553472%2C6839597113148616704)&replyUrn=urn%3Ali%3Acomment%3A(activity%3A6839596361080553472%2C6839617242049724416)"
           />

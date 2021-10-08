@@ -9,6 +9,8 @@ const abeLightBlue = "#3282b8";
 const abeBabyBlue = "#bbe1fa";
 const abeReact = '#282c34';
 const abeWhite = '#fff';
+const reactBlack = 'rgb(40,44, 52)';
+const reactDarkBlue = 'rgb(48, 56, 70)';
 
 export default createMuiTheme({
   palette: {
@@ -20,19 +22,20 @@ export default createMuiTheme({
       black: `${abeBlack}`,
       lightBlue: `${abeLightBlue}`,
       babyBlue: `${abeBabyBlue}`,
+      reactBlack: `${reactBlack}`,
     },
     primary: {
-      main: `${abeReact}`,
+      main: `${reactBlack}`,
     },
     secondary: {
-      main: `${abeBlue}`,
+      main: `${reactDarkBlue}`,
     },
   },
   typography: {
     tab: {
       fontFamily: "Bebas Neue",
       fontWeight: 550,
-      fontSize: "1.5rem",
+      fontSize: "1.2rem",
       texttrasform: "none",
     },
     estimate: {
