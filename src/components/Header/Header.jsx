@@ -130,6 +130,7 @@ const useStyles = makeStyles((theme) => ({
   },
   drawer: {
     backgroundColor: theme.palette.common.reactBlack,
+    anchor: "right"
   },
   drawerItem: {
     ...theme.typography.tab,
@@ -385,6 +386,7 @@ export default function Header(props) {
         </Button>
       </div>
       <SwipeableDrawer
+        anchor="right"
         disableBackdropTransition={!iOS}
         disableDiscovery={iOS}
         open={openDrawer}
@@ -413,26 +415,6 @@ export default function Header(props) {
               </ListItemText>
             </ListItem>
           ))}
-          {/* <ListItem
-            oonClick={() => {
-              setOpenDrawer(false);
-              setValue(5);
-            }}
-            divider
-            button
-            component={Link}
-            to="/freeestimate"
-            selected={value === 5}
-            className={{
-              root: classes.drawerItemEstimate,
-              selected: classes.drawItemSelected,
-            }}
-            disabled
-          >
-            <ListItemText className={classes.drawerItem} disableTypography>
-              Free Estimate
-            </ListItemText>
-          </ListItem> */}
         </List>
       </SwipeableDrawer>
       <IconButton
