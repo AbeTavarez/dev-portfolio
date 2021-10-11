@@ -30,7 +30,8 @@
   background-size: cover;
 }
 .abe {
-  color: #3282b8;;
+  /* color: #3282b8; */
+  color: #09d3ac;
 }
 
 .bio {
@@ -42,15 +43,20 @@
   margin-top: 15px;
   margin-bottom: 65px;
 }
+
+.social-links-home {
+  margin-top: 15px;
+}
 .social-links-home a {
-  color: #3282b8;
+  color: #fff;
   font-size: 2em;
   margin-left: 20px;
   
   
 }
 .social-links-home a:hover {
-  color: #0B72B9;
+  /* color: #0B72B9; */
+  color: #09d3ac;
 }
 
 a {

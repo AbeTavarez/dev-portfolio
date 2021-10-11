@@ -53,7 +53,7 @@ export default function Home() {
             
             <div className="social-links-home">
               <a
-                href="www.linkedin.com/in/abrahametavarez"
+                href="https://www.linkedin.com/in/abrahametavarez/"
                 rel="noopener noreferrer"
                 target="_blank"
               >

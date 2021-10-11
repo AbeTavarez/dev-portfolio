@@ -36,7 +36,7 @@ export default function YearCard ({title, time, description1, description2, desc
         </div>
 
         <div className="details">
-          <h3>{title}</h3>
+          <h2>{title}</h2>
           <p>{description1}</p>
           <p>{description2}</p>
           <p>{description3}</p>
