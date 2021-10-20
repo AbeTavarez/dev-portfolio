@@ -280,11 +280,10 @@ export default function Header(props) {
   const tabs = (
     <Fragment>
       <div className="message">
-      <div className="user-name">
-          {/* <img src="https://img.icons8.com/dotty/50/000000/user.png"/> */}
-          <img src="https://img.icons8.com/external-justicon-flat-justicon/58/000000/external-atom-science-justicon-flat-justicon.png" className='react-icon react-icon-desk'/>
+        <div className="user-name">
+            <img src="https://img.icons8.com/external-justicon-flat-justicon/58/000000/external-atom-science-justicon-flat-justicon.png" className='react-icon react-icon-desk'/>
         
-          </div>
+        </div>
         <div className={classes.topContent}>
           <Button
             component={Link}
