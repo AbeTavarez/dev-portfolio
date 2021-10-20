@@ -282,6 +282,7 @@ export default function Header(props) {
       <div className="message">
       <div className="user-name">
           {/* <img src="https://img.icons8.com/dotty/50/000000/user.png"/> */}
+          <img src="https://img.icons8.com/external-justicon-flat-justicon/58/000000/external-atom-science-justicon-flat-justicon.png" className='react-icon react-icon-desk'/>
         
           </div>
         <div className={classes.topContent}>
@@ -298,7 +299,7 @@ export default function Header(props) {
               className={classes.logo}
             /> */}
           </Button>
-            <div className="my-name">Abraham Tavarez</div>
+            {/* <div className="my-name">Abraham Tavarez</div> */}
         </div>
 
         <Paper className={classes.tabContainer} elevation='5' variant="elevation">
@@ -368,8 +369,9 @@ export default function Header(props) {
     <Fragment>
       <div className="">
       <div className="user-name">
-          <img src="https://img.icons8.com/dotty/50/000000/user.png"/>
-          <div className="">Abraham Tavarez</div>
+      <img src="https://img.icons8.com/external-justicon-flat-justicon/58/000000/external-atom-science-justicon-flat-justicon.png" className='react-icon'/>
+          {/* <img src="https://img.icons8.com/dotty/50/000000/user.png"/> */}
+          {/* <div className="">Abraham Tavarez</div> */}
           </div>
         <Button
           component={Link}

@@ -51,6 +51,30 @@ a {
   text-decoration: none;
 
 }
+.user-name {
+  display: flex;
+  justify-content: flex-end;
+}
+.react-icon-desk {
+  margin: 10px 5px;
+  
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .react-icon {
+    animation: react-icon-spin infinite 20s linear;
+  }
+}
+
+@keyframes react-icon-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /*medium screens to large screens*/
 @media (max-width: 1200px) {
   nav {
