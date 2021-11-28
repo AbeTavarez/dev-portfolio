@@ -143,6 +143,10 @@ a {
   margin: 15px;
 }
 
+.timeline-container h1 {
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+}
 
 
 /* Laptop */
