@@ -99,20 +99,20 @@ const useStyles = makeStyles((theme) => ({
     ...theme.typography.tab,
     minWidth: 10,
     marginLeft: "25px",
-    color: 'white'
+    color: '#F0DB4F'
   },
   button: {
     ...theme.typography.estimate,
     height: "25px",
   },
   menu: {
-    backgroundColor: theme.palette.common.reactBlack,
+    backgroundColor: theme.palette.common.midnightBlue,
     color: "white",
     borderRadius: 0,
   },
   menuItem: {
     ...theme.typography.tab,
-    opacity: 0.7,
+    opacity: 0.5,
     "&:hover": {
       opacity: 1,
     },
@@ -129,7 +129,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   drawer: {
-    backgroundColor: theme.palette.common.reactBlack,
+    backgroundColor: theme.palette.common.midnightBlue,
     anchor: "right"
   },
   drawerItem: {
@@ -138,7 +138,7 @@ const useStyles = makeStyles((theme) => ({
     opacity: 0.7,
   },
   drawerItemEstimate: {
-    backgroundColor: theme.palette.common.reactBlack,
+    backgroundColor: theme.palette.common.midnightBlue,
   },
   drawItemSelected: {
     "& .MuiListItemText-root": {
@@ -210,22 +210,11 @@ export default function Header(props) {
 
     { name: "Projects", link: "/projects", activeIndex: 1 },
     { name: "Resume", link: "/resume", activeIndex: 2 },
-    // {
-    //   name: "Services",
-    //   link: "/services",
-    //   activeIndex: 3,
-    //   ariaOwns: anchorEl ? "simple-menu" : undefined,
-    //   ariaPopup: anchorEl ? true : undefined,
-    //   mouseOver: (e) => handleClick(e),
-    //   isDisable: false
-    // },
-
-    // {
-    //   name: "Open Source",
-    //   link: "/opensource",
-    //   activeIndex: 4,
-    //   isDisable: false,
-    // },
+    {
+      name: "Learn to Code",
+      link: "/learntocode",
+      activeIndex: 4
+    },
   ];
   //Menu Items Array
   const menuOptions = [
@@ -320,15 +309,6 @@ export default function Header(props) {
         </Paper>
 
         <div className="estimate">
-          
-          {/* <Button
-            variant="contained"
-            color="primary"
-            className={classes.button}
-            disabled
-          >
-            Free Estimate
-          </Button> */}
           <Menu
             id="simple-menu"
             anchorEl={anchorEl}

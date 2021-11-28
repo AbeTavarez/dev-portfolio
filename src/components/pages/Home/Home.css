@@ -27,9 +27,28 @@
   background-size: cover;
 }
 .abe {
-  color: #09d3ac;
+  /* color: #09d3ac; */
+  color:  #F0DB4F;
+  font-weight: 600;
 }
 
+.emoji-hand {
+  height: 40px;
+}
+
+.hello-anime {
+  font-size: 32px;
+}
+.hello-anime img {
+  padding: 0 10px;
+}
+span.welcome-anime img:hover {
+  transform: rotate(-40deg);
+  transform: rotate(60deg);
+}
+div.hello-anime {
+  font-weight: 600;
+}
 .bio {
   font-size: 18px;
 }
@@ -120,6 +139,8 @@ a {
   padding: 0 20px;
   margin: 15px;
 }
+
+
 
 /* Laptop */
 @media (max-width: 1024px) {

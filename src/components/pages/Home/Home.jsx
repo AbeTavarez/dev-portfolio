@@ -1,4 +1,4 @@
-import React , {useEffect}from "react";
+import React, { useEffect } from "react";
 import Layout from "../../shared/Layout";
 import "./Home.css";
 import YearCard from "../../helpers/YearCard/YearCard";
@@ -21,9 +21,21 @@ export default function Home() {
       <div className="home-container">
         <div className="home-top">
           <div className="aboutme">
-            
             <div className="bio">
-              <h1>Welcome! My name is <span className='abe'>Abraham</span></h1>
+              <div className="hello-anime">
+                <span className="welcome-anime">
+                <img 
+                    src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/waving-hand_1f44b.png"
+                    className="emoji-hand"
+                  />
+                  Welcome! {" "}
+                  {/* <img
+                    src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/waving-hand_1f44b.png"
+                    className="emoji-hand"
+                  /> */}
+                </span>
+                My name is <span className="abe">Abraham </span>
+              </div>
               <p>
                 I'm a self motivated AWS re/Start and Software Engineer
                 Instructor at Per Scholas. I've experience on Cloud Computing,
@@ -38,7 +50,6 @@ export default function Home() {
                 vacation!
               </p>
             </div>
-            
           </div>
 
           <div className="home-message">
@@ -50,7 +61,7 @@ export default function Home() {
                 className="user-pic"
               />
             </div>
-            
+
             <div className="social-links-home">
               <a
                 href="https://www.linkedin.com/in/abrahametavarez/"
@@ -155,20 +166,18 @@ export default function Home() {
           <div>
             <h2>2021</h2>
           </div>
-          <YearCard 
-            title='IT Engineering Program  for Nationwide and Per Scholas.' 
-            time='October' 
-            description1='I had the amazing opportunity to work with Nationwide and Per Scholas,'
-            description2='to train over twenty new candidates for their IT and Software Engineering Apprenticeship Program.'
-            
-        />
-          <YearCard 
-            title='Job Promotion (Teaching Fellow).' 
-            time='October' 
-            description1='In just three months after staring as an IA at Per Scholas,'
+          <YearCard
+            title="IT Engineering Program  for Nationwide and Per Scholas."
+            time="October"
+            description1="I had the amazing opportunity to work with Nationwide and Per Scholas,"
+            description2="to train over twenty new candidates for their IT and Software Engineering Apprenticeship Program."
+          />
+          <YearCard
+            title="Job Promotion (Teaching Fellow)."
+            time="October"
+            description1="In just three months after staring as an IA at Per Scholas,"
             description2="I was promoted to a Teaching Fellow position."
-            
-        />
+          />
 
           <YearCard
             title="AWS re/Start Program Cohort 8."
