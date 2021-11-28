@@ -29,10 +29,6 @@ export default function Home() {
                     className="emoji-hand"
                   />
                   Welcome! {" "}
-                  {/* <img
-                    src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/waving-hand_1f44b.png"
-                    className="emoji-hand"
-                  /> */}
                 </span>
                 My name is <span className="abe">Abraham </span>
               </div>

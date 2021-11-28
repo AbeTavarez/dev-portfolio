@@ -16,8 +16,10 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  background-color: rgb(48, 56, 70);
+  /* background-color: rgb(48, 56, 70); */
+  background-color: rgb(40,44, 52);
   width: 100%;
+  min-height: 500px;
 }
 .user-pic {
   border-radius: 5%;
@@ -70,7 +72,8 @@ div.hello-anime {
 }
 .social-links-home a:hover {
   /* color: #0B72B9; */
-  color: #09d3ac;
+  /* color: #09d3ac; */
+  color: #F0DB4F;
 }
 
 a {

@@ -92,7 +92,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-evenly",
     marginLeft: "auto",
     flexGrow: 1,
-    backgroundColor: 'rgb(40,44, 52)'
+    backgroundColor: '#323330'
     // height: '30px'
   },
   tab: {
@@ -106,7 +106,7 @@ const useStyles = makeStyles((theme) => ({
     height: "25px",
   },
   menu: {
-    backgroundColor: theme.palette.common.midnightBlue,
+    backgroundColor: theme.palette.common.reactBlack,
     color: "white",
     borderRadius: 0,
   },
@@ -120,25 +120,25 @@ const useStyles = makeStyles((theme) => ({
   drawerIcon: {
     height: "50px",
     width: "50px",
-    color: 'white'
+    color: '#fff'
   },
   drawerIconContainer: {
     marginLeft: "auto",
     "&:hover": {
-      backgroundColor: "#282c34",
+      backgroundColor: "#F0DB4F",
     },
   },
   drawer: {
-    backgroundColor: theme.palette.common.midnightBlue,
+    backgroundColor: theme.palette.common.reactBlack,
     anchor: "right"
   },
   drawerItem: {
     ...theme.typography.tab,
-    color: "white",
+    color: "#F0DB4F",
     opacity: 0.7,
   },
   drawerItemEstimate: {
-    backgroundColor: theme.palette.common.midnightBlue,
+    backgroundColor: theme.palette.common.reactBlack,
   },
   drawItemSelected: {
     "& .MuiListItemText-root": {

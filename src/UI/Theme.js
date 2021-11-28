@@ -9,7 +9,7 @@ const abeLightBlue = "#3282b8";
 const abeBabyBlue = "#bbe1fa";
 const abeReact = '#282c34';
 const abeWhite = '#fff';
-const midnightBlue = '#191970';
+const midnightBlue = '#073980';
 const reactBlack = 'rgb(40,44, 52)';
 const reactDarkBlue = 'rgb(48, 56, 70)';
 

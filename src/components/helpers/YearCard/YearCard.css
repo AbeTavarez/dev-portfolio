@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
 .year-card h2 {
     /* color: #3282b8; */
-    color: #09d3ac;
+    /* color: #09d3ac; */
+    /* color: #F0DB4F; */
+    color: rgb(40,44, 52);
 }
 
 .year-card .details {
