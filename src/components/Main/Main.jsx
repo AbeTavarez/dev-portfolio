@@ -7,9 +7,9 @@ import Home from "../pages/Home/Home";
 import Projects from "../pages/Projects/Projects";
 import Resume from "../pages/Resume/Resume";
 // import Contact from "../pages/Contact/Contact";
-import OpenSource from "../pages/OpenSource/OpenSource";
 import Services from "../pages/Services/Services.jsx";
 import LearnToCode from "../LearnToCode/LearnToCode";
+import JavascriptCourse from "../JavascriptCourse/JavascriptCourse";
 
 import "./Main.css";
 import underConstruction from "../shared/underConstruction";
@@ -33,8 +33,8 @@ export default function Main({pageViews}) {
         <Route path="/projects" component={() => <Projects />} />
         <Route path="/resume" component={() => <Resume />} />
         <Route path="/services" component={() => <Services />} />
-        {/* <Route path="/opensource" component={() => <OpenSource />} /> */}
         <Route path="/learntocode" component={() => <LearnToCode />} />
+        <Route path="/JavaScriptBeginners" component={() => <JavascriptCourse />} />
       </Switch>
     </Route>
   );
