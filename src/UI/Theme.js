@@ -12,6 +12,7 @@ const abeWhite = '#fff';
 const midnightBlue = '#073980';
 const reactBlack = 'rgb(40,44, 52)';
 const reactDarkBlue = 'rgb(48, 56, 70)';
+const js = `#f0db4f`;
 
 export default createMuiTheme({
   palette: {
@@ -32,6 +33,9 @@ export default createMuiTheme({
     secondary: {
       main: `${reactDarkBlue}`,
     },
+    js: {
+      main: `${js}`,
+    }
   },
   typography: {
     tab: {

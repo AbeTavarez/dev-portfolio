@@ -30,7 +30,7 @@ const LearnToCode = () => {
         </main>
 
         <section>
-            <Button variant="text">Join Now!</Button>
+            <Button variant="contained" color="secondary" size="large" href="/JavaScriptBeginners">Join Now!</Button>
         </section>
       </Container>
     </Container>

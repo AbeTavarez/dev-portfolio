@@ -212,6 +212,12 @@ export default function Home() {
           </div>
 
           <YearCard
+            time="September"
+            title="Started working as a contract Web Developer"
+            description1="Worked with different clients to help them bring their ideas together and developed their projects"
+          />
+
+          <YearCard
             time="August"
             title="Studied Redux"
             description1="Build an e-commerce web-application using React and Redux."
@@ -244,6 +250,12 @@ export default function Home() {
             title="Started learning Swift and iOS Development"
             time="March"
             description1="Completed a iOS Development Bootcamp in SOHO NYC."
+          />
+
+          <YearCard 
+            title="Worked in IT for nearly 10 Years"
+            time="2010-2020"
+            description1="Worked at the IT Department at Coca Cola Company."
           />
         </div>
       </div>

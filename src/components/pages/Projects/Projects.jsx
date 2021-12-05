@@ -24,20 +24,16 @@ export default function Projects() {
   const classes = useStyles();
 
   return (
-    <Container maxWidth='fixed' className='main-cont'>
+    <Container maxWidth="fixed" className="main-cont">
       <div className="project-title">
-        <h1>
-          PROJECTS PAGE
-        </h1>
-        <hr/>
+        <h1>PROJECTS PAGE</h1>
+        <hr />
       </div>
-      
-      
-        <div className='projects-container'>
-        
+
+      <div className="projects-container">
         {/* <h2>Personal Projects</h2>
         <hr/> */}
-          <div className="card-section">
+        <div className="card-section">
           <Card className={classes.root}>
             <CardActionArea>
               <CardMedia
@@ -50,7 +46,8 @@ export default function Projects() {
                   Content-Type: Store
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                 Fully functional eCommerce web-site using ReactJS, Redux, NodeJS, Express and BootStrap.
+                  Fully functional eCommerce web-site using ReactJS, Redux,
+                  NodeJS, Express and BootStrap.
                   <Typography variant="body2" color="textPrimary" component="p">
                     Stack: ReactJS, NodeJS, Redux, Express.
                   </Typography>
@@ -61,7 +58,7 @@ export default function Projects() {
               <Button
                 size="small"
                 color="primary"
-                variant='outlined'
+                variant="outlined"
                 href="http://www.theoriginalprogrammerwristband.com/"
                 target="_blank"
               >
@@ -69,8 +66,8 @@ export default function Projects() {
               </Button>
               <Button
                 size="small"
-                  color="primary"
-                  variant='outlined'
+                color="primary"
+                variant="outlined"
                 href="https://github.com/AbeTavarez/CmdBlog"
                 target="_blank"
               >
@@ -78,16 +75,11 @@ export default function Projects() {
               </Button>
             </CardActions>
           </Card>
-          </div>
+        </div>
 
-        
-          
-          
-      {/* </div> */}
-      
+        {/* </div> */}
 
-      
-    {/* <div className='projects-container'> */}
+        {/* <div className='projects-container'> */}
         {/* <h2>Hackatons/Group Projects</h2>
         <hr/> */}
         <div className="card-section">
@@ -116,16 +108,16 @@ export default function Projects() {
             <CardActions>
               <Button
                 size="small"
-                  color="primary"
-                  variant='outlined'
+                color="primary"
+                variant="outlined"
                 href="http://instacart-costco.surge.sh/welcome"
                 target="_blank"
               >
                 Visit Site
               </Button>
               <Button
-                  size="small"
-                  variant='outlined'
+                size="small"
+                variant="outlined"
                 color="primary"
                 href="https://github.com/AbeTavarez/Instacart-Costco"
                 target="_blank"
@@ -135,14 +127,12 @@ export default function Projects() {
             </CardActions>
           </Card>
         </div>
-        </div>
+      </div>
 
-      
-        <div  className="projects-container">
+      <div className="projects-container">
         {/* <h2>Freelance Projects</h2>
         <hr/> */}
 
-        
         <div className="card-section">
           <Card className={classes.root}>
             <CardActionArea>
@@ -156,10 +146,10 @@ export default function Projects() {
                   Motorcycle & Tire Shop Business Website
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Consulted and created a website for a small business.
-                  Worked with the client throughout the project to help them
-                  create an online presence and driving new clients to their
-                  business by setting search engine optimization.
+                  Consulted and created a website for a small business. Worked
+                  with the client throughout the project to help them create an
+                  online presence and driving new clients to their business by
+                  setting search engine optimization.
                 </Typography>
                 <Typography variant="body2" color="textPrimary" component="p">
                   Stack: HTML, CSS, JavaScript, SEO, UX-UI, Deployment.
@@ -170,7 +160,7 @@ export default function Projects() {
               <Button
                 size="small"
                 color="primary"
-                variant='outlined'
+                variant="outlined"
                 href="https://www.davidsmechanic.shop/"
                 target="_blank"
               >
@@ -179,7 +169,7 @@ export default function Projects() {
               <Button
                 size="small"
                 color="primary"
-                variant='outlined'
+                variant="outlined"
                 href="https://github.com/AbeTavarez/david_tire_shop"
                 target="_blank"
               >
@@ -188,7 +178,6 @@ export default function Projects() {
             </CardActions>
           </Card>
         </div>
-
 
         <div className="card-section">
           <Card className={classes.root}>
@@ -215,7 +204,7 @@ export default function Projects() {
               <Button
                 size="small"
                 color="primary"
-                variant='outlined'
+                variant="outlined"
                 href="https://www.stayhomecookhome.com/"
                 target="_blank"
               >
@@ -224,7 +213,7 @@ export default function Projects() {
               <Button
                 size="small"
                 color="primary"
-                variant='outlined'
+                variant="outlined"
                 href="https://github.com/AbeTavarez/-StayHomeCookHome"
                 target="_blank"
               >
@@ -233,15 +222,13 @@ export default function Projects() {
             </CardActions>
           </Card>
         </div>
-        </div>
-
-
+      </div>
     </Container>
   );
 }
 
-
-{/* <div className="card-section">
+{
+  /* <div className="card-section">
           <Card className={classes.root}>
             <CardActionArea>
               <CardMedia
@@ -282,4 +269,5 @@ export default function Projects() {
               </Button>
             </CardActions>
           </Card>
-          </div>    */}
+          </div>    */
+}

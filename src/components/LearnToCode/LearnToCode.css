@@ -1,16 +1,19 @@
-
 .container {
-    font-family: 'Courier New', Courier, monospace;
-    min-height: 1000px;
-    font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+  min-height: 1310px;
+  font-size: 18px;
 }
 
 .js {
-    background-color: black;
-    color: #F0DB4F;
-    padding: 2px;
+  background-color: black;
+  color: #f0db4f;
+  padding: 2px;
 }
- main {
-     line-height: 2em;
-     font-weight: 400;
- }
+main {
+  line-height: 2em;
+  font-weight: 400;
+}
+
+.join:hover {
+  background-color: #f0db4f;
+}

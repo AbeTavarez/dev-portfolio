@@ -412,7 +412,7 @@ export default function Header(props) {
     <Fragment>
       <ElevationScroll>
         <div className={classes.root}>
-          <AppBar position="" color="primary" className={classes.appbar}>
+          <AppBar position="center" color="primary" className={classes.appbar}>
             <Toolbar className={classes.toolbar}>
               {matches ? drawer : tabs}
             </Toolbar>

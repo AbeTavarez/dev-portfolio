@@ -44,10 +44,12 @@
 .hello-anime img {
   padding: 0 10px;
 }
+
 span.welcome-anime img:hover {
   transform: rotate(-40deg);
   transform: rotate(60deg);
 }
+
 div.hello-anime {
   font-weight: 600;
 }
