@@ -143,6 +143,7 @@ a {
 .timeline-container {
   padding: 0 20px;
   margin: 15px;
+  align-self: center;
 }
 
 .timeline-container h1 {
