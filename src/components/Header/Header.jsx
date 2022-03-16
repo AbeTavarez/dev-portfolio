@@ -210,11 +210,11 @@ export default function Header(props) {
 
     { name: "Projects", link: "/projects", activeIndex: 1 },
     { name: "Resume", link: "/resume", activeIndex: 2 },
-    {
-      name: "Learn to Code",
-      link: "/learntocode",
-      activeIndex: 4
-    },
+    // {
+    //   name: "Learn to Code",
+    //   link: "/learntocode",
+    //   activeIndex: 4
+    // },
   ];
   //Menu Items Array
   const menuOptions = [

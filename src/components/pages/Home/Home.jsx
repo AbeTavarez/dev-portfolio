@@ -24,11 +24,11 @@ export default function Home() {
             <div className="bio">
               <div className="hello-anime">
                 <span className="welcome-anime">
-                <img 
+                  <img
                     src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/waving-hand_1f44b.png"
                     className="emoji-hand"
                   />
-                  Welcome! {" "}
+                  Welcome!{" "}
                 </span>
                 My name is <span className="abe">Abraham </span>
               </div>
@@ -252,7 +252,7 @@ export default function Home() {
             description1="Completed a iOS Development Bootcamp in SOHO NYC."
           />
 
-          <YearCard 
+          <YearCard
             title="Worked in IT for nearly 10 Years"
             time="2010-2020"
             description1="Worked at the IT Department at Coca Cola Company."
