@@ -2,29 +2,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .footer-container {
+  /* background-color: #0B72B9; */
+  background-color: rgb(48, 56, 70);
+  color: #fff;
   display: flex;
   justify-content: space-evenly;
-  /* height: 115px; */
+  height: 300px;
+  position: relative;
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: #3282b8;
+  overflow: hidden;
+}
+
+.social-links-footer a {
   color: #fff;
 }
-
-.links {
-  display: flex;
-  flex-direction: column;
+.social-links-footer a:hover {
+  color: #09d3ac;
 }
-.social-links {
-  display: flex;
-  padding-bottom: 10px;
 
-  flex-direction: row;
+.footer-links {
+  /* padding-top: 50px; */
+}
+.social-links-footer {
+  display: flex;
+  justify-content: center;
 }
 
 .getintouch {
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .links {
+    background-color: #0B72B9;
+    padding: 0px;
+  }
+  .social-links-footer a {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 30px;
+  }
+  .links {
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .getintouch {
+    font-size: 18px;
+    text-align: center;
+  }
+  .contact {
+    margin-top: 15px;
+  }
+ 
+}
+
+@media (max-width: 540px) {
+  .footer-container {
+
+  }
+  .contact p {
+    margin: 25px 0;
+    padding-left: 5px;
+  }
+  .social-links-footer a {
+    font-size: 20-px;
+  }
+  .getintouch {
+    font-size: 14px;
+    /* text-align: center; */
+  }
+  .links {
+    margin-top: 5px;
+  }
 }
 
 @media (max-width: 320px) {

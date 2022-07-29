@@ -1,16 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../../shared/Layout";
-
 import "./Home.css";
+import YearCard from "../../helpers/YearCard/YearCard";
 import { makeStyles } from "@material-ui/core/styles";
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
-import clouds from "../../../assets/cloud-computing.png";
 
 const useStyles = makeStyles({
   root: {
@@ -27,483 +19,244 @@ export default function Home() {
   return (
     <Layout>
       <div className="home-container">
-        <div className="welcome-message">
-          <div className="name-home">
-            <h2>Hi, I'm Abraham</h2>
-            <img src={clouds} alt="cloud" className="cloud" />
-          </div>
-          <h3>I'm a Software Engineer / Developer / DevOps.</h3>
-        </div>
-        
-        <div className="social-links">
-          <a
-            href="https://www.linkedin.com/in/abrahametavarez/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <i className="fa fa-linkedin-square" aria-hidden="true" />
-          </a>
-          {/* Github */}
-          <a
-            href="https://github.com/AbeTavarez"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <i className="fa fa-github-square" aria-hidden="true" />
-          </a>
-          {/* DEV */}
-          <a
-            href="https://dev.to/abetavarez"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <i className="fab fa-dev"></i>
-          </a>
-          <a
-            href="mailto:abetavarez@icloud.com"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <i class="fas fa-envelope-square"></i>
-          </a>
-        </div>
-
-        <div className="aboutme">
-          <hr />
-          <div>
-            <h2>About me</h2>
-          </div>
-          <div className="bio">
-            {" "}
-            <p>
-              I'm a New Yorker who is passionate about tech and software
-              development. 
-            </p>
-            <p>What I love the most about software development is the ability to create tools that can reach and change the life of millions of people around the world.</p>
-            <p>
-              I've been using a wide range of technologies to create functional and secure modern desktop/web applications and command line utilities using:
-            </p>
-            <p className="lang">JavaScript, React, Redux, NodeJS, Express, MongoDB, Python, Linux, Docker, Apache, PostgreSQL, Ruby, Rails and other technologies. 
-              <br /> <br />
-            </p>
-          </div>
-
-          <div>
-          <p >
-              I'm seeking a challenging and fun position, where I can contribute
-              and be part of a hard working team to develop new and exciting tools and applications.
-          </p>
-          <p>Please take a few minutes to check my lastest projects.</p>
-            
-         </div>
-          <hr />
-        </div>
-
-        <div className="icons-media">
-        <img
-                src="https://img.icons8.com/color/48/000000/html-5.png"
-               
-                alt="html-icon"
-              />
-              <img
-                src="https://img.icons8.com/color/48/000000/css3.png"
-             
-                alt="css-icons"
-              />
-              <img
-                src="https://img.icons8.com/color/48/000000/javascript.png"
-           
-                alt="javascript-icon"
-              />
-              <img
-                src="https://img.icons8.com/offices/48/000000/react.png"
-                style={{ padding: "3px" }}
-                alt="react-js-icon"
-              />
-              <img
-                src="https://img.icons8.com/color/48/000000/nodejs.png"
-                style={{ padding: "3px" }}
-                alt="node-js-icon"
-              />
-              <img
-                src="https://img.icons8.com/color/48/000000/ruby-programming-language.png"
-           
-                alt="ruby-icon"
-              />
-              <img
-                src="https://img.icons8.com/color/48/000000/python.png"
-               
-                alt="python-icon"
-              />
-              <img
-                src="https://img.icons8.com/color/48/000000/npm.png"
-             
-                alt="npm-icon"
-              />
-              <img
-                src="https://img.icons8.com/color/48/000000/git.png"
-            
-                alt="git-icon"
-              />
-              <img
-                src="https://img.icons8.com/color/48/000000/console.png"
-            
-                alt="command-line-icon"
-              />
-              <img
-                src="https://img.icons8.com/color/48/000000/api.png"
-               
-                alt="api-icon"
-              />
-              
-              <img src="https://img.icons8.com/color/48/000000/linux.png"
-           
-              alt="html-icon"
-              />
-
-              <img
-                src="https://img.icons8.com/color/48/000000/data-configuration.png"
-              
-                alt="html-icon"
-              />
-
-              <img src="https://img.icons8.com/color/48/000000/wired-network.png"
-            
-              alt="aws-icon"
-              />
-              <img src="https://img.icons8.com/color/48/000000/docker-container.png"
-              
-              alt="aws-icon"
-              />
-         
-        </div>
-
-        <div className='h-header'>
-        <h1>Articles</h1>
-          <hr />
-        </div>
-
-        <div className='name-home'>
-          
-          <div className='h-card-section'>
-          <Card className={classes.root}>
-              <CardActionArea>
-                <CardMedia
-                  className={classes.media}
-                  image="https://res.cloudinary.com/abetavarez/image/upload/v1606278870/IMG_1345_3_dxnsql.jpg"
-                  title="instacart-project-website"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    What's the difference between JSON and BSON ?
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
-                  While working in projects specially with MongoDb I been as many times now about, what's BSON and how is it difference than JSON, which one is better or faster?
-                  In this short but awesome article I wrote you'll find the answer to all these questions. 
-                  </Typography>
-                  <Typography variant="body2" color="textPrimary" component="p">
-                  Published on Dev.to
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Button
-                  size="small"
-                  color="primary"
-                  variant='outlined'
-                  href="https://dev.to/abetavarez/json-vs-bson-2f6b"
-                  target="_blank"
-                >
-                  Go to Article
-                </Button>
-              </CardActions>
-            </Card>
+        <div className="home-top">
+          <div className="aboutme">
+            <div className="bio">
+              <div className="hello-anime">
+                <span className="welcome-anime">
+                  <img
+                    src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/waving-hand_1f44b.png"
+                    className="emoji-hand"
+                  />
+                  Welcome!{" "}
+                </span>
+                My name is <span className="abe">Abraham </span>
+              </div>
+              <p>
+                I'm a self motivated AWS re/Start and Software Engineer
+                Instructor at Per Scholas. I've experience on Cloud Computing,
+                Linux, Networking, Cloud Security, Programming: Frontend and
+                Backend, Automation, Software Development Life Cycle and
+                Databases.
+              </p>
+              <p>
+                When I'm not teaching, I like to work on my personal programming
+                projects, play video games, and read a book. I enjoy riding my
+                bmx bike on my time off and escaping to a beach when I'm on
+                vacation!
+              </p>
             </div>
-        </div>
-
-        <div className="h-header">
-          <h1>RECENT PROJECTS</h1>
-        <hr/>
-        </div>
-        
-
-        <div className="">
-          <div className="h-card-section">
-            <hr />
-
-            <Card className={classes.root}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image="https://res.cloudinary.com/abetavarez/image/upload/v1606500088/Screen_Shot_2020-11-27_at_12.59.31_PM_xvfse4.png"
-                title="content-type store"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h4" component="h2">
-                  ESCLU
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                 Interact with Elastic Search Database from your favorite Terminal.
-                  <Typography variant="body2" color="textPrimary" component="p">
-                    Stack: JavaScript, NPM, Elastic Search.
-                  </Typography>
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                  color="primary"
-                  variant='outlined'
-                href="https://github.com/AbeTavarez/ESCLU"
-                target="_blank"
-              >
-                Visit Repo
-              </Button>
-            </CardActions>
-          </Card>
           </div>
-          <div className="h-card-section">
-            <hr />
 
-            <Card className={classes.root}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image="https://res.cloudinary.com/abetavarez/image/upload/v1606279133/IMG_1346_2_ehte5p.jpg"
-                title="content-type store"
+          <div className="home-message">
+            <div className="img-h3">
+              {/* <img src="https://res.cloudinary.com/abetavarez/image/upload/v1612810161/WIN_20210204_10_33_48_Pro-removebg-preview_5_npx6we.png" alt="user-pic" className="user-pic" /> */}
+              <img
+                src="https://efrentavarez-resume.s3.us-east-2.amazonaws.com/profile-pic.png"
+                alt="user-pic"
+                className="user-pic"
               />
-              <CardContent>
-                <Typography gutterBottom variant="h4" component="h2">
-                  Content-Type: Store
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                 Fully functional eCommerce web-site using ReactJS, Redux, NodeJS, Express and BootStrap.
-                  <Typography variant="body2" color="textPrimary" component="p">
-                    Stack: ReactJS, NodeJS, Redux, Express.
-                  </Typography>
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                variant='outlined'
-                href="http://www.theoriginalprogrammerwristband.com/"
+            </div>
+
+            <div className="social-links-home">
+              <a
+                href="https://www.linkedin.com/in/abrahametavarez/"
+                rel="noopener noreferrer"
                 target="_blank"
               >
-                Visit site
-              </Button>
-              <Button
-                size="small"
-                  color="primary"
-                  variant='outlined'
+                <i className="fa fa-linkedin-square" aria-hidden="true" />
+              </a>
+              {/* Github */}
+              <a
                 href="https://github.com/AbeTavarez"
+                rel="noopener noreferrer"
                 target="_blank"
               >
-                Visit Repo
-              </Button>
-            </CardActions>
-          </Card>
+                <i className="fa fa-github-square" aria-hidden="true" />
+              </a>
+              {/* DEV */}
+              <a
+                href="https://dev.to/abetavarez"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i className="fab fa-dev"></i>
+              </a>
+              <a
+                href="mailto:abetavarez@icloud.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i class="fas fa-envelope-square"></i>
+              </a>
+            </div>
           </div>
-
-
-
-
-          <div className="h-card-section">
-            <Card className={classes.root}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image="https://res.cloudinary.com/abetavarez/image/upload/v1606279384/IMG_1348_gmhkvo.jpg"
-                title="influencercv"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h4" component="h2">
-                  Influencer CV
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                 Social media site for Influencers, Content-Creators, Stremers and more...
-                  <Typography variant="body2" color="textPrimary" component="p">
-                    Stack: ReactJS, NodeJS, Redux, Express.
-                  </Typography>
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                variant='outlined'
-                href="http://influencercv.com/"
-                target="_blank"
-              >
-                Visit site
-              </Button>
-              <Button
-                size="small"
-                  color="primary"
-                  variant='outlined'
-                href="https://github.com/AbeTavarez"
-                target="_blank"
-              >
-                Visit Repo
-              </Button>
-            </CardActions>
-          </Card>
-          </div>
-          
-          <div className="h-card-section">
-          <Card className={classes.root}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image="https://res.cloudinary.com/abetavarez/image/upload/v1606275294/IMG_1343_2_dbqszh.jpg"
-                title="motorcycle-project-website"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  Motorcycle & Tire Shop Business Website
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  Consulted and created a website for a small business owner.
-                  Worked with the client throughout the project to help them
-                  create an online presence and driving new clients to their
-                  business by setting search engine optimization.
-                </Typography>
-                <Typography variant="body2" color="textPrimary" component="p">
-                  Stack: HTML, CSS, JavaScript, SEO, UXUI, Deployment.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                  color="primary"
-                  variant='outlined'
-                href="https://www.davidsmechanic.shop/"
-                target="_blank"
-              >
-                Visit Site
-              </Button>
-              <Button
-                size="small"
-                  color="primary"
-                  variant='outlined'
-                href="https://github.com/AbeTavarez/david_tire_shop"
-                target="_blank"
-              >
-                Visit Repo
-              </Button>
-            </CardActions>
-          </Card>
         </div>
 
+        {/* STACK ICONS */}
+        <div className="icons-media-home">
+          <img
+            src="https://img.icons8.com/color/48/000000/javascript.png"
+            alt="javascript-icon"
+          />
+          <img
+            src="https://img.icons8.com/offices/48/000000/react.png"
+            style={{ padding: "3px" }}
+            alt="react-js-icon"
+          />
+          <img
+            src="https://img.icons8.com/color/48/000000/nodejs.png"
+            style={{ padding: "3px" }}
+            alt="node-js-icon"
+          />
 
+          <img
+            src="https://img.icons8.com/color/48/000000/git.png"
+            alt="git-icon"
+          />
+
+          <img
+            src="https://img.icons8.com/color/48/000000/npm.png"
+            alt="npm-icon"
+          />
+
+          <img
+            src="https://img.icons8.com/color/48/000000/python.png"
+            alt="python-icon"
+          />
+
+          <img
+            src="https://img.icons8.com/color/48/000000/linux.png"
+            alt="html-icon"
+          />
+
+          <img
+            src="https://img.icons8.com/color/48/000000/console.png"
+            alt="command-line-icon"
+          />
+
+          <img
+            src="https://img.icons8.com/color/48/000000/docker-container.png"
+            alt="aws-icon"
+          />
+
+          <img
+            src="https://img.icons8.com/color/48/000000/ruby-programming-language.png"
+            alt="ruby-icon"
+          />
+
+          <img
+            src="https://img.icons8.com/color/48/000000/data-configuration.png"
+            alt="html-icon"
+          />
+
+          <img
+            src="https://img.icons8.com/color/48/000000/wired-network.png"
+            alt="aws-icon"
+          />
         </div>
 
-        <div className="home-projects-container">
-          <div className="card-section">
-            {/* <Card className={classes.root}>
-              <CardActionArea>
-                <CardMedia
-                  className={classes.media}
-                  image="https://res.cloudinary.com/abetavarez/image/upload/v1592621658/Screen_Shot_2020-06-19_at_10.52.40_PM_wzvrar.png"
-                  title="streamnetfy-website"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    Streamnetfy
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
-                    Website that can help you to find tv shows. Get show rating,
-                    gender, images, network, show summary and more.
-                  </Typography>
-                  <Typography variant="body2" color="textPrimary" component="p">
-                    Stack: ReactJS.
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Button
-                  size="small"
-                  color="primary"
-                  href="https://streamnetfy.netlify.app/"
-                  target="_blank"
-                >
-                  Visit Site
-                </Button>
-                <Button
-                  size="small"
-                  color="primary"
-                  href="https://github.com/AbeTavarez/Streamnetfy"
-                  target="_blank"
-                >
-                  Visit Repo
-                </Button>
-              </CardActions>
-            </Card> */}
+        <div className="timeline-container">
+          <h1>Timeline of Events</h1>
+          <hr />
+          <div>
+            <h2>2021</h2>
+          </div>
+          <YearCard
+            title="IT Engineering Program  for Nationwide and Per Scholas."
+            time="October"
+            description1="I had the amazing opportunity to work with Nationwide and Per Scholas,"
+            description2="to train over twenty new candidates for their IT and Software Engineering Apprenticeship Program."
+          />
+          <YearCard
+            title="Job Promotion (Teaching Fellow)."
+            time="October"
+            description1="In just three months after staring as an IA at Per Scholas,"
+            description2="I was promoted to a Teaching Fellow position."
+          />
+
+          <YearCard
+            title="AWS re/Start Program Cohort 8."
+            time="September"
+            description1="Assisted over twenty new learners to graduate from the AWS re/Start Program and"
+            description2=" get their AWS CCP and SA certifications."
+            imgUrl="https://abe-assets-cloud.s3.us-east-2.amazonaws.com/first-aws-class-gards.jpg"
+            btnUrl="https://www.linkedin.com/feed/update/urn:li:activity:6839596361080553472/?commentUrn=urn%3Ali%3Acomment%3A(activity%3A6839596361080553472%2C6839597113148616704)&replyUrn=urn%3Ali%3Acomment%3A(activity%3A6839596361080553472%2C6839617242049724416)"
+          />
+
+          <YearCard
+            title="New job with Per Scholas as an IA/Co-Instructor."
+            time="June"
+            description1="At the end of June after completing the AWS re/Start training I was offered a job position as an IA / Co-Instructor at"
+            description2="the AWS re/Start Program at Per Scholas."
+            imgUrl="https://abe-assets-cloud.s3.us-east-2.amazonaws.com/starting-perscholas.jpg"
+            btnUrl="https://www.linkedin.com/embed/feed/update/urn:li:share:6805503872241676288"
+          />
+
+          <YearCard
+            title="Graduated from the AWS re/Start Program"
+            time="May"
+            imgUrl="https://abe-assets-cloud.s3.us-east-2.amazonaws.com/AWS-Restart-Graduate-Badge-Foundational.png"
+            btnUrl="https://www.credly.com/badges/bbd3dc83-1559-461e-8e22-8e993d33f8df/linked_in"
+          />
+
+          <YearCard
+            title="Started the AWS re/Start Program"
+            time="January"
+            description1="The AWS re/Start Program is a 15 weeks of hands on technical training on Cloud Computing, AWS Cloud, Linux,"
+            description2="Python, Networking, Databases, Cybersecurity, CI/CD and more."
+          />
+
+          <div>
+            <h2>2020</h2>
           </div>
 
-          <div className="card-section">
-            {/* <Card className={classes.root}>
-              <CardActionArea>
-                <CardMedia
-                  className={classes.media}
-                  image="https://res.cloudinary.com/abetavarez/image/upload/v1592622098/Screen_Shot_2020-06-19_at_11.01.22_PM_nds2kr.png"
-                  title="command-blog-website"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    CommandBlog
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
-                    Full Stack Blog Application build with Authentication using
-                    JWT Tokens. All users can read articles. Users that sign-up
-                    can create and post articles.
-                    <Typography
-                      variant="body2"
-                      color="textPrimary"
-                      component="p"
-                    >
-                      Stack: ReactJS, Ruby on Rails, PostgreSQL.
-                    </Typography>
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Button
-                  size="small"
-                  color="primary"
-                  href="https://commandblog.netlify.app/"
-                  target="_blank"
-                >
-                  Visit site
-                </Button>
-                <Button
-                  size="small"
-                  color="primary"
-                  href="https://github.com/AbeTavarez/CmdBlog"
-                  target="_blank"
-                >
-                  Visit Repo
-                </Button>
-              </CardActions>
-            </Card> */}
+          <YearCard
+            time="September"
+            title="Started working as a contract Web Developer"
+            description1="Worked with different clients to help them bring their ideas together and developed their projects"
+          />
+
+          <YearCard
+            time="August"
+            title="Studied Redux"
+            description1="Build an e-commerce web-application using React and Redux."
+          />
+
+          <YearCard
+            time="July"
+            title="Studied Angular and TypeScript"
+            description1="Self-studied Angular and TypeScript."
+          />
+
+          <YearCard
+            time="June"
+            title="Graduated from the GA Software Engineering Program"
+            description1="Completed a 12 weeks immersive Software Engineering Program."
+          />
+
+          <YearCard
+            time="March"
+            title="Started the GA Software Engineering Immersive Program"
+            description1="The GA SE Immersive Program is a 12 weeks intense training program with focus on Frontend and Backend technologies in"
+            description2="HTML, CSS, JavaScript, NodeJS, React, Ruby, Data Structures, and many other web development technologies."
+          />
+
+          <div>
+            <h2>2019</h2>
           </div>
+
+          <YearCard
+            title="Started learning Swift and iOS Development"
+            time="March"
+            description1="Completed a iOS Development Bootcamp in SOHO NYC."
+          />
+
+          <YearCard
+            title="Worked in IT for nearly 10 Years"
+            time="2010-2020"
+            description1="Worked at the IT Department at Coca Cola Company."
+          />
         </div>
       </div>
     </Layout>

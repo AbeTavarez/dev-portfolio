@@ -1,40 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 .home-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: auto;
-  /* background-color: rgb(91, 97, 166); */
-  /* background-color: rgb(16, 168, 166); */
-  /* background-color: #200f21; */
-  /* background-color: #7b88ff; */
-  background-color: #1b262c;
-  color: #fff;
-}
-.profile-img {
-  border-radius: 100%;
-  border: 2px solid white;
-  height: 200px;
-  width: 200px;
-}
-.img-title {
-  display: flex;
-  flex-direction: column;
-}
-.welcome-message {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(65,74,76);
   font-family: 'Montserrat';
-  font-size: 22px;
+}
+.home-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  /* background-color: rgb(48, 56, 70); */
+  background-color: rgb(40,44, 52);
+  width: 100%;
+  min-height: 500px;
+}
+.user-pic {
+  border-radius: 5%;
+  max-width: 250px;
+  max-height: 250px;
+  margin-top: 5rem;
+  background-size: cover;
+}
+.abe {
+  /* color: #09d3ac; */
+  color:  #F0DB4F;
+  font-weight: 600;
 }
 
-.social-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+.emoji-hand {
+  height: 40px;
 }
+
+.hello-anime {
+  font-size: 32px;
+}
+.hello-anime img {
+  padding: 0 10px;
+}
+
+span.welcome-anime img:hover {
+  transform: rotate(-40deg);
+  transform: rotate(60deg);
+}
+
+div.hello-anime {
+  font-weight: 600;
+}
+.bio {
+  font-size: 18px;
+}
+.home-message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.social-links-home {
+  margin-top: 15px;
+}
+.social-links-home a {
+  color: #fff;
+  font-size: 2em;
+  margin-left: 20px;
+  
+  
+}
+.social-links-home a:hover {
+  /* color: #0B72B9; */
+  /* color: #09d3ac; */
+  color: #F0DB4F;
+}
+
 a {
   font-size: 32px;
   padding: 5px;
@@ -43,51 +86,44 @@ a {
   width: 100%;
 }
 
-.name-home {
-  font-family: 'Montserrat';
+.bio h2 {
+  color: #ef6c00;
 }
 
 .h-header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* margin: 150px 10px; */
-  font-family: 'Bebas Neue', cursive;
   letter-spacing: 2px;
   width: 50%;
+  padding-top: 100px;
 }
 .h-header hr {
   width: 100%;
   margin-top: 0;
   margin-bottom: 5px;
 }
-.home-projects-container {
-  display: flex;
-  flex-direction: row;
-  margin: 40px;
-}
-.home-projects-title {
-  font-family: 'Bebas Neue';
-  padding-top: 100px;
-}
 
 .aboutme {
   padding-top: 40px;
   text-align: center;
   font-size: 22px;
+  width: 800px;
 }
 .bio {
-  text-align: center;
+  padding: 1.5rem;
 }
 .lang {
   font-style: italic;
-  color: #3282b8;
+  /* color: #3282b8; */
+  color: white;
 }
-.icons-media {
+.icons-media-home {
   display: flex;
   justify-content: center;
-  height: 80px;
-  padding: 15px;
+  width: 100%;
+  margin-top: 25px;
+  /* background-color: rgb(48, 56, 70); */
 }
 .last-p {
   margin-bottom: 80px;
@@ -104,7 +140,20 @@ a {
   margin: 100px 10px;
 }
 
-@media (max-width: 1200px) {
+.timeline-container {
+  padding: 0 20px;
+  margin: 15px;
+  align-self: center;
+}
+
+.timeline-container h1 {
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* Laptop */
+@media (max-width: 1024px) {
   .home-projects-container {
     flex-direction: column;
   }
@@ -112,10 +161,8 @@ a {
     width: 600px;
     margin: 0 15px;
   }
-  .icons-media {
-    width: 200px;
-    height: 80px;
-    padding: 15px;
+  .icons-media-home {
+    display: none;
   }
   .welcome-message {
     font-size: 14px;
@@ -144,6 +191,24 @@ a {
   }
 }
 
+
+@media (max-width: 955px) {
+  .home-container {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .home-top {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 3rem;
+  }
+ 
+  .home-container {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 800px) {
   .welcome-message {
     font-size: 10px;
@@ -153,16 +218,6 @@ a {
     width: 400px;
     padding-left: 40px;
     padding-right: 40px;
-  }
-
-  .icons-media {
-    display: flex;
-    flex-wrap: wrap;
-    overflow-wrap: normal;
-    /* width: 40px;
-    height: auto; */
-    padding: 15px;
-    padding-bottom: 300px;
   }
 
   .img-title {
@@ -182,17 +237,13 @@ a {
   }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 600px) {
   .name-home {
     font-size: 22px;
   }
 }
 
-@media (max-width: 530px) {
-  .welcome-message {
-    width: auto;
-  }
-
+@media (max-width: 500px) {
   .aboutme {
     width: 300px;
   }

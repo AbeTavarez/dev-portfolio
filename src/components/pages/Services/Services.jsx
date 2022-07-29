@@ -16,7 +16,7 @@ const Services = () => {
         </div>
         <div className="scard-details">
           <h2>Web Design</h2>
-          <p>A new website from the first idea to the successful launch . Together with you I make an appealing design that suits your business. I design using the latest techniques and trends.</p>
+          <p>A new website from the first idea to the successful launch. Together with you I make an appealing design that suits your business. I design using the latest techniques and trends.</p>
         </div>
       </div>
 
@@ -26,7 +26,7 @@ const Services = () => {
       </div>
         <div className="scard-details">
           <h2>Web Development</h2>
-          <p>I develop custom websites , keeping them unique, functional and modern . Considering the latest technologies like HTML5, CSS3, PHP and more.
+          <p>I develop custom websites, keeping them unique, functional and modern. Considering the latest technologies like HTML5, CSS3, PHP and more.
           </p>
         </div>
       </div>
@@ -73,10 +73,10 @@ const Services = () => {
       
         {/* </div> */}
 
-      <div>
+      <div className="getintouch-services">
         <h1>Get in touch</h1>
         <img src="https://img.icons8.com/dusk/84/000000/paper-plane.png" alt="paper plane"/>
-        <p>Do you like my work? Want to get in touch? Send me an Email: dev.etavarez@gmail.com</p>
+        <p>Want to get in touch? Send me an Email: <span>abetavarez@gmail.com</span></p>
       </div>
 
     </div>

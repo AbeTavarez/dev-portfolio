@@ -26,11 +26,8 @@ import MenuIcon from "@material-ui/icons/Menu";
 
 import "./Header.css";
 
-//* ///////////////////////////////////////////////////////////
-//* //////////////////////////////////////////////////////////
-//* Styles //////////////////////////////////////////////////
-//* ////////////////////////////////////////////////////////
-//* ///////////////////////////////////////////////////////
+//* ==================== Styles 
+
 const useStyles = makeStyles((theme) => ({
   toolbarMargin: {
     ...theme.mixins.toolbar,
@@ -46,21 +43,20 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     width: "100%",
-    backgroundColor: "#1b262c;",
   },
   topContent: {
     display: "flex",
     justifyContent: "space-between",
-    padding: "10px",
+    padding: "0px",
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(1),
   },
   toolbar: {
-    minHeight: 128,
+    minHeight: 120,
     alignItems: "flex-start",
     paddingTop: theme.spacing(1),
-    paddingBottom: theme.spacing(2),
+    paddingBottom: theme.spacing(0),
     [theme.breakpoints.down("md")]: {
       minHeight: 80,
     },
@@ -75,6 +71,7 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     height: "4em",
     paddingRight: "100px",
+   
     
     [theme.breakpoints.down("md")]: {
       height: "4em",
@@ -95,24 +92,27 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-evenly",
     marginLeft: "auto",
     flexGrow: 1,
+    backgroundColor: '#323330'
+    // height: '30px'
   },
   tab: {
     ...theme.typography.tab,
     minWidth: 10,
     marginLeft: "25px",
+    color: '#F0DB4F'
   },
   button: {
     ...theme.typography.estimate,
-    height: "45px",
+    height: "25px",
   },
   menu: {
-    backgroundColor: theme.palette.common.lightBlue,
+    backgroundColor: theme.palette.common.reactBlack,
     color: "white",
     borderRadius: 0,
   },
   menuItem: {
     ...theme.typography.tab,
-    opacity: 0.7,
+    opacity: 0.5,
     "&:hover": {
       opacity: 1,
     },
@@ -120,23 +120,25 @@ const useStyles = makeStyles((theme) => ({
   drawerIcon: {
     height: "50px",
     width: "50px",
+    color: '#fff'
   },
   drawerIconContainer: {
     marginLeft: "auto",
     "&:hover": {
-      backgroundColor: "transparent",
+      backgroundColor: "#F0DB4F",
     },
   },
   drawer: {
-    backgroundColor: theme.palette.common.lightBlue,
+    backgroundColor: theme.palette.common.reactBlack,
+    anchor: "right"
   },
   drawerItem: {
     ...theme.typography.tab,
-    color: "white",
+    color: "#F0DB4F",
     opacity: 0.7,
   },
   drawerItemEstimate: {
-    backgroundColor: theme.palette.common.purple,
+    backgroundColor: theme.palette.common.reactBlack,
   },
   drawItemSelected: {
     "& .MuiListItemText-root": {
@@ -148,11 +150,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-//* //////////////////////////////////////////////////////////
-//* /////////////////////////////////////////////////////////
-//* /////////////// Scroll control /////////////////////////
-//* ///////////////////////////////////////////////////////
-//* //////////////////////////////////////////////////////
+
+//* ===================== Scroll control 
+
 
 function ElevationScroll(props) {
   const { children } = props;
@@ -166,11 +166,9 @@ function ElevationScroll(props) {
   });
 }
 
-//* //////////////////////////////////////////////////////////
-//* /////////////////////////////////////////////////////////
-//* /////////////////////Main Function /////////////////////
-//* ///////////////////////////////////////////////////////
-//* //////////////////////////////////////////////////////
+
+//* ================   Main Function 
+
 
 export default function Header(props) {
   const classes = useStyles();
@@ -206,28 +204,17 @@ export default function Header(props) {
     setSelectedIndex(idx);
   };
 
-  //* @routes - all routes
+  //* ================== @routes - all routes
   const routes = [
     { name: "Home", link: "/", activeIndex: 0 },
 
     { name: "Projects", link: "/projects", activeIndex: 1 },
     { name: "Resume", link: "/resume", activeIndex: 2 },
-    {
-      name: "Services",
-      link: "/services",
-      activeIndex: 3,
-      ariaOwns: anchorEl ? "simple-menu" : undefined,
-      ariaPopup: anchorEl ? true : undefined,
-      mouseOver: (e) => handleClick(e),
-      isDisable: false
-    },
-
-    {
-      name: "Open Source",
-      link: "/opensource",
-      activeIndex: 4,
-      isDisable: false,
-    },
+    // {
+    //   name: "Learn to Code",
+    //   link: "/learntocode",
+    //   activeIndex: 4
+    // },
   ];
   //Menu Items Array
   const menuOptions = [
@@ -256,11 +243,9 @@ export default function Header(props) {
       selectedIndex: 3,
     },
   ];
-  //* ///////////////////////////////////////////////////////////
-  //* //////////////////////////////////////////////////////////
-  //* ///////////////ACTIVE TAB REFRESH////////////////////////
-  //* ////////////////////////////////////////////////////////
-  //* ///////////////////////////////////////////////////////
+
+  //* ====================  ACTIVE TAB REFRESH
+
   useEffect(() => {
     [...menuOptions, ...routes].forEach((route) => {
       switch (window.location.pathname) {
@@ -277,14 +262,17 @@ export default function Header(props) {
       }
     });
   }, [value, menuOptions, selectedIndex, routes]);
-  //* /////////////////////////////////////////////////////////
-  //* //////////////////TABS /////////////////////////////////
-  //* ///////////////////////////////////////////////////////
-  //* //////////////////////////////////////////////////////
+
+  //* ===================== TABS 
+
 
   const tabs = (
     <Fragment>
       <div className="message">
+        <div className="user-name">
+            <img src="https://img.icons8.com/external-justicon-flat-justicon/58/000000/external-atom-science-justicon-flat-justicon.png" className='react-icon react-icon-desk'/>
+        
+        </div>
         <div className={classes.topContent}>
           <Button
             component={Link}
@@ -293,15 +281,16 @@ export default function Header(props) {
             onClick={() => setValue(0)}
             className={classes.logoContainer}
           >
-            <img
-              src="https://img.icons8.com/bubbles/50/000000/admin-settings-male.png"
+            {/* <img
+              src="https://res.cloudinary.com/abetavarez/image/upload/v1612810161/WIN_20210204_10_33_48_Pro-removebg-preview_5_npx6we.png" alt="user-pic" className="user-pic"
               alt="avatar"
               className={classes.logo}
-            />
+            /> */}
           </Button>
+            {/* <div className="my-name">Abraham Tavarez</div> */}
         </div>
 
-        <Paper className={classes.tabContainer}>
+        <Paper className={classes.tabContainer} elevation='5' variant="elevation">
           <Tabs value={value} onChange={handleChange}>
             {routes.map((route, index) => (
               <Tab
@@ -320,14 +309,6 @@ export default function Header(props) {
         </Paper>
 
         <div className="estimate">
-          {/* <Button
-            variant="contained"
-            color="primary"
-            className={classes.button}
-            disabled
-          >
-            Free Estimate
-          </Button> */}
           <Menu
             id="simple-menu"
             anchorEl={anchorEl}
@@ -362,10 +343,15 @@ export default function Header(props) {
     </Fragment>
   );
 
-  //* DRAWER ////////////////////////////////////////////////////////////////////////////////
+  //* ====================== DRAWER 
   const drawer = (
     <Fragment>
       <div className="">
+      <div className="user-name">
+      <img src="https://img.icons8.com/external-justicon-flat-justicon/58/000000/external-atom-science-justicon-flat-justicon.png" className='react-icon'/>
+          {/* <img src="https://img.icons8.com/dotty/50/000000/user.png"/> */}
+          {/* <div className="">Abraham Tavarez</div> */}
+          </div>
         <Button
           component={Link}
           to="/"
@@ -373,14 +359,15 @@ export default function Header(props) {
           onClick={() => setValue(0)}
           className={classes.logoContainer}
         >
-          <img
-            src="https://img.icons8.com/bubbles/50/000000/admin-settings-male.png"
+          {/* <img
+            src="https://res.cloudinary.com/abetavarez/image/upload/v1612810161/WIN_20210204_10_33_48_Pro-removebg-preview_5_npx6we.png" alt="user-pic" className="user-pic"
             alt="avatar"
             className={classes.logo}
-          />
+          /> */}
         </Button>
       </div>
       <SwipeableDrawer
+        anchor="right"
         disableBackdropTransition={!iOS}
         disableDiscovery={iOS}
         open={openDrawer}
@@ -409,26 +396,6 @@ export default function Header(props) {
               </ListItemText>
             </ListItem>
           ))}
-          <ListItem
-            oonClick={() => {
-              setOpenDrawer(false);
-              setValue(5);
-            }}
-            divider
-            button
-            component={Link}
-            to="/freeestimate"
-            selected={value === 5}
-            className={{
-              root: classes.drawerItemEstimate,
-              selected: classes.drawItemSelected,
-            }}
-            disabled
-          >
-            <ListItemText className={classes.drawerItem} disableTypography>
-              Free Estimate
-            </ListItemText>
-          </ListItem>
         </List>
       </SwipeableDrawer>
       <IconButton
@@ -445,7 +412,7 @@ export default function Header(props) {
     <Fragment>
       <ElevationScroll>
         <div className={classes.root}>
-          <AppBar position="fixed" color="secondary" className={classes.appbar}>
+          <AppBar position="center" color="primary" className={classes.appbar}>
             <Toolbar className={classes.toolbar}>
               {matches ? drawer : tabs}
             </Toolbar>

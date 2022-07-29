@@ -6,6 +6,16 @@ nav {
   top: 0;
   left: 0;
 }
+.my-name {
+  /* color: #3282b8; */
+  color: #09d3ac;;
+  padding: 10px;
+}
+
+.user-name {
+  display: flex;
+  align-items: center;
+}
 
 .header-container {
   display: flex;
@@ -39,8 +49,32 @@ nav {
 
 a {
   text-decoration: none;
-  color: white;
+
 }
+.user-name {
+  display: flex;
+  justify-content: flex-end;
+}
+.react-icon-desk {
+  margin: 10px 5px;
+  
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .react-icon {
+    animation: react-icon-spin infinite 20s linear;
+  }
+}
+
+@keyframes react-icon-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /*medium screens to large screens*/
 @media (max-width: 1200px) {
   nav {
@@ -61,9 +95,7 @@ a {
     box-shadow: 1px 1px 5px 0.3px #cecece;
     width: 100%;
   }
-}
 
-@media (max-width: 1200px) {
   .nav-links {
     justify-content: space-evenly;
     padding: 0 20px;

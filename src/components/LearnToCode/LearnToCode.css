@@ -1,0 +1,17 @@
+.container {
+  font-family: "Courier New", Courier, monospace;
+  min-height: 1310px;
+  font-size: 18px;
+}
+
+.js {
+  background-color: black;
+  color: #f0db4f;
+  padding: 2px;
+}
+main {
+  line-height: 2em;
+  font-weight: 400;
+}
+
+
